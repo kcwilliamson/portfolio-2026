@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Force Multipliers | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 4rem;
+        }
+        .case-study-header {
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #000000;
+        }
+        .case-study-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        .case-study-subtitle {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        .case-study-section {
+            margin-bottom: 4rem;
+        }
+        .section-heading {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #4ECDC4;
+        }
+        .case-study-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            opacity: 0.9;
+        }
+        .case-study-content p {
+            margin-bottom: 1.5rem;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .stat-box {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid #000000;
+        }
+        .stat-box:hover {
+            background-color: #4ECDC4;
+            color: #000;
+            border-color: #4ECDC4;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+            border: 2px solid #000000;
+        }
+        .back-link:hover {
+            background-color: transparent;
+            color: #000000;
+        }
+        .quote-box {
+            background-color: var(--secondary-color);
+            padding: 3rem;
+            margin: 3rem 0;
+            border-left: 4px solid #4ECDC4;
+            border: 2px solid #000000;
+            border-left-width: 6px;
+        }
+        .quote-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .process-step {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #4ECDC4;
+            transition: all 0.3s;
+            border: 2px solid #000000;
+            border-left-width: 6px;
+        }
+        .process-step:hover {
+            transform: translateX(10px);
+            border-color: #4ECDC4;
+            border-left-width: 6px;
+        }
+        .process-step h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-transition-overlay"></div>
+    
+    <div class="case-study">
+        <a href="../index.astro" class="back-link">← Back to Portfolio</a>
+        
+        <div class="case-study-header">
+            <h1 class="case-study-title">AI Force Multipliers</h1>
+            <p class="case-study-subtitle">Creating Systems That Amplify Team Output Through Intelligent Automation</p>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Problem</h2>
+            <div class="case-study-content">
+                <p>The UX team was drowning in repetitive tasks. Content audits taking weeks, user research analysis consuming hours, and documentation that was always outdated. Our most talented people were spending their time on work that didn't leverage their strategic thinking—the very skill that made them valuable.</p>
+                <p>We weren't just inefficient; we were failing to scale. As product demands increased, the team couldn't keep up. The bottleneck wasn't talent—it was process. We were building beautiful experiences but using tools and methods from a decade ago.</p>
+            </div>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Vision</h2>
+            <div class="case-study-content">
+                <p>I saw an opportunity to transform how we worked by integrating AI not as a replacement for human creativity, but as a force multiplier that could handle repetitive, time-consuming tasks, freeing our team to focus on strategic thinking and creative problem-solving.</p>
+                <p>The goal was ambitious: create an AI-powered ecosystem that would reduce administrative overhead by 70% while increasing strategic output by 50%. We wouldn't just use AI tools—we'd build systematic processes that made AI integral to our workflow.</p>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            <p class="quote-text">"AI isn't about replacing humans—it's about elevating them. When machines handle the mundane, humans can focus on the meaningful."</p>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Implementation</h2>
+            <div class="case-study-content">
+                <p>We built a three-tiered AI system, each layer designed to address specific pain points in our workflow:</p>
+                
+                <div class="process-step">
+                    <h3>Layer 1: Content Intelligence Engine</h3>
+                    <p>We developed a custom AI system that automated content audits, style guide enforcement, and terminology consistency. This reduced our content review time from 2 weeks to 3 days, catching inconsistencies that human reviewers missed.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Layer 2: Research Synthesis Platform</h3>
+                    <p>Our research platform uses AI to analyze user interview transcripts, identify patterns, and generate actionable insights. What once took analysts 40 hours now happens in 4 hours, with deeper, more nuanced insights extracted from the data.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3>Layer 3: Automated Documentation System</h3>
+                    <p>We built a system that automatically generates and updates design system documentation, component libraries, and user flows. This eliminated documentation debt and ensured stakeholders always had access to current information.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-number">70%</div>
+                <div class="stat-label">Reduction in Admin Tasks</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">3x</div>
+                <div class="stat-label">Faster Content Delivery</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">50%</div>
+                <div class="stat-label">More Strategic Output</div>
+            </div>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Impact</h2>
+            <div class="case-study-content">
+                <p>The results exceeded our expectations. Content audits that once took two weeks now complete in three days. User research analysis that previously required a full day of synthesis now delivers actionable insights in under an hour. Design system documentation is always current, automatically updating as components change.</p>
+                <p>But the most significant impact was on team morale and creativity. Freed from administrative burden, designers and content strategists were able to devote their energy to strategic thinking, creative exploration, and deeper collaboration with product and engineering teams.</p>
+                <p>The team's strategic contribution increased by 50%—not because we hired more people, but because we empowered our existing team to focus on work that truly mattered. AI became the foundation that allowed human creativity to flourish.</p>
+            </div>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">Lessons Learned</h2>
+            <div class="case-study-content">
+                <p><strong>AI requires human governance.</strong> We established clear guidelines for AI use, ensuring outputs were always reviewed and refined by human experts. AI accelerated our work, but human judgment remained essential.</p>
+                <p><strong>Training is critical.</strong> We invested heavily in team education, helping everyone understand AI capabilities and limitations. This created advocates throughout the organization, accelerating adoption and ensuring responsible use.</p>
+                <p><strong>Start small, scale fast.</strong> We began with a pilot program focusing on content audits, proved the concept, then systematically expanded to other areas. This minimized risk while building momentum and organizational support.</p>
+            </div>
+        </div>
+
+        <a href="../index.astro" class="back-link">← Back to Portfolio</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

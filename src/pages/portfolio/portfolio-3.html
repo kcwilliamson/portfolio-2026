@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content-First UX Intelligence | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 4rem;
+        }
+        .case-study-header {
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #000000;
+        }
+        .case-study-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        .case-study-subtitle {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        .case-study-section {
+            margin-bottom: 4rem;
+        }
+        .section-heading {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #FFE66D;
+        }
+        .case-study-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            opacity: 0.9;
+        }
+        .case-study-content p {
+            margin-bottom: 1.5rem;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .stat-box {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid #000000;
+        }
+        .stat-box:hover {
+            background-color: #FFE66D;
+            color: #000;
+            border-color: #FFE66D;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+            border: 2px solid #000000;
+        }
+        .back-link:hover {
+            background-color: transparent;
+            color: #000000;
+        }
+        .quote-box {
+            background-color: var(--secondary-color);
+            padding: 3rem;
+            margin: 3rem 0;
+            border-left: 4px solid #FFE66D;
+            border: 2px solid #000000;
+            border-left-width: 6px;
+        }
+        .quote-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .pillar-box {
+            background-color: var(--secondary-color);
+            padding: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #FFE66D;
+            transition: all 0.3s;
+            border: 2px solid #000000;
+            border-left-width: 6px;
+        }
+        .pillar-box:hover {
+            transform: translateX(10px);
+            border-color: #FFE66D;
+            border-left-width: 6px;
+        }
+        .pillar-box h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #FFE66D;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-transition-overlay"></div>
+    
+    <div class="case-study">
+        <a href="../index.astro" class="back-link">← Back to Portfolio</a>
+        
+        <div class="case-study-header">
+            <h1 class="case-study-title">Content-First UX Intelligence</h1>
+            <p class="case-study-subtitle">Building Intelligence Through Words, Strategy, and Multimedia</p>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Disconnect</h2>
+            <div class="case-study-content">
+                <p>Content was being treated as an afterthought. Designers created beautiful interfaces, then content was shoehorned in afterward. The result was disjointed user experiences where visual design and content strategy worked at cross-purposes rather than in harmony.</p>
+                <p>More critically, the organization lacked a cohesive content strategy. Different products had different voices, terminology was inconsistent across platforms, and there was no systematic approach to measuring content effectiveness. We were creating content, but we weren't building content intelligence.</p>
+            </div>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Philosophy</h2>
+            <div class="case-study-content">
+                <p>I advocated for a content-first approach: content shouldn't be applied to design—content should drive design. Words, strategy, and multimedia form the foundation of UX intelligence, informing every design decision and creating experiences that are coherent, purposeful, and effective.</p>
+                <p>This wasn't just about writing better copy. It was about building a systematic approach to content that scaled across products, teams, and touchpoints. Content intelligence meant understanding how words, images, and interactions work together to create meaning and drive user behavior.</p>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            <p class="quote-text">"Content is the architecture of user experience. When words lead design, the structure becomes purposeful, coherent, and deeply human."</p>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">Three Pillars of Content Intelligence</h2>
+            <div class="case-study-content">
+                <div class="pillar-box">
+                    <h3>Pillar 1: Strategic Words</h3>
+                    <p>We developed a comprehensive content strategy framework that defined voice, tone, and terminology across all products. Every word served a purpose, aligning with brand values and user needs. This wasn't just style guides—it was strategic thinking about how language shapes perception and behavior.</p>
+                    <p>We created content hierarchies that established information architecture before visual design began. By structuring content first, we ensured that design decisions were purposeful and user-centered rather than aesthetic choices retrofitted with text.</p>
+                </div>
+                
+                <div class="pillar-box">
+                    <h3>Pillar 2: Integrated Strategy</h3>
+                    <p>Content strategy became integrated into every stage of the product development process. Content strategists worked alongside product managers, designers, and engineers from project inception, ensuring that content considerations influenced feature definition and technical architecture.</p>
+                    <p>We built cross-functional content working groups that brought together stakeholders from marketing, support, and product. This created alignment across the organization, ensuring consistent messaging and terminology regardless of where users encountered our brand.</p>
+                </div>
+                
+                <div class="pillar-box">
+                    <h3>Pillar 3: Multimedia Intelligence</h3>
+                    <p>Words don't exist in isolation. We developed a multimedia content strategy that integrated text, imagery, video, and interactive elements. Each medium was chosen strategically based on user needs, context, and objectives.</p>
+                    <p>We built content intelligence systems that tracked performance across all media types, analyzing how different combinations of words and visuals impacted user engagement, comprehension, and conversion. This data informed continuous optimization of our content approach.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-number">45%</div>
+                <div class="stat-label">Higher User Engagement</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">3x</div>
+                <div class="stat-label">Faster Content Production</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">60%</div>
+                <div class="stat-label">Reduction in Support Tickets</div>
+            </div>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">The Transformation</h2>
+            <div class="case-study-content">
+                <p>The impact of content-first thinking was transformative. User engagement increased by 45% as content became clearer, more purposeful, and better aligned with user needs. Support tickets decreased by 60% because users could understand and accomplish tasks without assistance.</p>
+                <p>But the organizational impact was even more significant. Designers began requesting content strategy input earlier in projects, recognizing that content clarity improved design outcomes. Product teams integrated content considerations into feature planning, rather than treating content as a deliverable to be completed at the end.</p>
+                <p>We built content intelligence systems that provided visibility into content performance across all products. This data-driven approach allowed continuous optimization, with content decisions informed by real user behavior rather than assumptions.</p>
+            </div>
+        </div>
+
+        <div class="case-study-section">
+            <h2 class="section-heading">Building for Scale</h2>
+            <div class="case-study-content">
+                <p>Content intelligence isn't a project—it's a capability. We built systems and processes that scale: content templates for common patterns, automated quality checks for terminology consistency, and content performance dashboards that provide real-time visibility.</p>
+                <p>We invested in team education, helping designers and product managers understand content principles and recognize when content strategy should drive decisions. This created advocates throughout the organization, accelerating adoption and ensuring content-first thinking became embedded in the culture.</p>
+                <p>Most importantly, we established content governance structures that maintain consistency and quality as teams scale. Clear roles, defined processes, and systematic review mechanisms ensure that content intelligence grows alongside the organization.</p>
+            </div>
+        </div>
+
+        <a href="../index.astro" class="back-link">← Back to Portfolio</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
