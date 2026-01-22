@@ -2,56 +2,65 @@ export const workHistory = [
   {
     title: "Director of UX Content Strategy",
     company: "Cloudflare",
-    period: "Apr 2025 - Present",
-    description: "Leading UX content strategy initiatives at Cloudflare, directing strategic content development and UX intelligence programs across organization."
+    period: "Apr 2024 - Present",
+    description: "Leading UX content strategy initiatives at Cloudflare, directing strategic content development and UX intelligence programs across organization.",
+    skills: ["AI/LLM Implementation", "Executive Leadership", "Strategic Planning"]
   },
   {
     title: "Senior Manager UX Content Strategy",
     company: "Cloudflare",
-    period: "Feb 2022 - Apr 2025",
-    description: "Managed UX content design at Cloudflare for over 3 years, leading content strategy initiatives and building cross-functional content teams."
+    period: "Feb 2022 - Apr 2024",
+    description: "Managed UX content design at Cloudflare for over 2 years, leading content strategy initiatives and building cross-functional content teams.",
+    skills: ["Team Building", "Process Design", "Content Governance"]
   },
   {
     title: "Manager UX Content Design",
     company: "Calendly",
     period: "Mar 2021 - Feb 2022",
-    description: "Lead a team of product content strategists to establish content practices and processes at Calendly."
+    description: "Lead a team of product content strategists to establish content practices and processes at Calendly.",
+    skills: ["Content Strategy", "Team Management", "Product Development"]
   },
   {
     title: "UX Lead Product Content",
     company: "Mailchimp",
-    period: "2019 - 2021",
-    description: "Led product content strategy for Mailchimp's core platform."
+    period: "Jun 2019 - Mar 2021",
+    description: "Led product content strategy for Mailchimp's core platform.",
+    skills: ["UX Writing", "Content Design", "User Research"]
   },
   {
     title: "UX Team Lead",
     company: "The Home Depot",
-    period: "2017 - 2019",
-    description: "Led UX content team for enterprise e-commerce platform."
+    period: "Sep 2017 - Jun 2019",
+    description: "Led UX content team for enterprise e-commerce platform.",
+    skills: ["E-commerce", "Team Leadership", "Content Systems"]
   },
   {
     title: "Sr UX Designer",
     company: "Cox Automotive",
-    period: "2015 - 2017",
-    description: "Senior UX designer for automotive marketplace platforms."
+    period: "Aug 2015 - Sep 2017",
+    description: "Senior UX designer for automotive marketplace platforms.",
+    skills: ["UX Design", "Interaction Design", "Prototyping"]
   },
   {
     title: "Copy Writer",
     company: "Various Agencies",
     period: "2013 - 2015",
-    description: "Copywriting for marketing and advertising campaigns."
+    description: "Copywriting for marketing and advertising campaigns.",
+    skills: ["Copywriting", "Brand Voice", "Marketing"]
   },
   {
     title: "Marketing Specialist",
     company: "Early Career",
     period: "2011 - 2013",
-    description: "Marketing and communications specialist."
+    description: "Marketing and communications specialist.",
+    skills: ["Marketing Communications", "Campaign Management"]
   },
   {
     title: "Reporter",
     company: "Local News",
     period: "2009 - 2011",
-    description: "Journalism and reporting for local news outlets."
+    description: "Journalism and reporting for local news outlets.",
+    skills: ["Journalism", "Storytelling", "Research"]
   }
 ];
 

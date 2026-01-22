@@ -16,7 +16,10 @@ import { portfolioPieces } from '../data/portfolio';
 	<div class="split-container">
 		<div class="left-panel">
 			<div class="name-section">
-				<h1 class="name">KATIE<br>SEBKHI</h1>
+				<h1 class="name">
+					<span>K</span><span>A</span><span>T</span><span>I</span><span>E</span><br>
+					<span>S</span><span>E</span><span>B</span><span>K</span><span>H</span><span>I</span>
+				</h1>
 				<div class="taglines">
 					<p>Systems Architect</p>
 					<p>AI Innovation Leader</p>
@@ -49,7 +52,7 @@ import { portfolioPieces } from '../data/portfolio';
 			</a>
 			
 			{portfolioPieces.map((piece) => (
-				<a href={`/${piece.slug}`} class="nav-card" style={`background: ${piece.color};`}>
+				<a href={`/${piece.slug}`} class="nav-card" data-color={piece.color}>
 					<h2>{piece.title}</h2>
 					<p>{piece.subtitle}</p>
 				</a>
@@ -99,6 +102,23 @@ import { portfolioPieces } from '../data/portfolio';
 		letter-spacing: -0.02em;
 	}
 	
+	.name span {
+		display: inline-block;
+		transition: color 0.3s ease;
+	}
+	
+	.name:hover span:nth-child(1) { color: #FF6B35; }
+	.name:hover span:nth-child(2) { color: #FF1493; }
+	.name:hover span:nth-child(3) { color: #9D00FF; }
+	.name:hover span:nth-child(4) { color: #00FFFF; }
+	.name:hover span:nth-child(5) { color: #00FF00; }
+	.name:hover span:nth-child(7) { color: #FF1493; }
+	.name:hover span:nth-child(8) { color: #00FF00; }
+	.name:hover span:nth-child(9) { color: #00FFFF; }
+	.name:hover span:nth-child(10) { color: #9D00FF; }
+	.name:hover span:nth-child(11) { color: #FF6B35; }
+	.name:hover span:nth-child(12) { color: #FF1493; }
+	
 	.taglines {
 		margin-bottom: 2rem;
 	}
@@ -139,6 +159,7 @@ import { portfolioPieces } from '../data/portfolio';
 		border-bottom: 3px solid #000;
 		transition: all 0.3s ease;
 		position: relative;
+		background: #fff;
 	}
 	
 	.nav-card:last-child {
@@ -150,7 +171,27 @@ import { portfolioPieces } from '../data/portfolio';
 	}
 	
 	.about-card {
-		background: #f5f5f5;
+		background: #fff;
+	}
+	
+	.about-card:hover {
+		background: #FF6B35;
+	}
+	
+	.nav-card[data-color="#FF1493"]:hover {
+		background: #FF1493;
+	}
+	
+	.nav-card[data-color="#00FF00"]:hover {
+		background: #00FF00;
+	}
+	
+	.nav-card[data-color="#00FFFF"]:hover {
+		background: #00FFFF;
+	}
+	
+	.nav-card[data-color="#9D00FF"]:hover {
+		background: #9D00FF;
 	}
 	
 	.nav-card h2 {
