@@ -85,14 +85,13 @@ import { portfolioPieces } from '../data/portfolio';
 	
 	body {
 		font-family: 'Inter', sans-serif;
-		overflow: hidden;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	
 	.split-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	
 	.left-panel {
@@ -102,6 +101,9 @@ import { portfolioPieces } from '../data/portfolio';
 		align-items: center;
 		justify-content: center;
 		padding: 4rem;
+		position: sticky;
+		top: 0;
+		height: 100vh;
 	}
 	
 	.name-section {
@@ -167,9 +169,8 @@ import { portfolioPieces } from '../data/portfolio';
 	}
 	
 	.right-panel {
-		display: grid;
-		grid-template-rows: repeat(5, 1fr);
-		overflow: hidden;
+		display: flex;
+		flex-direction: column;
 	}
 	
 	.nav-card {
@@ -183,6 +184,7 @@ import { portfolioPieces } from '../data/portfolio';
 		transition: all 0.3s ease;
 		position: relative;
 		background: #fff;
+		min-height: 20vh;
 	}
 	
 	.nav-card:last-child {
