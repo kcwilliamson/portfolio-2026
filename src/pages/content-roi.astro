@@ -1,6 +1,6 @@
 ---
 import { portfolioPieces } from '../data/portfolio';
-const project = portfolioPieces.find(p => p.slug === 'build-scale');
+const project = portfolioPieces.find(p => p.slug === 'content-roi');
 ---
 
 <!DOCTYPE html>
@@ -40,7 +40,11 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 					{project.sections.map((section) => (
 						<div class="section-block">
 							<h2 class="section-heading">{section.heading}</h2>
-							<p class="section-content">{section.content}</p>
+							<div class="section-content">
+								{section.content.split('\n\n').map((paragraph) => (
+									<p>{paragraph}</p>
+								))}
+							</div>
 						</div>
 					))}
 				</div>
@@ -50,8 +54,8 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 						<div class="gallery-item" data-index={index} onclick={`openModal(${index}, '${example.caption.replace(/'/g, "\\'")}')`}>
 							<div class="placeholder-image">
 								<svg width="100%" height="100%" viewBox="0 0 400 400" fill="none">
-									<rect width="400" height="400" fill="rgba(0,0,0,0.1)"/>
-									<text x="50%" y="50%" text-anchor="middle" fill="rgba(0,0,0,0.5)" font-size="14" font-family="Inter">
+									<rect width="400" height="400" fill="rgba(255,255,255,0.1)"/>
+									<text x="50%" y="50%" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="14" font-family="Inter">
 										Image
 									</text>
 								</svg>
@@ -67,8 +71,8 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 				<button class="modal-close" onclick="closeModal()">&times;</button>
 				<div class="modal-image">
 					<svg width="100%" height="100%" viewBox="0 0 800 800" fill="none">
-						<rect width="800" height="800" fill="rgba(0,0,0,0.1)"/>
-						<text x="50%" y="50%" text-anchor="middle" fill="rgba(0,0,0,0.5)" font-size="24" font-family="Inter">
+						<rect width="800" height="800" fill="rgba(255,255,255,0.1)"/>
+						<text x="50%" y="50%" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="24" font-family="Inter">
 							Full Size Image
 						</text>
 					</svg>
@@ -116,7 +120,7 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 		font-family: 'Inter', sans-serif;
 		overflow: hidden;
 		height: 100vh;
-		background: #00FFFF;
+		background: #9D00FF;
 	}
 	
 	.split-container {
@@ -171,17 +175,17 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 	}
 	
 	.right-panel {
-		background: #00FFFF;
+		background: #9D00FF;
 		overflow-y: auto;
 		padding: 4rem;
-		color: #000;
+		color: #fff;
 	}
 	
 	.three-column-layout {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-		gap: 4rem;
-		max-width: 1400px;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		max-width: 1200px;
 	}
 	
 	.gallery-column {
@@ -193,11 +197,12 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 		gap: 1rem;
 		max-height: calc(100vh - 8rem);
 		overflow-y: auto;
+		width: 150px;
 	}
 	
 	.content-column {
-		max-width: calc(100% - 200px);
-		padding-right: 2rem;
+		max-width: 100%;
+		padding-right: 12rem;
 	}
 	
 	.page-title {
@@ -210,7 +215,7 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 	.subtitle {
 		font-size: clamp(1rem, 2vw, 1.5rem);
 		margin-bottom: 4rem;
-		opacity: 0.8;
+		opacity: 0.9;
 	}
 	
 	.section-block {
@@ -224,14 +229,22 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 	}
 	
 	.section-content {
-		font-size: 1.125rem;
-		line-height: 1.7;
 		margin-bottom: 2rem;
 	}
 	
+	.section-content p {
+		font-size: 1.125rem;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+	}
+	
+	.section-content p:last-child {
+		margin-bottom: 0;
+	}
+	
 	.gallery-item {
-		background: rgba(0, 0, 0, 0.05);
-		border: 2px solid rgba(0, 0, 0, 0.1);
+		background: rgba(255, 255, 255, 0.1);
+		border: 2px solid rgba(255, 255, 255, 0.2);
 		border-radius: 8px;
 		overflow: hidden;
 		transition: all 0.3s;
@@ -241,14 +254,14 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 	
 	.gallery-item:hover {
 		transform: scale(1.1);
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-		border-color: rgba(0, 0, 0, 0.3);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+		border-color: rgba(255, 255, 255, 0.5);
 	}
 	
 	.placeholder-image {
 		width: 100%;
 		aspect-ratio: 1/1;
-		background: rgba(0, 0, 0, 0.1);
+		background: rgba(0, 0, 0, 0.2);
 	}
 	
 	.modal {
@@ -269,7 +282,7 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 	}
 	
 	.modal-content {
-		background: #00FFFF;
+		background: #9D00FF;
 		padding: 3rem;
 		border-radius: 20px;
 		max-width: 800px;
@@ -277,16 +290,16 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 		max-height: 90vh;
 		overflow-y: auto;
 		position: relative;
-		color: #000;
+		color: #fff;
 	}
 	
 	.modal-close {
 		position: absolute;
 		top: 1rem;
 		right: 1rem;
-		background: rgba(0, 0, 0, 0.2);
+		background: rgba(255, 255, 255, 0.2);
 		border: none;
-		color: #000;
+		color: #fff;
 		font-size: 2rem;
 		width: 40px;
 		height: 40px;
@@ -299,7 +312,7 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 	}
 	
 	.modal-close:hover {
-		background: rgba(0, 0, 0, 0.3);
+		background: rgba(255, 255, 255, 0.3);
 	}
 	
 	.modal-image {
@@ -307,7 +320,7 @@ const project = portfolioPieces.find(p => p.slug === 'build-scale');
 		margin-bottom: 2rem;
 		border-radius: 12px;
 		overflow: hidden;
-		background: rgba(0, 0, 0, 0.1);
+		background: rgba(0, 0, 0, 0.2);
 	}
 	
 	.modal-title {

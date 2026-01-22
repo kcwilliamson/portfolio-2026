@@ -1,4 +1,14 @@
 ---
+/**
+ * ABOUT PAGE
+ * 
+ * HOW TO UPDATE:
+ * 1. Contact info: Update email, LinkedIn URL in the "Let's Connect" section below (lines ~90-95)
+ * 2. Social icons: Update href links in the social-icons section (lines ~31-45)
+ * 3. Work history timeline: Update in src/data/portfolio.ts
+ * 4. Bio content: Edit the text in the content-column div (lines ~68-95)
+ * 5. Taglines: Edit the taglines in left panel (lines ~25-28)
+ */
 import { workHistory } from '../data/portfolio';
 ---
 
@@ -38,7 +48,7 @@ import { workHistory } from '../data/portfolio';
 							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
 						</svg>
 					</a>
-					<a href="mailto:katie@example.com" aria-label="Email">
+					<a href="mailto:thekatiewilliamson@gmail.com" aria-label="Email">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
 						</svg>
@@ -49,6 +59,39 @@ import { workHistory } from '../data/portfolio';
 		
 		<div class="right-panel">
 			<div class="three-column-layout">
+				<div class="content-column">
+					<h1 class="page-title">About</h1>
+					<p class="subtitle">Director of UX Content Strategy | AI Innovation Leader | Team Builder</p>
+					
+					<h2>Core Strength</h2>
+					<p class="strength-statement">I am a <strong>Systems Architect who uses content as infrastructure</strong>. I don't just write better words—I build the frameworks, processes, and AI-powered tools that allow organizations to scale clarity and understanding at enterprise level.</p>
+					
+					<div class="bio">
+						<p>With over 11 years of experience spanning journalism, marketing, and product UX, I've built my career at the intersection of three worlds that rarely converge: <strong>technical depth</strong> (AI, cloud services, data systems), <strong>human empathy</strong> (user needs, accessibility), and <strong>operational excellence</strong> (measurement, governance, scalability).</p>
+						
+						<p>As Director of Content Strategy at Cloudflare, I lead initiatives that transform how global teams approach content—from reactive "microcopy" to proactive <strong>Conversation Architecture</strong>. I've pioneered AI-powered tools like CloudSpeaker (using LLMs to analyze customer feedback at scale), established governance frameworks that enable 10-person teams to support 50+ products, and built high-performing distributed teams across multiple time zones.</p>
+						
+						<p>My work delivers measurable business impact: 60% reduction in support tickets, 45% increase in user engagement, and systematic processes that scale team capabilities 3x without proportional headcount growth. I prove ROI through data, not just storytelling.</p>
+						
+						<p>I have a proven track record of consistently leveling up every direct report who's been on my team for at least a year, ensuring long-term sustainability and expertise of the function.</p>
+					</div>
+					
+					<h2>Beyond the Work</h2>
+					<p>I played semi-professional football for the <strong>Atlanta Phoenix</strong> (2018-2021) as both a linebacker and kicker—two positions requiring completely different skill sets. Linebacker demands real-time pattern recognition and strategic adjustments. Kicker demands high-pressure execution and precision. Sound familiar? That's exactly how I approach product leadership.</p>
+					
+					<p>I'm also a <strong>Shidokan Karate black belt</strong>, currently teaching at the YMCA of Metropolitan Atlanta. The discipline, respect, and continuous improvement mindset from martial arts directly informs how I build and develop teams. I bring the same competitive precision to product strategy that I apply on the field and in the dojo.</p>
+					
+					<p>A Savannah College of Art and Design alumna (MFA, Advertising) and University of Mississippi graduate (Journalism, Art, Anthropology), I combine creative problem-solving with strategic systems thinking.</p>
+					
+					<p><strong>Awards & Recognition:</strong> Robert F Kennedy Award for Humanitarian Journalism | Cloudflare Top Performer 2020 & 2021 | Certified in Product Management for AI & Data Science | Agile Scrum Certified</p>
+					
+					<h3>Let's Connect</h3>
+					<p>Based in Atlanta, Georgia | Open to remote leadership opportunities</p>
+					<p><strong>Email:</strong> thekatiewilliamson@gmail.com</p>
+					<p><strong>LinkedIn:</strong> linkedin.com/in/katie-williamson-sebkhi-8787a85b</p>
+					<p><strong>Portfolio:</strong> thekatiewilliamson.com</p>
+				</div>
+				
 				<div class="timeline-column">
 					<div class="timeline">
 						{workHistory.map((job, index) => (
@@ -61,33 +104,6 @@ import { workHistory } from '../data/portfolio';
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-				
-				<div class="content-column">
-					<h1 class="page-title">About</h1>
-					<p class="subtitle">Director of UX Content Strategy | AI Innovation Leader | Team Builder</p>
-					
-					<div class="core-strength">
-						<h2>Core Strength</h2>
-						<p class="strength-statement">I am a <strong>Systems Architect who uses content as infrastructure</strong>. I don't just write better words—I build the frameworks, processes, and AI-powered tools that allow organizations to scale clarity and understanding at enterprise level.</p>
-					</div>
-					
-					<div class="bio">
-						<p>With over 11 years of experience spanning journalism, marketing, and product UX, I've built my career at the intersection of three worlds that rarely converge: <strong>technical depth</strong> (AI, cloud services, data systems), <strong>human empathy</strong> (user needs, accessibility), and <strong>operational excellence</strong> (measurement, governance, scalability).</p>
-						
-						<p>As Director of UX Content Strategy at Cloudflare, I lead initiatives that transform how global teams approach content—from reactive "microcopy" to proactive <strong>Conversation Architecture</strong>. I've pioneered AI-powered tools like CloudSpeaker (using LLMs to analyze customer feedback at scale), established governance frameworks that enable 10-person teams to support 50+ products, and built high-performing distributed teams across multiple time zones.</p>
-						
-						<p>My work delivers measurable business impact: 60% reduction in support tickets, 45% increase in user engagement, and systematic processes that scale team capabilities 3x without proportional headcount growth. I prove ROI through data, not just storytelling.</p>
-						
-						<p>A Savannah College of Art and Design alumna and certified Shidokan Karate black belt, I bring discipline, strategic thinking, and creative problem-solving to every challenge. I'm passionate about building force multipliers—systems and tools that amplify entire teams' capabilities.</p>
-					</div>
-					
-					<div class="contact-info">
-						<h3>Let's Connect</h3>
-						<p>Based in Atlanta, Georgia | Open to remote leadership opportunities</p>
-						<p><strong>Email:</strong> katie@example.com</p>
-						<p><strong>LinkedIn:</strong> linkedin.com/in/katie-williamson-8787a85b</p>
 					</div>
 				</div>
 			</div>
@@ -184,7 +200,7 @@ import { workHistory } from '../data/portfolio';
 	
 	.three-column-layout {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
+		grid-template-columns: 2fr 1fr;
 		gap: 4rem;
 		max-width: 1400px;
 	}
@@ -197,6 +213,7 @@ import { workHistory } from '../data/portfolio';
 	
 	.content-column {
 		max-width: 900px;
+		padding-right: 2rem;
 	}
 	
 	.page-title {
@@ -212,14 +229,40 @@ import { workHistory } from '../data/portfolio';
 		opacity: 0.9;
 	}
 	
+	.content-column h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.content-column h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+	
 	.bio {
-		margin-bottom: 4rem;
+		margin-bottom: 3rem;
 	}
 	
 	.bio p {
 		font-size: 1.125rem;
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
+	}
+	
+	.content-column p {
+		font-size: 1.125rem;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+	}
+	
+	.strength-statement {
+		font-size: 1.25rem;
+		line-height: 1.6;
+		margin-bottom: 3rem;
 	}
 	
 	.timeline {

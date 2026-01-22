@@ -1,6 +1,6 @@
 ---
 import { portfolioPieces } from '../data/portfolio';
-const project = portfolioPieces.find(p => p.slug === 'force-multipliers');
+const project = portfolioPieces.find(p => p.slug === 'conversation-architecture');
 ---
 
 <!DOCTYPE html>
@@ -40,7 +40,11 @@ const project = portfolioPieces.find(p => p.slug === 'force-multipliers');
 					{project.sections.map((section) => (
 						<div class="section-block">
 							<h2 class="section-heading">{section.heading}</h2>
-							<p class="section-content">{section.content}</p>
+							<div class="section-content">
+								{section.content.split('\n\n').map((paragraph) => (
+									<p>{paragraph}</p>
+								))}
+							</div>
 						</div>
 					))}
 				</div>
@@ -179,9 +183,26 @@ const project = portfolioPieces.find(p => p.slug === 'force-multipliers');
 	
 	.three-column-layout {
 		display: grid;
-		grid-template-columns: 1fr auto;
+		grid-template-columns: 1fr;
 		gap: 2rem;
-		width: 100%;
+		max-width: 1200px;
+	}
+	
+	.gallery-column {
+		position: fixed;
+		right: 2rem;
+		top: 4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		max-height: calc(100vh - 8rem);
+		overflow-y: auto;
+		width: 150px;
+	}
+	
+	.content-column {
+		max-width: 100%;
+		padding-right: 12rem;
 	}
 	
 	.gallery-column {
@@ -225,9 +246,17 @@ const project = portfolioPieces.find(p => p.slug === 'force-multipliers');
 	}
 	
 	.section-content {
+		margin-bottom: 2rem;
+	}
+	
+	.section-content p {
 		font-size: 1.125rem;
 		line-height: 1.7;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	.section-content p:last-child {
+		margin-bottom: 0;
 	}
 	
 	.gallery-item {
