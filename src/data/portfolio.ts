@@ -83,8 +83,8 @@ export const workHistory = [
     company: "Cloudflare",
     companyUrl: "https://www.cloudflare.com/",
     period: "April 2025 - Present",
-    description: "Scaled team embracing AI as strategic partner, shifting from execution to tool development and team enablement. Led CloudSpeaker as acting PM (cross-functional AI platform). Enabled team to build CLUE Index (ML content scoring) and Frameflow (workflow automation). Transformed team culture: AI augments us, doesn't replace us.",
-    skills: ["Product Management", "AI/ML Tool Development", "Team Enablement", "Innovation Culture"]
+    description: "Pioneer of UX Intelligence—new discipline combining product strategy, UX research, AI/ML, and systematic problem-solving to understand users at enterprise scale. Led CloudSpeaker as hybrid product/UX leader. Enabled team to build CLUE Index and Frameflow. Hybrid innovator who moves fluidly between strategy, research, technical architecture, and team leadership.",
+    skills: ["UX Intelligence", "Hybrid Product/UX Strategy", "Discipline Creation", "Team Scaling"]
   },
   {
     title: "Senior UX Content Design Manager",
