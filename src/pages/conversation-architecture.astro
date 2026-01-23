@@ -42,7 +42,7 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 							<h2 class="section-heading">{section.heading}</h2>
 							<div class="section-content">
 								{section.content.split('\n\n').map((paragraph) => (
-									<p>{paragraph}</p>
+									<p set:html={paragraph.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}></p>
 								))}
 							</div>
 						</div>
@@ -319,6 +319,12 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 	
 	.section-content p:last-child {
 		margin-bottom: 0;
+	}
+	
+	/* Indent bullet points */
+	.section-content p:has(strong:first-child) {
+		padding-left: 2rem;
+		text-indent: -2rem;
 	}
 	
 	.gallery-item {
