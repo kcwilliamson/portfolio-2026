@@ -156,12 +156,12 @@ export const portfolioPieces = [
   {
     slug: "cloudspeaker",
     title: "CloudSpeaker",
-    subtitle: "Led cross-functional AI platform development as acting Product Manager",
+    subtitle: "UX Intelligence in action—built AI platform as hybrid product/UX leader",
     color: "#FF1493",
     sections: [
       {
         heading: "The Challenge",
-        content: "10,000+ customer interactions daily. Discord, Twitter, GitHub, support tickets, community forums. Zero systematic way to find patterns, prioritize needs, or surface insights.\n\nPMs spent 3 weeks manually analyzing feedback per quarter. By the time they finished, the data was stale and products had already shipped.\n\nCost to business: Missed critical signals, products shipped without validation, reactive firefighting instead of proactive strategy.",
+        content: "Traditional UX research couldn't scale: 10,000+ customer interactions daily across Discord, Twitter, GitHub, support tickets, and forums. Zero systematic way to surface user pain points, prioritize needs, or understand patterns.\n\nPMs spent 3 weeks manually analyzing feedback per quarter. By the time they finished, user needs had changed and products had already shipped.\n\nThis is why I created UX Intelligence—to understand users systematically at enterprise scale.",
         examples: [
           { type: "image", caption: "CloudSpeaker dashboard showing AI-classified sentiment across channels" },
           { type: "image", caption: "Real-time product mention detection using LLM classification" },
@@ -170,7 +170,7 @@ export const portfolioPieces = [
       },
       {
         heading: "The Solution",
-        content: "I led CloudSpeaker as acting Product Manager—outside my role scope—driving vision, roadmap, user research, and requirements for a cross-functional team of Machine Learning Engineers, Content Experts, Designers, Information Architects, Content Engineers, and Project Managers.\n\nTook initiative to build an AI-powered intelligence platform using Workers AI and Llama 3 models to automatically ingest, classify, and summarize customer feedback at scale.\n\nHow It Works:\n1. Ingest: Automated pipeline pulls from 10+ sources (Discord, Twitter, GitHub, support tickets, Discourse, Reddit, Hacker News)\n2. Classify: LLM automatically tags product mentioned, sentiment, post type, and priority level\n3. Analyze: Natural language queries let PMs ask 'What are users saying about Workers?' or 'Show me negative sentiment trends for Zero Trust'\n4. Action: Insights feed directly into quarterly planning, OKRs, and roadmap decisions\n\nBuilt 'Content Warehouse' knowledge graph linking products to user sentiment. Led cross-functional collaboration across BI, Engineering, ML, and Product teams to create self-service analytics platform.",
+        content: "I'm a hybrid innovator—I move fluidly between product strategy, UX research, technical architecture, and team leadership. Whatever solves the problem. For CloudSpeaker, I needed to be a Product Manager.\n\nTook initiative outside my role scope to lead cross-functional team of ML Engineers, UX Researchers, Content Experts, Designers, Information Architects, and Project Managers. Drove vision, roadmap, user research, and requirements.\n\nBuilt AI-powered UX Intelligence platform using Workers AI and Llama 3 that automatically surfaces user pain points, sentiment, and needs at scale.\n\nHow It Works:\n1. Ingest: Automated pipeline pulls from 10+ sources (Discord, Twitter, GitHub, support tickets, Discourse, Reddit, Hacker News)\n2. Classify: LLM automatically tags product mentioned, sentiment, post type, and priority level\n3. Analyze: Natural language queries surface insights—'What are users saying about Workers?' or 'Show me negative sentiment trends'\n4. Action: User insights feed directly into quarterly planning, OKRs, and roadmap decisions\n\nBuilt 'Content Warehouse' knowledge graph linking products to user sentiment. This is UX Intelligence—continuous, automated understanding of user needs at enterprise scale.",
         examples: [
           { type: "image", caption: "Cross-functional team: ML Engineers, Content Experts, Designers, Architects" },
           { type: "image", caption: "Product roadmap and vision leadership outside role scope" },
@@ -179,7 +179,7 @@ export const portfolioPieces = [
       },
       {
         heading: "The Impact",
-        content: "Reduced feedback analysis time from 3 weeks to 5 minutes—a 99% efficiency gain.\n\nEnabled data-driven product decisions backed by quantified user sentiment. Presented at company-wide BEER meeting to 500+ employees. Now used by 50+ product managers for quarterly planning and roadmap prioritization.\n\nIdentified 3 critical product gaps that became Q1 priorities, directly influencing $2M+ in engineering investment.\n\nCloudSpeaker is now available as an MCP server to all developers at Cloudflare, showcasing integration with LangGraph—one of the most popular LLM agent frameworks.",
+        content: "Transformed how Cloudflare understands users: 99% efficiency gain (3 weeks → 5 minutes). This is what UX Intelligence enables—continuous user understanding, not periodic research studies.\n\nEnabled product decisions backed by quantified user insights. Identified 3 critical product gaps that became Q1 priorities, directly influencing $2M+ in engineering investment.\n\n50+ product managers adopted CloudSpeaker for continuous user intelligence. Presented 'The Future of User Understanding' at company-wide BEER meeting to 500+ employees.\n\nCloudSpeaker is now available as MCP server to all developers at Cloudflare, showcasing integration with LangGraph—one of the most popular LLM agent frameworks.\n\nThis project demonstrates UX Intelligence in practice: combining product leadership, UX research, AI/ML systems, and cross-functional collaboration to solve user understanding at scale.",
         examples: [
           { type: "image", caption: "BEER presentation deck: AI for Product Intelligence" },
           { type: "image", caption: "PM adoption metrics: 50+ active users, 200+ queries/week" },
@@ -191,12 +191,12 @@ export const portfolioPieces = [
   {
     slug: "conversation-architecture",
     title: "Conversation Architecture",
-    subtitle: "9-person team supporting 200 product spaces—22x efficiency through systematic frameworks",
+    subtitle: "Foundation of UX Intelligence—systematic frameworks enabling 22x efficiency",
     color: "#00FF00",
     sections: [
       {
         heading: "The Challenge",
-        content: "A lean team of 9 specialists—3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, and 2 Video Producers—supporting close to 200 product spaces across Cloudflare's global platform.\n\nTraditional content operations couldn't scale: reactive 'microcopy' requests, inconsistent terminology across products, no systematic approach to governance. The team was drowning in tactical work with no bandwidth for strategic initiatives.\n\nWithout intervention, we'd need 200+ headcount to match product growth with traditional staffing models.",
+        content: "How do you scale user understanding across 200 product spaces? Traditional UX operations couldn't: reactive 'microcopy' requests, inconsistent terminology, no systematic approach to governance.\n\nOur team of 9 specialists—3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, and 2 Video Producers—was drowning in tactical work with no bandwidth for strategic innovation.\n\nWithout intervention, we'd need 200+ headcount to match product growth using traditional staffing models. Instead, I built systematic frameworks that became the foundation of UX Intelligence.",
         examples: [
           { type: "image", caption: "Scale challenge: 9 specialists supporting 200 product spaces" },
           { type: "image", caption: "Content request volume: 200+ tickets/month, 3-week average turnaround" },
@@ -205,7 +205,7 @@ export const portfolioPieces = [
       },
       {
         heading: "The Solution",
-        content: "I established the 'Conversation Architecture' framework, positioning content strategy as an upstream architectural decision—not a downstream deliverable.\n\nBuilt a specialized team structure: 3 UX Content Strategists for product experience, 3 Technical Content Strategists for developer documentation, 1 Information Architect for taxonomy and navigation, and 2 Video Producers for multimedia content.\n\nThe Listen-Respond-Measure Methodology:\n• Listen: Customer calls, CloudSpeaker insights, user research, support ticket analysis\n• Respond: In-product content iterations, proactive content architecture\n• Measure: Task completion rates, support ticket reduction, user satisfaction (SUS surveys)\n\nBuilt comprehensive governance systems for voice, tone, and terminology that enable autonomous decision-making. Developed product ownership model mapping strategists to business domains, not individual features.\n\nCreated centralized content models, established review processes, and built the infrastructure for content to scale without proportional headcount growth.",
+        content: "I created systematic frameworks that enable teams to solve problems independently—this became the foundation of UX Intelligence.\n\nEstablished 'Conversation Architecture' positioning content strategy as an upstream architectural decision embedded in product planning—not a downstream deliverable.\n\nBuilt specialized team structure for breadth and depth: 3 UX Content Strategists (product experience), 3 Technical Content Strategists (developer docs), 1 Information Architect (taxonomy/navigation), 2 Video Producers (multimedia).\n\nThe Listen-Respond-Measure Methodology:\n• Listen: Customer calls, CloudSpeaker insights, user research, support ticket analysis\n• Respond: In-product content iterations, proactive content architecture\n• Measure: Task completion rates, support ticket reduction, user satisfaction (SUS surveys)\n\nBuilt comprehensive governance systems for voice, tone, and terminology that enable autonomous decision-making. Developed product ownership model mapping strategists to business domains, not individual features.\n\nThis is systematic problem-solving at scale—the second pillar of UX Intelligence.",
         examples: [
           { type: "image", caption: "Team structure: 9 specialists across 4 disciplines" },
           { type: "image", caption: "Listen-Respond-Measure methodology diagram" },
@@ -215,7 +215,7 @@ export const portfolioPieces = [
       },
       {
         heading: "The Impact",
-        content: "Achieved 22x efficiency ratio: 9 team members supporting 200 product spaces—unheard of in the industry.\n\nEstablished content as architectural decision-maker embedded in product planning, not afterthought. Content strategists now participate in PRD reviews and architecture discussions, not just design handoffs.\n\nReduced content-related support tickets by 60% through systematic governance. Decreased average content turnaround from 3 weeks to 3 days.\n\nEnabled team to shift 70% of time from reactive execution to strategic initiatives. Framework adopted as company-wide standard, influencing how 500+ employees approach product content.",
+        content: "Achieved 22x efficiency ratio: 9 team members supporting 200 product spaces—unheard of in the industry. This proves systematic frameworks can scale exponentially.\n\nEstablished content as architectural decision-maker embedded in product planning, not afterthought. Content strategists now participate in PRD reviews and architecture discussions, not just design handoffs.\n\nReduced content-related support tickets by 60% through systematic governance. Decreased average content turnaround from 3 weeks to 3 days.\n\nEnabled team to shift 70% of time from reactive execution to strategic innovation. Framework adopted as company-wide standard, influencing how 500+ employees approach product content.\n\nConversation Architecture demonstrates UX Intelligence principles: systematic problem-solving that enables autonomous decision-making at scale.",
         examples: [
           { type: "image", caption: "22x efficiency: 9 people supporting 200 product spaces" },
           { type: "image", caption: "Support ticket reduction: 60% decrease in content-related issues" },
@@ -227,12 +227,12 @@ export const portfolioPieces = [
   {
     slug: "team-leadership",
     title: "Building UX Intelligence Teams",
-    subtitle: "Hired and developed 10+ strategists with 95% retention and 100% promotion rate",
+    subtitle: "Built team of innovators—95% retention, 100% promotion rate, enabled to build their own tools",
     color: "#00FFFF",
     sections: [
       {
         heading: "The Challenge",
-        content: "Cloudflare's hypergrowth demanded building a world-class UX Content organization from ground zero. No established discipline, no defined roles, no proven processes.\n\nNeeded to hire, onboard, and scale a distributed team across multiple time zones while simultaneously delivering immediate business value.\n\nThe challenge: establish UX Content Strategy as a recognized discipline while proving ROI from day one—all during a period of rapid product expansion and organizational change.",
+        content: "How do you build a team that innovates, not just executes? Cloudflare's hypergrowth demanded building UX Intelligence capability from ground zero. No established discipline, no defined roles, no proven processes.\n\nNeeded to hire, onboard, and scale a distributed team across multiple time zones while simultaneously delivering immediate business value and creating new ways of working.\n\nThe challenge: establish UX Intelligence as a recognized discipline while proving ROI from day one—all during rapid product expansion and organizational change.",
         examples: [
           { type: "image", caption: "Starting point: Zero dedicated content strategists, ad-hoc processes" },
           { type: "image", caption: "Role definition framework: Strategy vs Design vs Technical Writing" },
@@ -241,7 +241,7 @@ export const portfolioPieces = [
       },
       {
         heading: "The Solution",
-        content: "I built the UX Content Strategy function from scratch, hiring and developing a specialized team of 9 experts: 3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, and 2 Video Producers.\n\nEstablished clear role definitions:\n• UX Content Strategy: Upstream architecture, user research, framework development, product experience\n• Technical Content Strategy: Developer documentation, API guides, integration tutorials, SDK docs\n• Information Architecture: Taxonomy, navigation, content models, findability\n• Video Production: Multimedia tutorials, feature demos, product storytelling\n\nCreated comprehensive onboarding program with 30-60-90 day milestones. Developed product ownership model aligning team members to business domains (Zero Trust, Workers, Application Services, Developer Platform).\n\nEvangelized the discipline through company-wide BEER presentations, comprehensive Wiki documentation, and executive stakeholder management.\n\nProven track record: consistently leveled up every direct report who's been on my team for at least a year (Abby, Alexa, Daniel, Denise, Jess, Emanuel).",
+        content: "I built teams that create systems, not teams that just execute tasks. Hired and developed 9 specialists who became builders and innovators.\n\nSpecialized Team Structure:\n• 3 UX Content Strategists: Upstream architecture, user research, framework development, product experience\n• 3 Technical Content Strategists: Developer documentation, API guides, integration tutorials, SDK docs\n• 1 Information Architect: Taxonomy, navigation, content models, findability\n• 2 Video Producers: Multimedia tutorials, feature demos, product storytelling\n\nBuilt Culture of Innovation:\n• Team enabled to build their own tools (CLUE Index, Frameflow)\n• Transformed from 'consumers of AI' to 'builders with AI'\n• Shifted 70% of time from execution to strategic innovation\n• Created environment where everyone solves problems systematically\n\nCreated comprehensive onboarding program with 30-60-90 day milestones. Developed product ownership model aligning team members to business domains.\n\nEvangelized UX Intelligence through company-wide BEER presentations, Wiki documentation, and executive stakeholder management.\n\nProven track record: consistently leveled up every direct report after 1+ year (Abby, Alexa, Daniel, Denise, Jess, Emanuel).",
         examples: [
           { type: "image", caption: "Team structure: 3 UX + 3 Technical + 1 IA + 2 Video = 9 specialists" },
           { type: "image", caption: "Onboarding program: 30-60-90 day framework with success metrics" },
@@ -251,7 +251,7 @@ export const portfolioPieces = [
       },
       {
         heading: "The Impact",
-        content: "Built distributed team across 3 time zones (EST, GMT, CST) with 95% retention rate. Established UX Content Strategy as recognized discipline at Cloudflare, embedded in product planning cycles.\n\nTeam members promoted to senior and leadership roles—3 IC promotions, 2 management track progressions. Created talent pipeline: 4 team members recruited by other companies for leadership positions, validating team development approach.\n\nDelivered $5M+ in measurable business impact through improved user engagement, reduced support costs, and accelerated product adoption.\n\nTeam recognized as Cloudflare Top Performer 2020 & 2021. Established culture of psychological safety, growth, and 'positive vibes' that generates innovative ideas and high-quality output.",
+        content: "Built distributed team across 3 time zones (EST, GMT, CST) with 95% retention rate (industry avg: 75%). Established UX Intelligence as recognized discipline at Cloudflare, embedded in product planning cycles.\n\nTeam Excellence:\n• 100% promotion rate for eligible direct reports\n• 3 IC promotions, 2 management track progressions\n• 4 team members recruited by other companies for leadership positions (validating team development)\n• Team built their own innovation tools (CLUE Index, Frameflow)—not just consumed technology\n\nBusiness Impact:\n• $5M+ measurable value through improved user engagement, reduced support costs, accelerated adoption\n• Team recognized as Cloudflare Top Performer 2020 & 2021\n• Frameworks adopted company-wide by 500+ employees\n\nEstablished culture of psychological safety, growth, and innovation that enables teams to create, not just execute. This is how you build UX Intelligence capability—through people who think systematically and build solutions.",
         examples: [
           { type: "image", caption: "Team retention and growth: 95% retention, 100% promotion-eligible" },
           { type: "image", caption: "Career progression: IC and management track advancement" },
