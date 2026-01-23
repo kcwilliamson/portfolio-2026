@@ -81,6 +81,7 @@ export const workHistory = [
   {
     title: "Director of Content Strategy",
     company: "Cloudflare",
+    companyUrl: "https://www.cloudflare.com/",
     period: "April 2025 - Present",
     description: "Lead PCX team building UX Intelligence systems. Pioneered CloudSpeaker (AI customer feedback platform), CLUE Index (ML-powered content scoring), and Voice of User framework.",
     skills: ["AI/LLM Implementation", "Executive Leadership", "Strategic Planning"]
@@ -88,6 +89,7 @@ export const workHistory = [
   {
     title: "Senior UX Content Design Manager",
     company: "Cloudflare",
+    companyUrl: "https://www.cloudflare.com/",
     period: "February 2022 - April 2025",
     description: "Built UX Content Strategy function from scratch. Grew team from 0 to 10+ members. Established Conversation Architecture framework.",
     skills: ["Team Building", "Process Design", "Content Governance"]
@@ -95,6 +97,7 @@ export const workHistory = [
   {
     title: "UX Manager of Product Content",
     company: "Calendly",
+    companyUrl: "https://calendly.com/",
     period: "March 2021 - February 2022",
     description: "Led product content strategists, establishing content practices across 15 squad teams.",
     skills: ["Content Strategy", "Team Management", "Product Development"]
@@ -102,6 +105,7 @@ export const workHistory = [
   {
     title: "UX Lead Product Content Strategist",
     company: "Calendly",
+    companyUrl: "https://calendly.com/",
     period: "January 2020 - March 2021",
     description: "Implemented techniques to align customer needs with business needs. Integrated content design into product delivery lifecycle, making it a permanent requirement in Calendly product design.",
     skills: ["UX Writing", "Content Design", "User Research"]
@@ -109,6 +113,7 @@ export const workHistory = [
   {
     title: "UX Team Lead",
     company: "ADP",
+    companyUrl: "https://www.adp.com/",
     period: "May 2019 - December 2019",
     description: "Led UX efforts for next-generation payroll technology. Created demos, marketing material, and presentations to convey user and business value.",
     skills: ["Team Leadership", "Enterprise UX", "Next-Gen Payroll"]
@@ -116,6 +121,7 @@ export const workHistory = [
   {
     title: "Sr. UX Designer / Content Strategist",
     company: "ADP",
+    companyUrl: "https://www.adp.com/",
     period: "January 2018 - May 2019",
     description: "Content strategy and UX design for payroll products. Aligned business goals with user experience through strategic content planning.",
     skills: ["UX Design", "Content Strategy", "Product Strategy"]
@@ -123,6 +129,7 @@ export const workHistory = [
   {
     title: "Copywriter",
     company: "Georgia-Pacific LLC",
+    companyUrl: "https://www.gp.com/",
     period: "July 2017 - December 2017",
     description: "Digital and social media content for household paper product brands. Established voice for Copper & Crane brand innovation.",
     skills: ["Copywriting", "Brand Voice", "Digital Content"]
@@ -130,6 +137,7 @@ export const workHistory = [
   {
     title: "Marketing Communications Specialist",
     company: "University of Mississippi Graduate School",
+    companyUrl: "https://gradschool.olemiss.edu/",
     period: "June 2015 - October 2015",
     description: "Authored, photographed, designed promotional material. Established bi-monthly newsletter, increased social media presence, redesigned recruitment materials.",
     skills: ["Marketing Communications", "Design", "Photography"]
@@ -137,6 +145,7 @@ export const workHistory = [
   {
     title: "Reporter",
     company: "The Daily Leader",
+    companyUrl: "https://dailyleader.com/",
     period: "April 2014 - December 2014",
     description: "Journalism and reporting for daily newspaper serving four counties. Awarded Robert F Kennedy Award for Humanitarian Journalism.",
     skills: ["Journalism", "Storytelling", "Photography", "Design"]

@@ -95,14 +95,14 @@ import { workHistory } from '../data/portfolio';
 				<div class="timeline-column">
 					<div class="timeline">
 						{workHistory.map((job, index) => (
-							<div class="timeline-item" data-index={index}>
+							<a href={job.companyUrl} target="_blank" rel="noopener noreferrer" class="timeline-item" data-index={index}>
 								<div class="timeline-dot"></div>
 								<div class="timeline-content">
 									<h3>{job.title}</h3>
 									<p class="company">{job.company}</p>
 									<p class="period">{job.period}</p>
 								</div>
-							</div>
+							</a>
 						))}
 					</div>
 				</div>
@@ -285,10 +285,17 @@ import { workHistory } from '../data/portfolio';
 		margin-bottom: 2.5rem;
 		cursor: pointer;
 		transition: transform 0.2s;
+		text-decoration: none;
+		color: inherit;
+		display: block;
 	}
 	
 	.timeline-item:hover {
 		transform: translateX(10px);
+	}
+	
+	.timeline-item:visited {
+		color: inherit;
 	}
 	
 	.timeline-dot {
