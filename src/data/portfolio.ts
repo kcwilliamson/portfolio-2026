@@ -161,7 +161,7 @@ export const portfolioPieces = [
     sections: [
       {
         heading: "The Challenge",
-        content: "Traditional UX research couldn't scale: 10,000+ customer interactions daily across Discord, Twitter, GitHub, support tickets, and forums. Zero systematic way to surface user pain points, prioritize needs, or understand patterns.\n\nPMs spent 3 weeks manually analyzing feedback per quarter. By the time they finished, user needs had changed and products had already shipped.\n\nThis is why I created UX Intelligence—to understand users systematically at enterprise scale.",
+        content: "Product managers didn't have time to sift through customer data. They relied primarily on customer calls and escalations to drive decisions, leaving all the voices across the internet unheard—10,000+ daily interactions across Discord, Twitter, GitHub, support tickets, forums, Reddit, and Hacker News.\n\nOther customer-facing teams were sifting through single data sources to make recommendations, but there was no single source of truth for all user feedback. Sentiment was lost. While we tracked behavior in dashboards and docs, we had very little insight into actual customer experiences.\n\nThe blockers: Time and individual bias based on anecdotal comments. PMs spent 3 weeks manually analyzing feedback per quarter. By the time they finished, user needs had changed and products had already shipped.\n\nThis is why I created UX Intelligence—to understand users systematically at enterprise scale.",
         examples: [
           { type: "image", caption: "CloudSpeaker dashboard showing AI-classified sentiment across channels" },
           { type: "image", caption: "Real-time product mention detection using LLM classification" },
