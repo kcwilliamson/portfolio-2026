@@ -268,9 +268,9 @@ export const portfolioPieces = [
     sections: [
       {
         heading: "The Challenge",
-        content: "Cloudflare's technical products—from Workers edge computing to Zero Trust security—needed to serve radically different audiences: developers seeking API documentation, IT admins evaluating enterprise solutions, and C-suite executives making million-dollar decisions.\n\nContent was fragmented across 50+ products with inconsistent voice, conflicting terminology, and no systematic approach to audience segmentation.\n\nUser research showed 40% comprehension failure rate on critical onboarding flows. The business cost: high support volume, slow product adoption, and lost enterprise deals.",
+        content: "Cloudflare's technical products—from Workers edge computing to Zero Trust security—needed to serve radically different audiences: developers seeking API documentation, IT admins evaluating enterprise solutions, and C-suite executives making million-dollar decisions.\n\nContent was fragmented across 100+ products with inconsistent voice, conflicting terminology, and no systematic approach to audience segmentation. Inconsistent UX throughout the product ecosystem meant users faced different patterns, flows, and language across every product. The technical bar to entry was almost insurmountable—even technical users struggled to get started.\n\nUser research showed 40% comprehension failure rate on critical onboarding flows. The business cost: high support volume, slow product adoption, and lost enterprise deals.",
         examples: [
-          { type: "image", caption: "Content audit: 50+ products, 12 different voice/tone approaches" },
+          { type: "image", caption: "Content audit: 100+ products, 12 different voice/tone approaches, inconsistent UX patterns" },
           { type: "image", caption: "User research: 40% comprehension failure on key flows" },
           { type: "image", caption: "Business impact: Support costs and lost revenue from poor content" }
         ]
