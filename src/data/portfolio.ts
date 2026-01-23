@@ -83,16 +83,16 @@ export const workHistory = [
     company: "Cloudflare",
     companyUrl: "https://www.cloudflare.com/",
     period: "April 2025 - Present",
-    description: "Lead PCX team building UX Intelligence systems. Pioneered CloudSpeaker (AI customer feedback platform), CLUE Index (ML-powered content scoring), and Voice of User framework.",
-    skills: ["AI/LLM Implementation", "Executive Leadership", "Strategic Planning"]
+    description: "Scaled team embracing AI as strategic partner, shifting from execution to tool development and team enablement. Led CloudSpeaker as acting PM (cross-functional AI platform). Enabled team to build CLUE Index (ML content scoring) and Frameflow (workflow automation). Transformed team culture: AI augments us, doesn't replace us.",
+    skills: ["Product Management", "AI/ML Tool Development", "Team Enablement", "Innovation Culture"]
   },
   {
     title: "Senior UX Content Design Manager",
     company: "Cloudflare",
     companyUrl: "https://www.cloudflare.com/",
     period: "February 2022 - April 2025",
-    description: "Built UX Content Strategy function from scratch. Grew team from 0 to 10+ members. Established Conversation Architecture framework.",
-    skills: ["Team Building", "Process Design", "Content Governance"]
+    description: "Built UX Content Strategy function from scratch. Scaled specialized team of 9 experts (3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, 2 Video Producers) to support 200 product spaces. Established Conversation Architecture framework achieving 22x efficiency ratio.",
+    skills: ["Team Building", "Operational Scaling", "Framework Development"]
   },
   {
     title: "UX Manager of Product Content",
@@ -156,7 +156,7 @@ export const portfolioPieces = [
   {
     slug: "cloudspeaker",
     title: "CloudSpeaker",
-    subtitle: "AI-powered customer intelligence platform analyzing 10K+ daily interactions",
+    subtitle: "Led cross-functional AI platform development as acting Product Manager",
     color: "#FF1493",
     sections: [
       {
@@ -170,10 +170,10 @@ export const portfolioPieces = [
       },
       {
         heading: "The Solution",
-        content: "I spearheaded CloudSpeaker, an AI-powered intelligence platform using Workers AI and Llama 3 models to automatically ingest, classify, and summarize customer feedback at scale.\n\nHow It Works:\n1. Ingest: Automated pipeline pulls from 10+ sources (Discord, Twitter, GitHub, support tickets, Discourse, Reddit, Hacker News)\n2. Classify: LLM automatically tags product mentioned, sentiment, post type, and priority level\n3. Analyze: Natural language queries let PMs ask 'What are users saying about Workers?' or 'Show me negative sentiment trends for Zero Trust'\n4. Action: Insights feed directly into quarterly planning, OKRs, and roadmap decisions\n\nBuilt 'Content Warehouse' knowledge graph linking products to user sentiment. Collaborated with BI and Engineering teams to create self-service analytics platform.",
+        content: "I led CloudSpeaker as acting Product Manager—outside my role scope—driving vision, roadmap, user research, and requirements for a cross-functional team of Machine Learning Engineers, Content Experts, Designers, Information Architects, Content Engineers, and Project Managers.\n\nTook initiative to build an AI-powered intelligence platform using Workers AI and Llama 3 models to automatically ingest, classify, and summarize customer feedback at scale.\n\nHow It Works:\n1. Ingest: Automated pipeline pulls from 10+ sources (Discord, Twitter, GitHub, support tickets, Discourse, Reddit, Hacker News)\n2. Classify: LLM automatically tags product mentioned, sentiment, post type, and priority level\n3. Analyze: Natural language queries let PMs ask 'What are users saying about Workers?' or 'Show me negative sentiment trends for Zero Trust'\n4. Action: Insights feed directly into quarterly planning, OKRs, and roadmap decisions\n\nBuilt 'Content Warehouse' knowledge graph linking products to user sentiment. Led cross-functional collaboration across BI, Engineering, ML, and Product teams to create self-service analytics platform.",
         examples: [
-          { type: "image", caption: "Content warehouse architecture: LLM pipeline design" },
-          { type: "image", caption: "Product relationship mapping and taxonomy system" },
+          { type: "image", caption: "Cross-functional team: ML Engineers, Content Experts, Designers, Architects" },
+          { type: "image", caption: "Product roadmap and vision leadership outside role scope" },
           { type: "image", caption: "Natural language query interface for PM self-service" }
         ]
       },
@@ -191,23 +191,23 @@ export const portfolioPieces = [
   {
     slug: "conversation-architecture",
     title: "Conversation Architecture",
-    subtitle: "Scaling 10-person team to support 50+ products through systematic frameworks",
+    subtitle: "9-person team supporting 200 product spaces—22x efficiency through systematic frameworks",
     color: "#00FF00",
     sections: [
       {
         heading: "The Challenge",
-        content: "A 10-person UX Content team supporting 50+ products across Cloudflare's global platform—from Zero Trust security to Workers edge computing.\n\nTraditional content operations couldn't scale: reactive 'microcopy' requests, inconsistent terminology across products, no systematic approach to governance. The team was drowning in tactical work with no bandwidth for strategic initiatives.\n\nWithout intervention, we'd need 50+ headcount to match product growth.",
+        content: "A lean team of 9 specialists—3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, and 2 Video Producers—supporting close to 200 product spaces across Cloudflare's global platform.\n\nTraditional content operations couldn't scale: reactive 'microcopy' requests, inconsistent terminology across products, no systematic approach to governance. The team was drowning in tactical work with no bandwidth for strategic initiatives.\n\nWithout intervention, we'd need 200+ headcount to match product growth with traditional staffing models.",
         examples: [
-          { type: "image", caption: "Product portfolio mapping: 50+ products, 10 content strategists" },
+          { type: "image", caption: "Scale challenge: 9 specialists supporting 200 product spaces" },
           { type: "image", caption: "Content request volume: 200+ tickets/month, 3-week average turnaround" },
           { type: "image", caption: "Inconsistency audit: 47 different terms for same concepts across products" }
         ]
       },
       {
         heading: "The Solution",
-        content: "I established the 'Conversation Architecture' framework, positioning content strategy as an upstream architectural decision—not a downstream deliverable.\n\nThe Listen-Respond-Measure Methodology:\n• Listen: Customer calls, CloudSpeaker insights, user research, support ticket analysis\n• Respond: In-product content iterations, proactive content architecture\n• Measure: Task completion rates, support ticket reduction, user satisfaction (SUS surveys)\n\nBuilt comprehensive governance systems for voice, tone, and terminology that enable autonomous decision-making. Developed product ownership model mapping strategists to business domains, not individual features.\n\nCreated centralized content models, established review processes, and built the infrastructure for content to scale without proportional headcount growth.",
+        content: "I established the 'Conversation Architecture' framework, positioning content strategy as an upstream architectural decision—not a downstream deliverable.\n\nBuilt a specialized team structure: 3 UX Content Strategists for product experience, 3 Technical Content Strategists for developer documentation, 1 Information Architect for taxonomy and navigation, and 2 Video Producers for multimedia content.\n\nThe Listen-Respond-Measure Methodology:\n• Listen: Customer calls, CloudSpeaker insights, user research, support ticket analysis\n• Respond: In-product content iterations, proactive content architecture\n• Measure: Task completion rates, support ticket reduction, user satisfaction (SUS surveys)\n\nBuilt comprehensive governance systems for voice, tone, and terminology that enable autonomous decision-making. Developed product ownership model mapping strategists to business domains, not individual features.\n\nCreated centralized content models, established review processes, and built the infrastructure for content to scale without proportional headcount growth.",
         examples: [
-          { type: "image", caption: "Conversation Architecture framework: Content as infrastructure" },
+          { type: "image", caption: "Team structure: 9 specialists across 4 disciplines" },
           { type: "image", caption: "Listen-Respond-Measure methodology diagram" },
           { type: "image", caption: "Product ownership model: Domain-based team structure" },
           { type: "image", caption: "Governance toolkit: Voice/tone guidelines, terminology standards" }
@@ -215,9 +215,9 @@ export const portfolioPieces = [
       },
       {
         heading: "The Impact",
-        content: "Team scaled from 5 to 10 members while product coverage increased 3x—achieving 300% efficiency gain.\n\nEstablished content as architectural decision-maker embedded in product planning, not afterthought. Content strategists now participate in PRD reviews and architecture discussions, not just design handoffs.\n\nReduced content-related support tickets by 60% through systematic governance. Decreased average content turnaround from 3 weeks to 3 days.\n\nEnabled team to shift 70% of time from reactive execution to strategic initiatives. Framework adopted as company-wide standard, influencing how 500+ employees approach product content.",
+        content: "Achieved 22x efficiency ratio: 9 team members supporting 200 product spaces—unheard of in the industry.\n\nEstablished content as architectural decision-maker embedded in product planning, not afterthought. Content strategists now participate in PRD reviews and architecture discussions, not just design handoffs.\n\nReduced content-related support tickets by 60% through systematic governance. Decreased average content turnaround from 3 weeks to 3 days.\n\nEnabled team to shift 70% of time from reactive execution to strategic initiatives. Framework adopted as company-wide standard, influencing how 500+ employees approach product content.",
         examples: [
-          { type: "image", caption: "Efficiency metrics: 3x product coverage with 2x team growth" },
+          { type: "image", caption: "22x efficiency: 9 people supporting 200 product spaces" },
           { type: "image", caption: "Support ticket reduction: 60% decrease in content-related issues" },
           { type: "image", caption: "Strategic time allocation: 70% proactive vs 30% reactive" }
         ]
@@ -241,9 +241,9 @@ export const portfolioPieces = [
       },
       {
         heading: "The Solution",
-        content: "I built the UX Content Strategy function from scratch, hiring and developing 10+ team members across UX Content Strategy, Technical Writing, and Video Production.\n\nEstablished clear role definitions:\n• Strategy: Upstream architecture, user research, framework development\n• Design: In-product execution, microcopy, UI content\n• Technical Writing: Developer documentation, API guides, integration tutorials\n\nCreated comprehensive onboarding program with 30-60-90 day milestones. Developed product ownership model aligning team members to business domains (Zero Trust, Workers, Application Services, Developer Platform).\n\nEvangelized the discipline through company-wide BEER presentations, comprehensive Wiki documentation, and executive stakeholder management.\n\nProven track record: consistently leveled up every direct report who's been on my team for at least a year (Abby, Alexa, Daniel, Denise, Jess, Emanuel).",
+        content: "I built the UX Content Strategy function from scratch, hiring and developing a specialized team of 9 experts: 3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, and 2 Video Producers.\n\nEstablished clear role definitions:\n• UX Content Strategy: Upstream architecture, user research, framework development, product experience\n• Technical Content Strategy: Developer documentation, API guides, integration tutorials, SDK docs\n• Information Architecture: Taxonomy, navigation, content models, findability\n• Video Production: Multimedia tutorials, feature demos, product storytelling\n\nCreated comprehensive onboarding program with 30-60-90 day milestones. Developed product ownership model aligning team members to business domains (Zero Trust, Workers, Application Services, Developer Platform).\n\nEvangelized the discipline through company-wide BEER presentations, comprehensive Wiki documentation, and executive stakeholder management.\n\nProven track record: consistently leveled up every direct report who's been on my team for at least a year (Abby, Alexa, Daniel, Denise, Jess, Emanuel).",
         examples: [
-          { type: "image", caption: "Team org chart evolution: 0 to 10+ members in 18 months" },
+          { type: "image", caption: "Team structure: 3 UX + 3 Technical + 1 IA + 2 Video = 9 specialists" },
           { type: "image", caption: "Onboarding program: 30-60-90 day framework with success metrics" },
           { type: "image", caption: "BEER presentation: Introducing UX Content Strategy to 500+ employees" },
           { type: "image", caption: "Stakeholder engagement: Executive alignment and advocacy" }
