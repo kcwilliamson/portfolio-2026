@@ -43,8 +43,8 @@ const project = portfolioPieces.find(p => p.slug === 'content-roi');
 							<div class="section-content">
 								{section.content.split('\n\n').map((paragraph) => {
 									// Replace **text** with <strong>text</strong>
-									const formatted = paragraph.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-									return <p set:html={formatted}></p>
+									const formatted = paragraph.replaceAll(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>');
+									return <p set:html={formatted} />;
 								})}
 							</div>
 						</div>
