@@ -174,9 +174,7 @@ import { portfolioPieces } from '../data/portfolio';
 	}
 	
 	.nav-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		display: block;
 		padding: 3rem;
 		text-decoration: none;
 		color: #000;
@@ -185,6 +183,15 @@ import { portfolioPieces } from '../data/portfolio';
 		position: relative;
 		background: #fff;
 		min-height: 20vh;
+	}
+	
+	.nav-card:last-child {
+		border-bottom: none;
+	}
+	
+	.nav-card:hover {
+		padding-left: 4rem;
+		padding-right: 2rem;
 	}
 	
 	.nav-card:last-child {
