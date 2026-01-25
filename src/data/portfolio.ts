@@ -162,23 +162,17 @@ export const portfolioPieces = [
       {
         heading: "The Challenge",
         content: "Product managers wanted deeper customer insights but didn't have time to sift through data. Their calendars were packed with roadmap planning, stakeholder meetings, and cross-functional coordination—they worked incredibly hard on critical aspects of their roles. They relied primarily on single customer calls or individual tweets to drive product decisions, leaving all the voices across the internet unheard—10,000+ daily interactions across Discord, Twitter, GitHub, support tickets, forums, Reddit, and Hacker News.\n\nOther customer-facing teams were sifting through single data sources to make recommendations, but there was no single source of truth for all user feedback. Sentiment was lost. While we tracked behavior in dashboards and docs, we had very little insight into actual customer experiences.\n\nThe core problem: PMs simply didn't have enough time in the day to dig into insights, with the exception of content, design, and a few customer-facing teams whose roles allowed for this discovery work. Decisions got made based on one call or one tweet—not because of carelessness, but because of time constraints.\n\nI spent an entire quarter manually collecting all internal data sources, call notes, and feedback reports. Generated numerous walkthroughs and guides for how people at Cloudflare could take advantage of existing resources to get a better picture. But without a systematic solution that fit into their workflow, nothing changed.\n\nThis was a core part of the UX Intelligence strategy—to understand users systematically at enterprise scale, without requiring PMs to become researchers.",
-        examples: [
-          { type: "image", url: "/illustrations/cloudspeaker-before-after.svg", caption: "Manual scattered data vs. CloudSpeaker automated insights" }
-        ]
+        examples: []
       },
       {
         heading: "The Solution",
         content: "I'm a hybrid innovator—I move fluidly between product strategy, UX research, technical architecture, and team leadership. Whatever solves the problem. For CloudSpeaker, I needed to be a Product Manager.\n\nTook initiative outside my role scope to lead cross-functional team of ML Engineers, UX Researchers, Content Experts, Designers, Information Architects, and Project Managers. Drove vision, roadmap, user research, and requirements.\n\nBuilt AI-powered UX Intelligence platform using Workers AI and Llama 3 that automatically surfaces user pain points, sentiment, and needs at scale.\n\nHow It Works:\n\n• Ingest: Automated pipeline pulls from 10+ sources (Discord, Twitter, GitHub, support tickets, Discourse, Reddit, Hacker News)\n\n• Classify: LLM automatically tags product mentioned, sentiment, post type, and priority level\n\n• Analyze: Natural language queries surface insights—'What are users saying about Workers?' or 'Show me negative sentiment trends'\n\n• Action: User insights feed directly into quarterly planning, OKRs, and roadmap decisions\n\nBuilt 'Content Warehouse' knowledge graph linking products to user sentiment. This is UX Intelligence—continuous, automated understanding of user needs at enterprise scale.",
-        examples: [
-          { type: "image", url: "/illustrations/cloudspeaker-pipeline.svg", caption: "CloudSpeaker data pipeline: From 10k+ daily interactions to actionable insights" }
-        ]
+        examples: []
       },
       {
         heading: "The Impact",
         content: "Transformed how Cloudflare understands users: 99% efficiency gain (3 weeks → 5 minutes). This is what UX Intelligence enables—continuous user understanding, not periodic research studies.\n\nEnabled product decisions backed by quantified user insights. Identified 3 critical product gaps that became Q1 priorities, directly influencing $2M+ in engineering investment.\n\n50+ product managers adopted CloudSpeaker for continuous user intelligence. Presented 'The Future of User Understanding' at company-wide BEER meeting to 500+ employees.\n\nCloudSpeaker is now available as a full-fledged product experience and as an MCP server for developers at Cloudflare, showcasing integration with LangGraph—one of the most popular LLM agent frameworks.\n\nThis project demonstrates UX Intelligence in practice: combining product leadership, UX research, AI/ML systems, and cross-functional collaboration to solve user understanding at scale.",
-        examples: [
-          { type: "image", url: "/illustrations/cloudspeaker-impact.svg", caption: "10k+ daily interactions, 50+ PMs, $2M+ engineering investment driven by insights" }
-        ]
+        examples: []
       }
     ]
   },
@@ -191,17 +185,12 @@ export const portfolioPieces = [
       {
         heading: "The Challenge",
         content: "How do you scale user understanding across 100+ product spaces? Traditional UX operations couldn't: reactive 'microcopy' requests, inconsistent terminology, no systematic approach to governance.\n\nOur team of 9 specialists—3 UX Content Strategists, 3 Technical Content Strategists, 1 Information Architect, and 2 Video Producers—was drowning in tactical work with no bandwidth for strategic innovation.\n\nWithout intervention, we'd need 100+ headcount to match product growth using traditional staffing models. Instead, I built systematic frameworks that became the foundation of UX Intelligence.",
-        examples: [
-          { type: "image", url: "/illustrations/conversation-architecture-scale.svg", caption: "The impossible ratio: 9 specialists supporting 100+ product spaces" }
-        ]
+        examples: []
       },
       {
         heading: "The Solution",
         content: "I created systematic frameworks that enable teams to solve problems independently—this became the foundation of UX Intelligence.\n\nStrategic Focus & Democratization: Rather than spreading resources thin across all products, I focused on supporting products where we could have the biggest impact. Used these solutions to standardize and scale across all 100+ product spaces—building systems that democratized content excellence instead of requiring custom solutions for each product.\n\nRedefined what it means to provide UX at scale: Embedded UX Intelligence directly in code through design systems. Utilized gems and prompt libraries to make excellence accessible to all product teams, not just those with dedicated content support. This democratization approach—making systematic problem-solving available to everyone—enabled 9 specialists to support 100+ product spaces effectively.\n\nEstablished 'Conversation Architecture' positioning content strategy as an upstream architectural decision embedded in product planning—not a downstream deliverable.\n\n**The Listen-Respond-Measure Methodology:**\n\n• Listen: Customer calls, CloudSpeaker insights, user research, support ticket analysis\n\n• Respond: In-product content iterations, proactive content architecture\n\n• Measure: Task completion rates, support ticket reduction, user satisfaction (SUS surveys)\n\nBuilt comprehensive governance systems for voice, tone, and terminology that enable autonomous decision-making. Developed product ownership model mapping strategists to business domains, not individual features.\n\n**Tools Team Built to Enable UX Intelligence** (examples):\n\nGuided team to adopt UX Intelligence mindset—building their own solutions rather than consuming off-the-shelf tools. Team innovations include:\n\n• **CLUE Index**: ML-powered content quality assessment—answers 'Is this helping users?' with data-driven scoring across all product spaces\n\n• **Frameflow**: Workflow automation—freed team...",
-        examples: [
-          { type: "image", url: "/illustrations/conversation-architecture-cycle.svg", caption: "Listen-Respond-Measure: Continuous cycle of user understanding" },
-          { type: "image", url: "/illustrations/conversation-architecture-democratization.svg", caption: "Democratization framework: Making systematic problem-solving available to all teams" }
-        ]
+        examples: []
       },
       {
         heading: "The Impact",
@@ -224,17 +213,12 @@ export const portfolioPieces = [
       {
         heading: "The Solution",
         content: "I built teams that create systems, not teams that just execute tasks. Hired and developed 9 specialists who became builders and innovators.\n\nMy Philosophy from Day One: If we can't measure our impact, we won't do it. We always show the value of content through data, not assumptions.\n\nSpecialized Team Structure: Built team of 9 specialists—3 UX Content Strategists focused on upstream architecture, user research, and framework development; 3 Technical Content Strategists optimizing developer documentation and enabling reuse across product dashboards and content spaces; 1 Information Architect establishing taxonomy, navigation, and content models; 2 Video Producers creating multimedia tutorials and product storytelling.\n\n**Built Culture of Innovation:**\n\n• Team enabled to build their own tools (CLUE Index, Frameflow)\n\n• Transformed from 'consumers of AI' to 'builders with AI'\n\n• Shifted 70% of time from execution to strategic innovation\n\n• Created environment where everyone solves problems systematically\n\nImplemented OKRs and Quarterly Planning: Established structured goal-setting and quarterly planning processes to tell the story of content at Cloudflare—making impact visible and connecting content work directly to business outcomes.\n\nCreated comprehensive onboarding program with 30-60-90 day milestones. Developed product ownership model aligning team members to business domains.\n\nEvangelized UX Intelligence through company-wide BEER presentations, Wiki documentation, and executive stakeholder management.\n\nProven track record: consistently leveled up every direct report after 1+ year.",
-        examples: [
-          { type: "image", url: "/illustrations/team-leadership-structure.svg", caption: "Team structure: 3 UX + 3 Technical + 1 IA + 2 Video = 9 specialists building innovation" },
-          { type: "image", url: "/illustrations/team-leadership-onboarding.svg", caption: "30-60-90 day onboarding: Foundation → Execution → Innovation" }
-        ]
+        examples: []
       },
       {
         heading: "The Impact",
         content: "Built distributed team across 3 time zones (EST, GMT, CST) with 95% retention rate (industry avg: 75%). Established UX Intelligence as recognized discipline at Cloudflare, embedded in product planning cycles.\n\n**Team Excellence:**\n\n• 100% promotion rate for eligible direct reports\n\n• 3 IC promotions, 2 management track progressions\n\n• 4 team members recruited by other companies for leadership positions (validating team development)\n\n• Team built their own innovation tools (CLUE Index, Frameflow)—not just consumed technology\n\n**Business Impact:**\n\n• $5M+ measurable value through improved user engagement, reduced support costs, accelerated adoption\n\n• Frameworks adopted company-wide by 500+ employees\n\nEstablished culture of psychological safety, growth, and innovation that enables teams to create, not just execute. This is how you build UX Intelligence capability—through people who think systematically and build solutions.",
-        examples: [
-          { type: "image", url: "/illustrations/team-leadership-growth.svg", caption: "95% retention • 100% promotion rate • $5M+ value delivered" }
-        ]
+        examples: []
       }
     ]
   },
@@ -247,23 +231,17 @@ export const portfolioPieces = [
       {
         heading: "The Challenge",
         content: "Cloudflare's technical products—from Workers edge computing to Zero Trust security—needed to serve radically different audiences: developers seeking API documentation, IT admins evaluating enterprise solutions, and C-suite executives making million-dollar decisions.\n\nContent was fragmented across 100+ products with inconsistent voice, conflicting terminology, and no systematic approach to audience segmentation. Inconsistent UX throughout the product ecosystem meant users faced different patterns, flows, and language across every product. The technical bar to entry was almost insurmountable—even technical users struggled to get started.\n\nUser research showed 40% comprehension failure rate on critical onboarding flows. The business cost: high support volume, slow product adoption, and lost enterprise deals.",
-        examples: [
-          { type: "image", url: "/illustrations/content-roi-journey.svg", caption: "Before: 40% comprehension failure, 8 min to understand • After: 3 min, 62% improvement" }
-        ]
+        examples: []
       },
       {
         heading: "The Solution",
-        content: "I established comprehensive voice and tone guidelines tailored to Cloudflare's technical-yet-accessible brand. Created content models for different user journeys—developer docs, admin guides, executive briefings—each optimized for audience needs and business goals.\n\nPartnered with Video Production team to develop multimedia storytelling:\n• Written content: In-product guidance, error messages, onboarding flows\n• Video tutorials: Complex setup processes, troubleshooting guides\n• Interactive demos: Product exploration, feature discovery\n\nBuilt measurement framework using Amplitude to track content effectiveness: task completion rates, time-on-page, support ticket deflection, and conversion metrics.\n\nEstablished content-first design process where content drives UX decisions, not vice versa. Content strategists now participate in PRD reviews and architecture discussions, ensuring user communication is considered from the start.",
-        examples: [
-          { type: "image", url: "/illustrations/content-roi-multichannel.svg", caption: "Multi-channel content strategy: Developers → IT Admins → C-Suite, each with tailored content" }
-        ]
+        content: "The only way to scale a small team is through ruthless prioritization and strategic planning. I established content OKRs directly aligned with product and company success metrics. With clear targets in hand, the team focused efforts on strategic projects rather than functioning as a reactive service—this shift enabled us to directly influence engagement, conversion, and support ticket reduction.\n\nWe always treat UX as a product—delivering with the same processes and strategy as any other platform. By making data-driven decisions, we consistently pushed business objectives forward, becoming a strategic product partner with the ability to connect customer needs, business goals, and user experience. We focused on high-impact projects that moved the needle—proving solutions in one area, then scaling across all of Cloudflare through UX Intelligence initiatives.\n\nTime and again, we pointed our work back to tangible outcomes:\n\n• Established comprehensive voice and tone guidelines tailored to Cloudflare's technical-yet-accessible brand\n\n• Partnered with Video Production team for multimedia storytelling—written content, video tutorials, interactive demos\n\n• Built measurement framework using Amplitude to track content effectiveness: task completion rates, time-on-page, support ticket deflection, conversion metrics\n\n• Established content-first design process where content drives UX decisions—strategists now participate in PRD reviews and architecture discussions from the start\n\nStrategy is not a deliverable—it's a means to an end. We delivered measurable business impact.",
+        examples: []
       },
       {
         heading: "The Impact",
         content: "Increased user engagement by 45% across key product flows. Reduced time-to-comprehension in user testing from 8 minutes to 3 minutes—a 62% improvement.\n\nDecreased support ticket volume by 35% through clearer in-product guidance. Improved enterprise trial-to-paid conversion by 28% through targeted executive content.\n\nEstablished docs-in-dashboard experience: embedded developer documentation directly into product UI, improving task completion rates across every product area.\n\nAdded video component to dashboard, increasing visibility of video content and delivering measurable impact on product adoption and task completion.\n\nFramework adopted across organization, influencing how 500+ employees approach product communication. Content-first approach now standard practice in product development.",
-        examples: [
-          { type: "image", url: "/illustrations/content-roi-impact.svg", caption: "+45% engagement • -60% support tickets • +28% conversion • 500+ employees influenced" }
-        ]
+        examples: []
       }
     ]
   }

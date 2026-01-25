@@ -68,19 +68,21 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 					</div>
 				</div>
 				
-				<div class="gallery-column">
-					{project.sections.flatMap((section) => section.examples).map((example, index) => (
-						<div class="gallery-item" data-index={index} data-caption={example.caption} data-type={example.type} data-url={example.url}>
-							{example.type === 'video' ? (
-								<video class="gallery-thumbnail" muted playsinline>
-									<source src={example.url} type="video/mp4" />
-								</video>
-							) : (
-								<img src={example.url} alt={example.caption} class="gallery-thumbnail" />
-							)}
-						</div>
-					))}
-				</div>
+				{project.sections.flatMap((section) => section.examples).length > 0 && (
+					<div class="gallery-column">
+						{project.sections.flatMap((section) => section.examples).map((example, index) => (
+							<div class="gallery-item" data-index={index} data-caption={example.caption} data-type={example.type} data-url={example.url}>
+								{example.type === 'video' ? (
+									<video class="gallery-thumbnail" muted playsinline>
+										<source src={example.url} type="video/mp4" />
+									</video>
+								) : (
+									<img src={example.url} alt={example.caption} class="gallery-thumbnail" />
+								)}
+							</div>
+						))}
+					</div>
+				)}
 			</div>
 		</div>
 		
