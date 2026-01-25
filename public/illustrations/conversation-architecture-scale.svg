@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="250" y="40" fill="white" font-size="26" font-weight="900">THE IMPOSSIBLE RATIO</text>
+  
+  <!-- Left Side: The Team -->
+  <g id="team-side">
+    <text x="80" y="80" fill="white" font-size="18" font-weight="700">9 SPECIALISTS</text>
+    
+    <!-- Team members -->
+    <g id="team-icons">
+      <!-- Row 1 -->
+      <circle cx="80" cy="120" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="74" y="127" fill="white" font-size="12">UX</text>
+      <circle cx="130" cy="120" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="124" y="127" fill="white" font-size="12">UX</text>
+      <circle cx="180" cy="120" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="174" y="127" fill="white" font-size="12">UX</text>
+      
+      <!-- Row 2 -->
+      <circle cx="80" cy="170" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="74" y="177" fill="white" font-size="11">TC</text>
+      <circle cx="130" cy="170" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="124" y="177" fill="white" font-size="11">TC</text>
+      <circle cx="180" cy="170" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="174" y="177" fill="white" font-size="11">TC</text>
+      
+      <!-- Row 3 -->
+      <circle cx="105" cy="220" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="101" y="227" fill="white" font-size="12">IA</text>
+      <circle cx="155" cy="220" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="149" y="227" fill="white" font-size="11">VP</text>
+      <circle cx="130" cy="270" r="18" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <text x="124" y="277" fill="white" font-size="11">VP</text>
+    </g>
+    
+    <text x="60" y="310" fill="white" font-size="11" opacity="0.7">UX Content Strategists</text>
+    <text x="60" y="325" fill="white" font-size="11" opacity="0.7">Technical Strategists</text>
+    <text x="60" y="340" fill="white" font-size="11" opacity="0.7">Info Architect • Video</text>
+  </g>
+  
+  <!-- VS Symbol -->
+  <g id="vs">
+    <text x="275" y="210" fill="white" font-size="48" font-weight="900" opacity="0.4">VS</text>
+  </g>
+  
+  <!-- Right Side: Products -->
+  <g id="products-side">
+    <text x="490" y="80" fill="white" font-size="18" font-weight="700">100+ PRODUCTS</text>
+    
+    <!-- Product grid -->
+    <g id="product-grid">
+      <rect x="420" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="460" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="500" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="540" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="580" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="620" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="660" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="700" y="100" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      
+      <rect x="420" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="460" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="500" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="540" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="580" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="620" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="660" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="700" y="135" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      
+      <rect x="420" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="460" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="500" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="540" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="580" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="620" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="660" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="700" y="170" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      
+      <rect x="420" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="460" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="500" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="540" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="580" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="620" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="660" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      <rect x="700" y="205" width="35" height="30" rx="4" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1"/>
+      
+      <text x="520" y="260" fill="white" font-size="16" opacity="0.7">+ 68 more...</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Explanation -->
+  <g id="explanation">
+    <rect x="100" y="340" width="600" height="50" rx="8" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="160" y="365" fill="white" font-size="14" opacity="0.9">Traditional model would require 100+ headcount</text>
+    <text x="160" y="382" fill="white" font-size="13" font-weight="700">Systematic frameworks enable exponential scale</text>
+  </g>
+</svg>

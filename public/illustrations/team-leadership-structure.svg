@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="260" y="40" fill="black" font-size="26" font-weight="900">TEAM STRUCTURE</text>
+  <text x="280" y="65" fill="black" font-size="14" opacity="0.8">9 specialists = Innovation</text>
+  
+  <!-- Leader -->
+  <g id="leader">
+    <circle cx="400" cy="110" r="35" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="3"/>
+    <text x="375" y="120" fill="black" font-size="16" font-weight="900">LEAD</text>
+  </g>
+  
+  <!-- Lines to teams -->
+  <line x1="400" y1="145" x2="150" y2="220" stroke="black" stroke-width="2" opacity="0.4"/>
+  <line x1="400" y1="145" x2="400" y2="220" stroke="black" stroke-width="2" opacity="0.4"/>
+  <line x1="400" y1="145" x2="650" y2="220" stroke="black" stroke-width="2" opacity="0.4"/>
+  
+  <!-- UX Content Strategists (3) -->
+  <g id="ux-team">
+    <rect x="50" y="220" width="200" height="140" rx="12" fill="rgba(0,0,0,0.1)" stroke="black" stroke-width="3"/>
+    <text x="80" y="250" fill="black" font-size="16" font-weight="900">UX CONTENT</text>
+    <text x="85" y="268" fill="black" font-size="16" font-weight="900">STRATEGISTS</text>
+    
+    <circle cx="90" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="85" y="307" fill="black" font-size="12">1</text>
+    <circle cx="150" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="145" y="307" fill="black" font-size="12">2</text>
+    <circle cx="210" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="205" y="307" fill="black" font-size="12">3</text>
+    
+    <text x="60" y="340" fill="black" font-size="11" opacity="0.8">• Upstream architecture</text>
+    <text x="60" y="355" fill="black" font-size="11" opacity="0.8">• User research</text>
+  </g>
+  
+  <!-- Technical Content Strategists (3) -->
+  <g id="technical-team">
+    <rect x="300" y="220" width="200" height="140" rx="12" fill="rgba(0,0,0,0.1)" stroke="black" stroke-width="3"/>
+    <text x="325" y="250" fill="black" font-size="16" font-weight="900">TECHNICAL</text>
+    <text x="330" y="268" fill="black" font-size="16" font-weight="900">STRATEGISTS</text>
+    
+    <circle cx="340" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="335" y="307" fill="black" font-size="12">1</text>
+    <circle cx="400" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="395" y="307" fill="black" font-size="12">2</text>
+    <circle cx="460" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="455" y="307" fill="black" font-size="12">3</text>
+    
+    <text x="310" y="340" fill="black" font-size="11" opacity="0.8">• Developer docs</text>
+    <text x="310" y="355" fill="black" font-size="11" opacity="0.8">• Content reuse</text>
+  </g>
+  
+  <!-- Info Architect + Video (3) -->
+  <g id="special-team">
+    <rect x="550" y="220" width="200" height="140" rx="12" fill="rgba(0,0,0,0.1)" stroke="black" stroke-width="3"/>
+    <text x="570" y="250" fill="black" font-size="16" font-weight="900">SPECIALISTS</text>
+    
+    <circle cx="600" cy="290" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="593" y="297" fill="black" font-size="12">IA</text>
+    <circle cx="660" cy="300" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="652" y="307" fill="black" font-size="12">VP</text>
+    <circle cx="720" cy="310" r="20" fill="rgba(0,0,0,0.15)" stroke="black" stroke-width="2"/>
+    <text x="712" y="317" fill="black" font-size="12">VP</text>
+    
+    <text x="560" y="340" fill="black" font-size="11" opacity="0.8">IA: Taxonomy, navigation</text>
+    <text x="560" y="355" fill="black" font-size="11" opacity="0.8">VP: Multimedia tutorials</text>
+  </g>
+  
+  <!-- Culture Box -->
+  <g id="culture">
+    <rect x="100" y="390" width="600" height="90" rx="12" fill="rgba(0,0,0,0.08)" stroke="black" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="300" y="420" fill="black" font-size="18" font-weight="700">CULTURE OF INNOVATION</text>
+    <text x="150" y="445" fill="black" font-size="13" opacity="0.9">Team builds their own tools • Shift to strategic work (70%)</text>
+    <text x="180" y="465" fill="black" font-size="13" opacity="0.9">Builders with AI, not consumers • Systematic problem-solving</text>
+  </g>
+</svg>

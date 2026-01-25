@@ -1,0 +1,53 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="250" y="40" fill="white" font-size="28" font-weight="900">IMPACT METRICS</text>
+  
+  <!-- Metric 1: Data Volume -->
+  <g id="metric-1">
+    <rect x="50" y="80" width="220" height="140" rx="12" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="70" y="110" fill="white" font-size="48" font-weight="900">10K+</text>
+    <text x="70" y="140" fill="white" font-size="16" opacity="0.9">Daily Interactions</text>
+    <text x="70" y="160" fill="white" font-size="13" opacity="0.7">Analyzed automatically</text>
+    <text x="70" y="178" fill="white" font-size="13" opacity="0.7">from 10+ sources</text>
+    <text x="70" y="205" fill="white" font-size="11" opacity="0.6">Discord • Twitter • GitHub</text>
+    <text x="70" y="220" fill="white" font-size="11" opacity="0.6">Support • Forums • Reddit</text>
+  </g>
+  
+  <!-- Metric 2: PM Adoption -->
+  <g id="metric-2">
+    <rect x="290" y="80" width="220" height="140" rx="12" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="320" y="110" fill="white" font-size="48" font-weight="900">50+</text>
+    <text x="310" y="140" fill="white" font-size="16" opacity="0.9">Product Managers</text>
+    <text x="310" y="160" fill="white" font-size="13" opacity="0.7">Using CloudSpeaker for</text>
+    <text x="310" y="178" fill="white" font-size="13" opacity="0.7">continuous user intel</text>
+    
+    <!-- User icons -->
+    <g opacity="0.8">
+      <circle cx="320" cy="200" r="6" fill="white"/>
+      <circle cx="340" cy="200" r="6" fill="white"/>
+      <circle cx="360" cy="200" r="6" fill="white"/>
+      <circle cx="380" cy="200" r="6" fill="white"/>
+      <circle cx="400" cy="200" r="6" fill="white"/>
+      <text x="420" y="205" fill="white" font-size="12">+45 more</text>
+    </g>
+  </g>
+  
+  <!-- Metric 3: Business Impact -->
+  <g id="metric-3">
+    <rect x="530" y="80" width="220" height="140" rx="12" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="550" y="110" fill="white" font-size="48" font-weight="900">$2M+</text>
+    <text x="550" y="140" fill="white" font-size="16" opacity="0.9">Engineering Investment</text>
+    <text x="550" y="165" fill="white" font-size="13" opacity="0.7">3 critical product gaps</text>
+    <text x="550" y="183" fill="white" font-size="13" opacity="0.7">became Q1 priorities</text>
+    <text x="550" y="210" fill="white" font-size="11" opacity="0.6">Data-driven decisions</text>
+  </g>
+  
+  <!-- Bottom Banner: Company Presentation -->
+  <g id="presentation">
+    <rect x="50" y="250" width="700" height="120" rx="12" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="280" y="285" fill="white" font-size="20" font-weight="700">Company-Wide Impact</text>
+    <text x="170" y="315" fill="white" font-size="15" opacity="0.9">Presented "The Future of User Understanding" at BEER meeting</text>
+    <text x="280" y="340" fill="white" font-size="14" opacity="0.8">500+ employees • Full product experience</text>
+    <text x="250" y="360" fill="white" font-size="13" opacity="0.7">Available as MCP server integrated with LangGraph</text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="230" y="40" fill="white" font-size="26" font-weight="900">DEMOCRATIZATION FRAMEWORK</text>
+  <text x="190" y="65" fill="white" font-size="14" opacity="0.8">Making systematic problem-solving available to everyone</text>
+  
+  <!-- Top Level: Design Systems -->
+  <g id="level-1">
+    <rect x="250" y="100" width="300" height="80" rx="12" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="3"/>
+    <text x="340" y="130" fill="white" font-size="20" font-weight="900">DESIGN SYSTEMS</text>
+    <text x="280" y="155" fill="white" font-size="13" opacity="0.9">UX Intelligence embedded in code</text>
+    <text x="300" y="172" fill="white" font-size="12" opacity="0.8">Excellence built into foundation</text>
+  </g>
+  
+  <!-- Arrows down -->
+  <defs>
+    <marker id="arrow-down" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto">
+      <polygon points="0 0, 10 0, 5 10" fill="white"/>
+    </marker>
+  </defs>
+  
+  <path d="M 350 180 L 350 220" stroke="white" stroke-width="3" opacity="0.6" marker-end="url(#arrow-down)"/>
+  <path d="M 450 180 L 450 220" stroke="white" stroke-width="3" opacity="0.6" marker-end="url(#arrow-down)"/>
+  
+  <!-- Middle Level: Tools & Libraries -->
+  <g id="level-2">
+    <!-- Gems -->
+    <rect x="120" y="220" width="200" height="100" rx="10" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="175" y="250" fill="white" font-size="18" font-weight="700">GEMS</text>
+    <text x="135" y="275" fill="white" font-size="12" opacity="0.9">Reusable patterns</text>
+    <text x="135" y="292" fill="white" font-size="11" opacity="0.8">• Error messages</text>
+    <text x="135" y="307" fill="white" font-size="11" opacity="0.8">• Onboarding flows</text>
+    
+    <!-- Prompt Libraries -->
+    <rect x="480" y="220" width="200" height="100" rx="10" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="510" y="250" fill="white" font-size="18" font-weight="700">PROMPT LIBRARIES</text>
+    <text x="495" y="275" fill="white" font-size="12" opacity="0.9">AI-powered templates</text>
+    <text x="495" y="292" fill="white" font-size="11" opacity="0.8">• Content generation</text>
+    <text x="495" y="307" fill="white" font-size="11" opacity="0.8">• Consistency checks</text>
+    
+    <!-- CLUE Index -->
+    <rect x="340" y="220" width="140" height="45" rx="8" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="360" y="240" fill="white" font-size="14" font-weight="700">CLUE Index</text>
+    <text x="355" y="257" fill="white" font-size="10" opacity="0.8">Quality scoring</text>
+    
+    <!-- Frameflow -->
+    <rect x="340" y="275" width="140" height="45" rx="8" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="360" y="295" fill="white" font-size="14" font-weight="700">Frameflow</text>
+    <text x="355" y="312" fill="white" font-size="10" opacity="0.8">Workflow automation</text>
+  </g>
+  
+  <!-- Arrows down to teams -->
+  <path d="M 220 320 L 220 360" stroke="white" stroke-width="2" opacity="0.5" marker-end="url(#arrow-down)"/>
+  <path d="M 410 320 L 410 360" stroke="white" stroke-width="2" opacity="0.5" marker-end="url(#arrow-down)"/>
+  <path d="M 580 320 L 580 360" stroke="white" stroke-width="2" opacity="0.5" marker-end="url(#arrow-down)"/>
+  
+  <!-- Bottom Level: All Product Teams -->
+  <g id="level-3">
+    <rect x="50" y="360" width="700" height="110" rx="12" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="3"/>
+    <text x="280" y="390" fill="white" font-size="20" font-weight="900">ALL PRODUCT TEAMS</text>
+    <text x="240" y="415" fill="white" font-size="14" opacity="0.9">100+ product spaces empowered with:</text>
+    
+    <g id="benefits">
+      <text x="100" y="440" fill="white" font-size="12" opacity="0.8">✓ Self-service excellence</text>
+      <text x="300" y="440" fill="white" font-size="12" opacity="0.8">✓ Autonomous decisions</text>
+      <text x="500" y="440" fill="white" font-size="12" opacity="0.8">✓ Built-in quality</text>
+      
+      <text x="100" y="460" fill="white" font-size="12" opacity="0.8">✓ Consistent patterns</text>
+      <text x="300" y="460" fill="white" font-size="12" opacity="0.8">✓ Rapid iteration</text>
+      <text x="500" y="460" fill="white" font-size="12" opacity="0.8">✓ Scalable systems</text>
+    </g>
+  </g>
+</svg>

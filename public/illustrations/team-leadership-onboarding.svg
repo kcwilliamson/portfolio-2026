@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="200" y="40" fill="black" font-size="26" font-weight="900">30-60-90 DAY ONBOARDING</text>
+  
+  <!-- Day 1-30: Foundation -->
+  <g id="phase-1">
+    <rect x="50" y="80" width="220" height="280" rx="12" fill="rgba(0,0,0,0.08)" stroke="black" stroke-width="3"/>
+    <text x="110" y="110" fill="black" font-size="20" font-weight="900">DAY 1-30</text>
+    <text x="100" y="135" fill="black" font-size="16" font-weight="700">FOUNDATION</text>
+    
+    <!-- Foundation items -->
+    <g id="foundation-items">
+      <circle cx="70" cy="165" r="6" fill="black" opacity="0.3"/>
+      <text x="85" y="170" fill="black" font-size="12" opacity="0.9">Tools & Systems</text>
+      
+      <circle cx="70" cy="195" r="6" fill="black" opacity="0.3"/>
+      <text x="85" y="200" fill="black" font-size="12" opacity="0.9">Product Knowledge</text>
+      
+      <circle cx="70" cy="225" r="6" fill="black" opacity="0.3"/>
+      <text x="85" y="230" fill="black" font-size="12" opacity="0.9">Team Processes</text>
+      
+      <circle cx="70" cy="255" r="6" fill="black" opacity="0.3"/>
+      <text x="85" y="260" fill="black" font-size="12" opacity="0.9">First Stakeholders</text>
+      
+      <circle cx="70" cy="285" r="6" fill="black" opacity="0.3"/>
+      <text x="85" y="290" fill="black" font-size="12" opacity="0.9">Shadowing</text>
+    </g>
+    
+    <rect x="65" y="315" width="140" height="30" rx="6" fill="rgba(0,0,0,0.15)"/>
+    <text x="75" y="335" fill="black" font-size="11" font-weight="600">Milestone: Readiness</text>
+  </g>
+  
+  <!-- Day 31-60: Execution -->
+  <g id="phase-2">
+    <rect x="290" y="80" width="220" height="280" rx="12" fill="rgba(0,0,0,0.08)" stroke="black" stroke-width="3"/>
+    <text x="340" y="110" fill="black" font-size="20" font-weight="900">DAY 31-60</text>
+    <text x="340" y="135" fill="black" font-size="16" font-weight="700">EXECUTION</text>
+    
+    <!-- Execution items -->
+    <g id="execution-items">
+      <circle cx="310" cy="165" r="6" fill="black" opacity="0.5"/>
+      <text x="325" y="170" fill="black" font-size="12" opacity="0.9">First Projects</text>
+      
+      <circle cx="310" cy="195" r="6" fill="black" opacity="0.5"/>
+      <text x="325" y="200" fill="black" font-size="12" opacity="0.9">Stakeholder Mgmt</text>
+      
+      <circle cx="310" cy="225" r="6" fill="black" opacity="0.5"/>
+      <text x="325" y="230" fill="black" font-size="12" opacity="0.9">Quality Reviews</text>
+      
+      <circle cx="310" cy="255" r="6" fill="black" opacity="0.5"/>
+      <text x="325" y="260" fill="black" font-size="12" opacity="0.9">Framework Use</text>
+      
+      <circle cx="310" cy="285" r="6" fill="black" opacity="0.5"/>
+      <text x="325" y="290" fill="black" font-size="12" opacity="0.9">Peer Collaboration</text>
+    </g>
+    
+    <rect x="305" y="315" width="140" height="30" rx="6" fill="rgba(0,0,0,0.15)"/>
+    <text x="315" y="335" fill="black" font-size="11" font-weight="600">Milestone: Delivery</text>
+  </g>
+  
+  <!-- Day 61-90: Innovation -->
+  <g id="phase-3">
+    <rect x="530" y="80" width="220" height="280" rx="12" fill="rgba(0,0,0,0.08)" stroke="black" stroke-width="3"/>
+    <text x="580" y="110" fill="black" font-size="20" font-weight="900">DAY 61-90</text>
+    <text x="575" y="135" fill="black" font-size="16" font-weight="700">INNOVATION</text>
+    
+    <!-- Innovation items -->
+    <g id="innovation-items">
+      <circle cx="550" cy="165" r="6" fill="black" opacity="0.7"/>
+      <text x="565" y="170" fill="black" font-size="12" opacity="0.9">Strategic Initiatives</text>
+      
+      <circle cx="550" cy="195" r="6" fill="black" opacity="0.7"/>
+      <text x="565" y="200" fill="black" font-size="12" opacity="0.9">Process Improvement</text>
+      
+      <circle cx="550" cy="225" r="6" fill="black" opacity="0.7"/>
+      <text x="565" y="230" fill="black" font-size="12" opacity="0.9">Framework Contrib</text>
+      
+      <circle cx="550" cy="255" r="6" fill="black" opacity="0.7"/>
+      <text x="565" y="260" fill="black" font-size="12" opacity="0.9">Thought Leadership</text>
+      
+      <circle cx="550" cy="285" r="6" fill="black" opacity="0.7"/>
+      <text x="565" y="290" fill="black" font-size="12" opacity="0.9">Mentorship</text>
+    </g>
+    
+    <rect x="545" y="315" width="140" height="30" rx="6" fill="rgba(0,0,0,0.15)"/>
+    <text x="555" y="335" fill="black" font-size="11" font-weight="600">Milestone: Impact</text>
+  </g>
+</svg>

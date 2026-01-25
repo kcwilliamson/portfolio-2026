@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="200" y="40" fill="white" font-size="26" font-weight="900">MULTI-CHANNEL CONTENT STRATEGY</text>
+  
+  <!-- Center: Content Hub -->
+  <g id="content-hub">
+    <circle cx="400" cy="250" r="70" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="3"/>
+    <text x="365" y="245" fill="white" font-size="16" font-weight="900">CONTENT</text>
+    <text x="370" y="265" fill="white" font-size="16" font-weight="900">FIRST</text>
+  </g>
+  
+  <!-- Developers (Top Left) -->
+  <g id="developers">
+    <rect x="50" y="80" width="180" height="120" rx="10" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="95" y="110" fill="white" font-size="18" font-weight="900">DEVELOPERS</text>
+    <text x="70" y="135" fill="white" font-size="12" opacity="0.9">• API documentation</text>
+    <text x="70" y="153" fill="white" font-size="12" opacity="0.9">• Code samples</text>
+    <text x="70" y="171" fill="white" font-size="12" opacity="0.9">• SDKs & libraries</text>
+    <text x="70" y="189" fill="white" font-size="12" opacity="0.9">• GitHub integration</text>
+  </g>
+  <path d="M 230 140 L 340 210" stroke="white" stroke-width="3" opacity="0.6"/>
+  
+  <!-- IT Admins (Top Right) -->
+  <g id="it-admins">
+    <rect x="570" y="80" width="180" height="120" rx="10" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="615" y="110" fill="white" font-size="18" font-weight="900">IT ADMINS</text>
+    <text x="590" y="135" fill="white" font-size="12" opacity="0.9">• Setup guides</text>
+    <text x="590" y="153" fill="white" font-size="12" opacity="0.9">• Video tutorials</text>
+    <text x="590" y="171" fill="white" font-size="12" opacity="0.9">• Troubleshooting</text>
+    <text x="590" y="189" fill="white" font-size="12" opacity="0.9">• Best practices</text>
+  </g>
+  <path d="M 570 140 L 460 210" stroke="white" stroke-width="3" opacity="0.6"/>
+  
+  <!-- C-Suite (Bottom) -->
+  <g id="csuite">
+    <rect x="310" y="380" width="180" height="100" rx="10" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="2"/>
+    <text x="360" y="410" fill="white" font-size="18" font-weight="900">C-SUITE</text>
+    <text x="330" y="435" fill="white" font-size="12" opacity="0.9">• Executive briefings</text>
+    <text x="330" y="453" fill="white" font-size="12" opacity="0.9">• ROI calculators</text>
+    <text x="330" y="471" fill="white" font-size="12" opacity="0.9">• Case studies</text>
+  </g>
+  <path d="M 400 320 L 400 380" stroke="white" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Content Types (Left annotation) -->
+  <g id="content-types">
+    <rect x="50" y="240" width="150" height="140" rx="8" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="70" y="265" fill="white" font-size="14" font-weight="700">CONTENT TYPES</text>
+    <text x="65" y="285" fill="white" font-size="11" opacity="0.8">Written guides</text>
+    <text x="65" y="302" fill="white" font-size="11" opacity="0.8">Video tutorials</text>
+    <text x="65" y="319" fill="white" font-size="11" opacity="0.8">Interactive demos</text>
+    <text x="65" y="336" fill="white" font-size="11" opacity="0.8">In-product tips</text>
+    <text x="65" y="353" fill="white" font-size="11" opacity="0.8">Error messages</text>
+    <text x="65" y="370" fill="white" font-size="11" opacity="0.8">Onboarding flows</text>
+  </g>
+  
+  <!-- Voice & Tone (Right annotation) -->
+  <g id="voice-tone">
+    <rect x="600" y="240" width="150" height="140" rx="8" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="620" y="265" fill="white" font-size="14" font-weight="700">VOICE & TONE</text>
+    <text x="615" y="285" fill="white" font-size="11" opacity="0.8">Technical depth</text>
+    <text x="615" y="302" fill="white" font-size="11" opacity="0.8">Human accessibility</text>
+    <text x="615" y="319" fill="white" font-size="11" opacity="0.8">Consistent brand</text>
+    <text x="615" y="336" fill="white" font-size="11" opacity="0.8">Audience-tailored</text>
+    <text x="615" y="353" fill="white" font-size="11" opacity="0.8">Goal-oriented</text>
+    <text x="615" y="370" fill="white" font-size="11" opacity="0.8">Data-measured</text>
+  </g>
+</svg>

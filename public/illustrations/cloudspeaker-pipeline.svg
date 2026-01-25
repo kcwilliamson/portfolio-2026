@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Data Sources -->
+  <g id="sources">
+    <text x="40" y="30" fill="white" font-size="16" font-weight="700">DATA SOURCES</text>
+    <circle cx="60" cy="80" r="20" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+    <text x="50" y="87" fill="white" font-size="12" font-weight="600">DC</text>
+    <circle cx="60" cy="130" r="20" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+    <text x="50" y="137" fill="white" font-size="12" font-weight="600">TW</text>
+    <circle cx="60" cy="180" r="20" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+    <text x="50" y="187" fill="white" font-size="12" font-weight="600">GH</text>
+    <circle cx="60" cy="230" r="20" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+    <text x="48" y="237" fill="white" font-size="12" font-weight="600">TIX</text>
+    <text x="35" y="280" fill="white" font-size="11" opacity="0.8">10+ sources</text>
+    <text x="25" y="295" fill="white" font-size="11" opacity="0.8">10k+ daily posts</text>
+  </g>
+  
+  <!-- Arrows to Ingestion -->
+  <path d="M 90 80 L 170 150" stroke="white" stroke-width="3" opacity="0.6" marker-end="url(#arrowhead)"/>
+  <path d="M 90 130 L 170 150" stroke="white" stroke-width="3" opacity="0.6" marker-end="url(#arrowhead)"/>
+  <path d="M 90 180 L 170 150" stroke="white" stroke-width="3" opacity="0.6" marker-end="url(#arrowhead)"/>
+  <path d="M 90 230 L 170 150" stroke="white" stroke-width="3" opacity="0.6" marker-end="url(#arrowhead)"/>
+  
+  <!-- Ingestion -->
+  <g id="ingestion">
+    <rect x="170" y="100" width="120" height="100" rx="8" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="185" y="125" fill="white" font-size="14" font-weight="700">INGEST</text>
+    <text x="180" y="145" fill="white" font-size="11" opacity="0.9">Automated</text>
+    <text x="185" y="160" fill="white" font-size="11" opacity="0.9">Pipeline</text>
+    <text x="180" y="185" fill="white" font-size="11" opacity="0.9">Workers AI</text>
+  </g>
+  
+  <!-- Arrow to LLM -->
+  <path d="M 290 150 L 350 150" stroke="white" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- LLM Classification -->
+  <g id="llm">
+    <rect x="350" y="100" width="120" height="100" rx="8" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="365" y="125" fill="white" font-size="14" font-weight="700">CLASSIFY</text>
+    <text x="360" y="145" fill="white" font-size="11" opacity="0.9">LLM Analysis</text>
+    <text x="375" y="160" fill="white" font-size="11" opacity="0.9">Llama 3</text>
+    <text x="365" y="185" fill="white" font-size="11" opacity="0.9">• Sentiment</text>
+    <path d="M 365 185 L 460 185" stroke="white" stroke-width="1" opacity="0.3"/>
+  </g>
+  
+  <!-- Arrow to Dashboard -->
+  <path d="M 470 150 L 530 150" stroke="white" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- CloudSpeaker Dashboard -->
+  <g id="dashboard">
+    <rect x="530" y="80" width="150" height="140" rx="8" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="3"/>
+    <text x="545" y="105" fill="white" font-size="14" font-weight="700">CLOUDSPEAKER</text>
+    <rect x="545" y="115" width="120" height="4" rx="2" fill="white" opacity="0.3"/>
+    <text x="545" y="135" fill="white" font-size="11" opacity="0.9">Natural Language</text>
+    <text x="545" y="150" fill="white" font-size="11" opacity="0.9">Queries</text>
+    <text x="545" y="175" fill="white" font-size="10" opacity="0.7">"What are users</text>
+    <text x="545" y="188" fill="white" font-size="10" opacity="0.7">saying about</text>
+    <text x="545" y="201" fill="white" font-size="10" opacity="0.7">Workers?"</text>
+  </g>
+  
+  <!-- Arrow to Decisions -->
+  <path d="M 680 150 L 730 150" stroke="white" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Product Decisions -->
+  <g id="decisions">
+    <circle cx="755" cy="150" r="35" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="735" y="145" fill="white" font-size="11" font-weight="700">Action</text>
+    <text x="740" y="160" fill="white" font-size="9" opacity="0.9">OKRs</text>
+  </g>
+  
+  <!-- Efficiency Metric -->
+  <g id="metric">
+    <rect x="250" y="250" width="300" height="120" rx="8" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="330" y="280" fill="white" font-size="20" font-weight="900">99% EFFICIENCY GAIN</text>
+    <text x="300" y="310" fill="white" font-size="16" opacity="0.8">3 weeks → 5 minutes</text>
+    <text x="280" y="340" fill="white" font-size="13" opacity="0.7">50+ PMs using CloudSpeaker</text>
+    <text x="290" y="360" fill="white" font-size="13" opacity="0.7">$2M+ engineering investment</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="white"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="230" y="40" fill="white" font-size="28" font-weight="900">BUSINESS IMPACT</text>
+  
+  <!-- Metric 1: Engagement -->
+  <g id="engagement">
+    <rect x="50" y="80" width="220" height="140" rx="12" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="100" y="115" fill="white" font-size="48" font-weight="900">+45%</text>
+    <text x="70" y="145" fill="white" font-size="16" opacity="0.9">User Engagement</text>
+    
+    <!-- Progress bar -->
+    <rect x="70" y="160" width="160" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="70" y="160" width="116" height="12" rx="6" fill="white" opacity="0.8"/>
+    
+    <text x="75" y="195" fill="white" font-size="12" opacity="0.8">Across key product</text>
+    <text x="90" y="210" fill="white" font-size="12" opacity="0.8">flows and features</text>
+  </g>
+  
+  <!-- Metric 2: Support Reduction -->
+  <g id="support">
+    <rect x="290" y="80" width="220" height="140" rx="12" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="340" y="115" fill="white" font-size="48" font-weight="900">-60%</text>
+    <text x="310" y="145" fill="white" font-size="16" opacity="0.9">Support Tickets</text>
+    
+    <!-- Progress bar (reverse) -->
+    <rect x="310" y="160" width="160" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="310" y="160" width="64" height="12" rx="6" fill="white" opacity="0.8"/>
+    
+    <text x="315" y="195" fill="white" font-size="12" opacity="0.8">Through clearer</text>
+    <text x="315" y="210" fill="white" font-size="12" opacity="0.8">in-product guidance</text>
+  </g>
+  
+  <!-- Metric 3: Conversion -->
+  <g id="conversion">
+    <rect x="530" y="80" width="220" height="140" rx="12" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="3"/>
+    <text x="580" y="115" fill="white" font-size="48" font-weight="900">+28%</text>
+    <text x="550" y="145" fill="white" font-size="16" opacity="0.9">Trial Conversion</text>
+    
+    <!-- Progress bar -->
+    <rect x="550" y="160" width="160" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="550" y="160" width="90" height="12" rx="6" fill="white" opacity="0.8"/>
+    
+    <text x="555" y="195" fill="white" font-size="12" opacity="0.8">Enterprise trial-to-</text>
+    <text x="570" y="210" fill="white" font-size="12" opacity="0.8">paid improvement</text>
+  </g>
+  
+  <!-- Comprehension Improvement -->
+  <g id="comprehension">
+    <rect x="50" y="250" width="340" height="120" rx="12" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2"/>
+    <text x="130" y="285" fill="white" font-size="20" font-weight="700">Time to Comprehension</text>
+    <text x="100" y="310" fill="white" font-size="16" opacity="0.9">8 minutes → 3 minutes</text>
+    <text x="130" y="335" fill="white" font-size="18" font-weight="900" opacity="0.9">62% improvement</text>
+    <text x="110" y="357" fill="white" font-size="12" opacity="0.7">Measured in user testing</text>
+  </g>
+  
+  <!-- Company-Wide Adoption -->
+  <g id="adoption">
+    <rect x="410" y="250" width="340" height="120" rx="12" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2"/>
+    <text x="470" y="285" fill="white" font-size="20" font-weight="700">Framework Adoption</text>
+    <text x="480" y="310" fill="white" font-size="16" opacity="0.9">500+ employees using</text>
+    <text x="470" y="335" fill="white" font-size="16" opacity="0.9">content-first approach</text>
+    <text x="460" y="357" fill="white" font-size="12" opacity="0.7">Standard practice in product dev</text>
+  </g>
+</svg>
