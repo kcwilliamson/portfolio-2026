@@ -18,12 +18,12 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 	<div class="split-container">
 		<div class="left-panel">
 			<a href="/" class="back-link">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 					<path d="M19 12H5M12 19l-7-7 7-7"/>
 				</svg>
 			</a>
 			<div class="name-section">
-				<h1 class="name">KATIE<br>SEBKHI</h1>
+				<h1 class="name">KATIE<br>WILLIAMSON<br>SEBKHI</h1>
 				<div class="taglines">
 					<p>Digital Storyteller</p>
 					<p>Content Crusader</p>
@@ -307,14 +307,18 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		left: 2rem;
 		color: #000;
 		text-decoration: none;
-		transition: opacity 0.2s;
+		transition: all 0.2s;
 		padding: 1rem;
 		margin: -1rem;
 		display: inline-block;
+		background: #ffffff;
+		border-radius: 50%;
+		border: 2px solid rgba(0, 0, 0, 0.1);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 	}
 	
 	.back-link:hover {
-		opacity: 0.6;
+		transform: translateX(-5px) scale(1.1);
 	}
 	
 	.name-section {
