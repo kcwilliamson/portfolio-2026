@@ -76,58 +76,195 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 				
 				<div class="gallery-column">
 					{project.sections.flatMap((section) => section.examples).map((example, index) => (
-						<div class="gallery-item" data-index={index} onclick={`openModal(${index}, '${example.caption.replace(/'/g, "\\'")}')`}>
-							<div class="placeholder-image">
-								<svg width="100%" height="100%" viewBox="0 0 400 400" fill="none">
-									<rect width="400" height="400" fill="rgba(0,0,0,0.1)"/>
-									<text x="50%" y="50%" text-anchor="middle" fill="rgba(0,0,0,0.5)" font-size="14" font-family="Inter">
-										Image
-									</text>
-								</svg>
-							</div>
+						<div class="gallery-item" data-index={index} data-caption={example.caption} data-type={example.type} data-url={example.url}>
+							{example.type === 'video' ? (
+								<video class="gallery-thumbnail" muted playsinline>
+									<source src={example.url} type="video/mp4" />
+								</video>
+							) : (
+								<img src={example.url} alt={example.caption} class="gallery-thumbnail" />
+							)}
 						</div>
 					))}
 				</div>
 			</div>
 		</div>
 		
-		<div id="imageModal" class="modal" onclick="closeModal()">
-			<div class="modal-content" onclick="event.stopPropagation()">
-				<button class="modal-close" onclick="closeModal()">&times;</button>
-				<div class="modal-image">
-					<svg width="100%" height="100%" viewBox="0 0 800 800" fill="none">
-						<rect width="800" height="800" fill="rgba(0,0,0,0.1)"/>
-						<text x="50%" y="50%" text-anchor="middle" fill="rgba(0,0,0,0.5)" font-size="24" font-family="Inter">
-							Full Size Image
-						</text>
-					</svg>
+		<div id="imageModal" class="modal">
+			<button class="modal-nav modal-nav-prev" id="modalPrevBtn">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+					<path d="M15 18l-6-6 6-6"/>
+				</svg>
+			</button>
+			<div class="modal-content">
+				<button class="modal-close" id="modalCloseBtn">&times;</button>
+				<div class="modal-media" id="modalMedia">
+					<!-- Media content will be inserted here by JavaScript -->
 				</div>
 				<h3 class="modal-title" id="modalTitle"></h3>
 				<p class="modal-description" id="modalDescription"></p>
 			</div>
+			<button class="modal-nav modal-nav-next" id="modalNextBtn">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+					<path d="M9 18l6-6-6-6"/>
+				</svg>
+			</button>
 		</div>
 	</div>
 	
 	<script>
-		function openModal(index, caption) {
+		let currentIndex = 0;
+		let allItems = [];
+		
+		function openModal(index, caption, type, url) {
+			currentIndex = parseInt(index);
 			const modal = document.getElementById('imageModal');
 			const title = document.getElementById('modalTitle');
 			const description = document.getElementById('modalDescription');
+			const mediaContainer = document.getElementById('modalMedia');
+			const prevBtn = document.getElementById('modalPrevBtn');
+			const nextBtn = document.getElementById('modalNextBtn');
 			
-			title.textContent = 'Project Example ' + (index + 1);
+			title.textContent = 'Project Example ' + (currentIndex + 1);
 			description.textContent = caption;
+			
+			// Clear previous media
+			mediaContainer.innerHTML = '';
+			
+			// Insert appropriate media type
+			if (type === 'video') {
+				const video = document.createElement('video');
+				video.controls = true;
+				video.className = 'modal-video';
+				video.style.width = '100%';
+				video.style.borderRadius = '12px';
+				
+				const source = document.createElement('source');
+				source.src = url;
+				source.type = 'video/mp4';
+				
+				video.appendChild(source);
+				mediaContainer.appendChild(video);
+			} else {
+				const img = document.createElement('img');
+				img.src = url;
+				img.alt = caption;
+				img.className = 'modal-image';
+				img.style.width = '100%';
+				img.style.borderRadius = '12px';
+				mediaContainer.appendChild(img);
+			}
+			
+			// Update navigation button states
+			prevBtn.disabled = currentIndex === 0;
+			nextBtn.disabled = currentIndex === allItems.length - 1;
+			
 			modal.classList.add('active');
 			document.body.style.overflow = 'hidden';
 		}
 		
 		function closeModal() {
 			const modal = document.getElementById('imageModal');
+			const mediaContainer = document.getElementById('modalMedia');
+			
+			// Stop any playing videos
+			const video = mediaContainer.querySelector('video');
+			if (video) {
+				video.pause();
+			}
+			
 			modal.classList.remove('active');
 			document.body.style.overflow = 'auto';
 		}
 		
+		function navigateModal(direction) {
+			const newIndex = currentIndex + direction;
+			if (newIndex >= 0 && newIndex < allItems.length) {
+				const item = allItems[newIndex];
+				const caption = item.getAttribute('data-caption');
+				const type = item.getAttribute('data-type');
+				const url = item.getAttribute('data-url');
+				openModal(newIndex, caption, type, url);
+			}
+		}
+		
 		document.addEventListener('keydown', (e) => {
-			if (e.key === 'Escape') closeModal();
+			const modal = document.getElementById('imageModal');
+			if (!modal.classList.contains('active')) return;
+			
+			if (e.key === 'Escape') {
+				closeModal();
+			} else if (e.key === 'ArrowLeft') {
+				navigateModal(-1);
+			} else if (e.key === 'ArrowRight') {
+				navigateModal(1);
+			}
+		});
+		
+		// Add click handlers to gallery items
+		document.addEventListener('DOMContentLoaded', () => {
+			const galleryItems = document.querySelectorAll('.gallery-item');
+			allItems = Array.from(galleryItems);
+			
+			galleryItems.forEach((item) => {
+				item.addEventListener('click', () => {
+					const index = item.getAttribute('data-index');
+					const caption = item.getAttribute('data-caption');
+					const type = item.getAttribute('data-type');
+					const url = item.getAttribute('data-url');
+					openModal(index, caption, type, url);
+				});
+			});
+			
+			// Add close button handler
+			const closeBtn = document.getElementById('modalCloseBtn');
+			if (closeBtn) {
+				closeBtn.addEventListener('click', closeModal);
+			}
+			
+			// Add navigation button handlers
+			const prevBtn = document.getElementById('modalPrevBtn');
+			const nextBtn = document.getElementById('modalNextBtn');
+			if (prevBtn) {
+				prevBtn.addEventListener('click', (e) => {
+					e.stopPropagation();
+					navigateModal(-1);
+				});
+			}
+			if (nextBtn) {
+				nextBtn.addEventListener('click', (e) => {
+					e.stopPropagation();
+					navigateModal(1);
+				});
+			}
+			
+			// Add click outside modal to close
+			const modal = document.getElementById('imageModal');
+			const modalContent = document.querySelector('.modal-content');
+			if (modal) {
+				modal.addEventListener('click', (e) => {
+					if (e.target === modal) {
+						closeModal();
+					}
+				});
+			}
+			if (modalContent) {
+				modalContent.addEventListener('click', (e) => {
+					e.stopPropagation();
+				});
+			}
+			
+			// Add hover effect for video thumbnails
+			const videoThumbnails = document.querySelectorAll('video.gallery-thumbnail');
+			videoThumbnails.forEach(video => {
+				video.parentElement.addEventListener('mouseenter', () => {
+					video.play().catch(() => {});
+				});
+				video.parentElement.addEventListener('mouseleave', () => {
+					video.pause();
+					video.currentTime = 0;
+				});
+			});
 		});
 	</script>
 	</div>
@@ -349,10 +486,11 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		border-color: rgba(0, 0, 0, 0.3);
 	}
 	
-	.placeholder-image {
+	.gallery-thumbnail {
 		width: 100%;
-		aspect-ratio: 1/1;
-		background: rgba(0, 0, 0, 0.1);
+		height: 100%;
+		object-fit: cover;
+		display: block;
 	}
 	
 	.modal {
@@ -376,9 +514,9 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		background: #00FF00;
 		padding: 3rem;
 		border-radius: 20px;
-		max-width: 800px;
-		width: 90%;
-		max-height: 90vh;
+		max-width: 1200px;
+		width: 95%;
+		max-height: 95vh;
 		overflow-y: auto;
 		position: relative;
 		color: #000;
@@ -406,12 +544,60 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		background: rgba(0, 0, 0, 0.3);
 	}
 	
-	.modal-image {
+	.modal-nav {
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(0, 0, 0, 0.3);
+		border: none;
+		color: #fff;
+		font-size: 3rem;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s;
+		z-index: 1001;
+		backdrop-filter: blur(10px);
+	}
+	
+	.modal-nav:hover {
+		background: rgba(0, 0, 0, 0.5);
+		transform: translateY(-50%) scale(1.1);
+	}
+	
+	.modal-nav svg {
+		stroke: #fff;
+	}
+	
+	.modal-nav:disabled {
+		opacity: 0.3;
+		cursor: not-allowed;
+	}
+	
+	.modal-nav-prev {
+		left: 2rem;
+	}
+	
+	.modal-nav-next {
+		right: 2rem;
+	}
+	
+	.modal-media {
 		width: 100%;
 		margin-bottom: 2rem;
 		border-radius: 12px;
 		overflow: hidden;
 		background: rgba(0, 0, 0, 0.1);
+	}
+	
+	.modal-image, .modal-video {
+		width: 100%;
+		border-radius: 12px;
+		display: block;
 	}
 	
 	.modal-title {
