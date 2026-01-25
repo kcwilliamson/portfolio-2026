@@ -283,7 +283,7 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 	
 	.split-container {
 		display: grid;
-		grid-template-columns: 1fr 3fr;
+		grid-template-columns: 1fr 4fr;
 		height: 100vh;
 	}
 	
@@ -345,6 +345,7 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 	.right-panel {
 		background: #FF1493;
 		overflow-y: auto;
+		overflow-x: hidden;
 		padding: 4rem;
 		color: #fff;
 	}
@@ -353,7 +354,7 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 2rem;
-		max-width: 1200px;
+		max-width: 100%;
 	}
 	
 	.gallery-column {
@@ -370,7 +371,7 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 	
 	.content-column {
 		max-width: 100%;
-		padding-right: 12rem;
+		padding-right: 10rem;
 	}
 	
 	.page-title {
