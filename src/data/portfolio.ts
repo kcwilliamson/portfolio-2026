@@ -162,18 +162,12 @@ export const portfolioPieces = [
       {
         heading: "The Challenge",
         content: "Product managers wanted deeper customer insights but didn't have time to sift through data. Their calendars were packed with roadmap planning, stakeholder meetings, and cross-functional coordination—they worked incredibly hard on critical aspects of their roles. They relied primarily on single customer calls or individual tweets to drive product decisions, leaving all the voices across the internet unheard—10,000+ daily interactions across Discord, Twitter, GitHub, support tickets, forums, Reddit, and Hacker News.\n\nOther customer-facing teams were sifting through single data sources to make recommendations, but there was no single source of truth for all user feedback. Sentiment was lost. While we tracked behavior in dashboards and docs, we had very little insight into actual customer experiences.\n\nThe core problem: PMs simply didn't have enough time in the day to dig into insights, with the exception of content, design, and a few customer-facing teams whose roles allowed for this discovery work. Decisions got made based on one call or one tweet—not because of carelessness, but because of time constraints.\n\nI spent an entire quarter manually collecting all internal data sources, call notes, and feedback reports. Generated numerous walkthroughs and guides for how people at Cloudflare could take advantage of existing resources to get a better picture. But without a systematic solution that fit into their workflow, nothing changed.\n\nThis was a core part of the UX Intelligence strategy—to understand users systematically at enterprise scale, without requiring PMs to become researchers.",
-        examples: [
-          { type: "image", caption: "CloudSpeaker dashboard showing AI-classified sentiment across channels", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/CS%20Graph.png" },
-          { type: "image", caption: "CloudSpeaker architecture and data flow", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/CS%20Skeleton.png" }
-        ]
+        examples: []
       },
       {
         heading: "The Solution",
         content: "I'm a hybrid innovator—I move fluidly between product strategy, UX research, technical architecture, and team leadership. Whatever solves the problem. For CloudSpeaker, I needed to be a Product Manager.\n\nTook initiative outside my role scope to lead cross-functional team of ML Engineers, UX Researchers, Content Experts, Designers, Information Architects, and Project Managers. Drove vision, roadmap, user research, and requirements.\n\nBuilt AI-powered UX Intelligence platform using Workers AI and Llama 3 that automatically surfaces user pain points, sentiment, and needs at scale.\n\nHow It Works:\n\n• Ingest: Automated pipeline pulls from 10+ sources (Discord, Twitter, GitHub, support tickets, Discourse, Reddit, Hacker News)\n\n• Classify: LLM automatically tags product mentioned, sentiment, post type, and priority level\n\n• Analyze: Natural language queries surface insights—'What are users saying about Workers?' or 'Show me negative sentiment trends'\n\n• Action: User insights feed directly into quarterly planning, OKRs, and roadmap decisions\n\nBuilt 'Content Warehouse' knowledge graph linking products to user sentiment. This is UX Intelligence—continuous, automated understanding of user needs at enterprise scale.",
-        examples: [
-          { type: "video", caption: "CloudSpeaker V1 Demo - Product walkthrough", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/V1%20CS.mp4" },
-          { type: "video", caption: "CloudSpeaker V2 Demo - Enhanced features", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/V2%20CS.mp4" }
-        ]
+        examples: []
       },
       {
         heading: "The Impact",
@@ -196,12 +190,7 @@ export const portfolioPieces = [
       {
         heading: "The Solution",
         content: "I created systematic frameworks that enable teams to solve problems independently—this became the foundation of UX Intelligence.\n\nStrategic Focus & Democratization: Rather than spreading resources thin across all products, I focused on supporting products where we could have the biggest impact. Used these solutions to standardize and scale across all 100+ product spaces—building systems that democratized content excellence instead of requiring custom solutions for each product.\n\nRedefined what it means to provide UX at scale: Embedded UX Intelligence directly in code through design systems. Utilized gems and prompt libraries to make excellence accessible to all product teams, not just those with dedicated content support. This democratization approach—making systematic problem-solving available to everyone—enabled 9 specialists to support 100+ product spaces effectively.\n\nEstablished 'Conversation Architecture' positioning content strategy as an upstream architectural decision embedded in product planning—not a downstream deliverable.\n\n**The Listen-Respond-Measure Methodology:**\n\n• Listen: Customer calls, CloudSpeaker insights, user research, support ticket analysis\n\n• Respond: In-product content iterations, proactive content architecture\n\n• Measure: Task completion rates, support ticket reduction, user satisfaction (SUS surveys)\n\nBuilt comprehensive governance systems for voice, tone, and terminology that enable autonomous decision-making. Developed product ownership model mapping strategists to business domains, not individual features.\n\n**Tools Team Built to Enable UX Intelligence** (examples):\n\nGuided team to adopt UX Intelligence mindset—building their own solutions rather than consuming off-the-shelf tools. Team innovations include:\n\n• **CLUE Index**: ML-powered content quality assessment—answers 'Is this helping users?' with data-driven scoring across all product spaces\n\n• **Frameflow**: Workflow automation—freed team from manual processes to focus on solving user problems systematically\n\n• **CloudSpeaker**: AI-powered user intelligence—surfaces insights from 10K+ daily interactions, eliminating bias from single tweets or calls\n\n• **Controlled Vocabulary**: Standardized terminology system—ensures consistency and eliminates the 47+ variations for same concepts\n\n• **Design Systems Integration**: Content rules embedded in code—makes excellence automatic, not optional, democratizing best practices\n\n• **Docs in Dash**: Contextual developer documentation—integrated directly into product UI where users need guidance\n\n• **Product AI Monitoring**: Tracked success metrics of AI products through dashboard—monitored containment rates and refined prompts to better serve users\n\nThis is systematic problem-solving at scale—the second pillar of UX Intelligence.",
-        examples: [
-          { type: "image", caption: "CLUE Index: ML-powered content quality assessment", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/CLUE1.png" },
-          { type: "image", caption: "CLUE scoring system across product spaces", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/CLUE2.png" },
-          { type: "image", caption: "Docs in Dashboard: Embedded documentation experience", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/Docsindash.png" },
-          { type: "video", caption: "Conversation Architecture workflow demonstration", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/Screen%20Recording%202026-01-25%20at%203.35.03%20PM.mov" }
-        ]
+        examples: []
       },
       {
         heading: "The Impact",
@@ -274,10 +263,7 @@ export const portfolioPieces = [
       {
         heading: "The Impact",
         content: "Increased user engagement by 45% across key product flows. Reduced time-to-comprehension in user testing from 8 minutes to 3 minutes—a 62% improvement.\n\nDecreased support ticket volume by 35% through clearer in-product guidance. Improved enterprise trial-to-paid conversion by 28% through targeted executive content.\n\nEstablished docs-in-dashboard experience: embedded developer documentation directly into product UI, improving task completion rates across every product area.\n\nAdded video component to dashboard, increasing visibility of video content and delivering measurable impact on product adoption and task completion.\n\nFramework adopted across organization, influencing how 500+ employees approach product communication. Content-first approach now standard practice in product development.",
-        examples: [
-          { type: "image", caption: "Docs-in-dash usage and impact metrics", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/Docs-in-dash%20usage%20and%20impact.png" },
-          { type: "image", caption: "Load Balancing: Proactive video content integration", url: "https://pub-27ef340adfb84caea0afa3a92718056d.r2.dev/Loadbalancingpreactivationwatchvideopurchaseloadbalancing.png" }
-        ]
+        examples: []
       }
     ]
   }
