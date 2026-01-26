@@ -33,11 +33,12 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 		</div>
 		
 		<div class="right-panel">
+			<div class="header-section">
+				<h1 class="page-title">{project.title}</h1>
+				<p class="subtitle">{project.subtitle}</p>
+			</div>
 			<div class="three-column-layout">
 				<div class="content-column">
-					<h1 class="page-title">{project.title}</h1>
-					<p class="subtitle">{project.subtitle}</p>
-					
 					{project.sections.map((section) => (
 						<div class="section-block">
 							<h2 class="section-heading">{section.heading}</h2>
@@ -329,35 +330,18 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 	}
 	
 	.right-panel {
-		background: #FF1493;
+		background: #FFFFFF;
 		overflow-y: auto;
 		overflow-x: hidden;
-		padding: 4rem;
-		color: #fff;
+		padding: 0;
+		color: #000000;
 	}
 	
-	.three-column-layout {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 2rem;
-		max-width: 100%;
-	}
-	
-	.gallery-column {
-		position: fixed;
-		right: 2rem;
-		top: 4rem;
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		max-height: calc(100vh - 8rem);
-		overflow-y: auto;
-		width: 150px;
-	}
-	
-	.content-column {
-		max-width: 100%;
-		padding-right: 10rem;
+	.header-section {
+		background: #FF1493;
+		color: #FFFFFF;
+		padding: 3rem 4rem;
+		width: 100%;
 	}
 	
 	.page-title {
@@ -365,12 +349,38 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 		font-weight: 900;
 		margin-bottom: 1rem;
 		line-height: 1;
+		color: #FFFFFF;
 	}
 	
 	.subtitle {
 		font-size: clamp(1rem, 2vw, 1.5rem);
-		margin-bottom: 2rem;
-		opacity: 0.9;
+		color: #FFFFFF;
+	}
+	
+	.three-column-layout {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		max-width: 100%;
+		background: #FFFFFF;
+		padding: 4rem;
+	}
+	
+	.gallery-column {
+		position: fixed;
+		right: 2rem;
+		top: 12rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		max-height: calc(100vh - 14rem);
+		overflow-y: auto;
+		width: 150px;
+	}
+	
+	.content-column {
+		max-width: 100%;
+		padding-right: 10rem;
 	}
 	
 	.section-block {
@@ -381,6 +391,7 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 		font-size: clamp(1.5rem, 3vw, 2.5rem);
 		font-weight: 700;
 		margin-bottom: 1.5rem;
+		color: #000000;
 	}
 	
 	.section-content {
@@ -391,6 +402,7 @@ const project = portfolioPieces.find(p => p.slug === 'cloudspeaker');
 		font-size: 1.125rem;
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
+		color: #000000;
 	}
 	
 	.section-content p:last-child {
