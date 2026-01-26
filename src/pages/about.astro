@@ -59,11 +59,12 @@ import { workHistory } from '../data/portfolio';
 		</div>
 		
 		<div class="right-panel">
+			<div class="header-section">
+				<h1 class="page-title">About</h1>
+				<p class="subtitle">Director of UX Content Strategy | AI Innovation Leader | Team Builder</p>
+			</div>
 			<div class="three-column-layout">
 				<div class="content-column">
-					<h1 class="page-title">About</h1>
-					<p class="subtitle">Director of UX Content Strategy | AI Innovation Leader | Team Builder</p>
-					
 					<h2>Core Strength</h2>
 					<p class="strength-statement">I am a <strong>Strategic Problem Solver who builds systematic solutions</strong>. I don't just write better words—I build the frameworks, processes, and AI-powered tools that allow organizations to scale clarity and understanding at enterprise level.</p>
 					
@@ -212,26 +213,11 @@ import { workHistory } from '../data/portfolio';
 		color: #000000;
 	}
 	
-	.three-column-layout {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		gap: 4rem;
-		max-width: 100%;
-		background: #FFFFFF;
-	}
-	
-	.timeline-column {
-		position: sticky;
-		top: 4rem;
-		align-self: start;
-		padding: 4rem 2rem;
-		background: #f5f5f5;
-		margin-right: 0;
-	}
-	
-	.content-column {
-		max-width: 900px;
-		padding-right: 2rem;
+	.header-section {
+		background: #FF6B35;
+		color: #000000;
+		padding: 3rem 4rem;
+		width: 100%;
 	}
 	
 	.page-title {
@@ -239,22 +225,32 @@ import { workHistory } from '../data/portfolio';
 		font-weight: 900;
 		margin-bottom: 1rem;
 		line-height: 1;
-		background: #FF6B35;
 		color: #000000;
-		padding: 2rem;
-		margin-left: -4rem;
-		margin-right: -2rem;
-		margin-top: 0;
 	}
 	
 	.subtitle {
 		font-size: clamp(1rem, 2vw, 1.5rem);
-		margin-bottom: 3rem;
-		background: #FF6B35;
 		color: #000000;
-		padding: 1rem 2rem;
-		margin-left: -4rem;
-		margin-right: -2rem;
+	}
+	
+	.three-column-layout {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 4rem;
+		max-width: 100%;
+		background: #FFFFFF;
+		padding: 4rem;
+	}
+	
+	.timeline-column {
+		position: sticky;
+		top: 4rem;
+		align-self: start;
+	}
+	
+	.content-column {
+		max-width: 900px;
+		padding-right: 2rem;
 	}
 	
 	.content-column h2 {
@@ -263,7 +259,6 @@ import { workHistory } from '../data/portfolio';
 		margin-top: 3rem;
 		margin-bottom: 1rem;
 		color: #000000;
-		padding-left: 4rem;
 	}
 	
 	.content-column h3 {
@@ -272,13 +267,10 @@ import { workHistory } from '../data/portfolio';
 		margin-top: 3rem;
 		margin-bottom: 1rem;
 		color: #000000;
-		padding-left: 4rem;
 	}
 	
 	.bio {
 		margin-bottom: 3rem;
-		padding-left: 4rem;
-		padding-right: 4rem;
 	}
 	
 	.bio p {
@@ -293,8 +285,6 @@ import { workHistory } from '../data/portfolio';
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
 		color: #000000;
-		padding-left: 4rem;
-		padding-right: 4rem;
 	}
 	
 	.strength-statement {
