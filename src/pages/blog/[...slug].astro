@@ -134,22 +134,25 @@ const { Content } = await post.render();
 		max-width: 1400px;
 		margin: 0 auto;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 		align-items: center;
+		gap: 2rem;
 	}
 	
 	.header-left {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		align-items: center;
 	}
 	
 	.site-name {
-		font-size: clamp(1.5rem, 3vw, 2.5rem);
+		font-size: clamp(1rem, 2vw, 1.5rem);
 		font-weight: 900;
 		line-height: 0.9;
 		color: #fff;
 		letter-spacing: -0.02em;
+		text-align: center;
 	}
 	
 	.social-icons {
@@ -170,7 +173,7 @@ const { Content } = await post.render();
 		font-size: clamp(3rem, 6vw, 5rem);
 		font-weight: 900;
 		color: #fff;
-		text-align: right;
+		text-align: center;
 	}
 	
 	.blog-content {
@@ -338,12 +341,12 @@ const { Content } = await post.render();
 		
 		.header-content {
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center;
 			gap: 2rem;
 		}
 		
 		.blog-title {
-			text-align: left;
+			text-align: center;
 			font-size: 2.5rem;
 		}
 		
