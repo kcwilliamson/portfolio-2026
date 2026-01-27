@@ -33,8 +33,12 @@ const { Content } = await post.render();
 <body>
 	<header class="blog-header">
 		<div class="header-content">
-			<div class="header-left">
-				<h1 class="site-name">KATIE<br>WILLIAMSON<br>SEBKHI</h1>
+			<div class="header-top">
+				<a href="/about" class="site-name-link">
+					<h1 class="site-name">
+						<span>K</span><span>A</span><span>T</span><span>I</span><span>E</span><span> </span><span>W</span><span>I</span><span>L</span><span>L</span><span>I</span><span>A</span><span>M</span><span>S</span><span>O</span><span>N</span><span> </span><span>S</span><span>E</span><span>B</span><span>K</span><span>H</span><span>I</span>
+					</h1>
+				</a>
 				<div class="social-icons">
 					<a href="https://www.linkedin.com/in/katie-williamson-sebkhi-8787a85b/" target="_blank" aria-label="LinkedIn">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -136,24 +140,58 @@ const { Content } = await post.render();
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 2rem;
+		gap: 1.5rem;
 	}
 	
-	.header-left {
+	.header-top {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 0.75rem;
 		align-items: center;
+		width: 100%;
+	}
+	
+	.site-name-link {
+		text-decoration: none;
+		color: #fff;
 	}
 	
 	.site-name {
-		font-size: clamp(1rem, 2vw, 1.5rem);
+		font-size: clamp(0.875rem, 1.5vw, 1.25rem);
 		font-weight: 900;
-		line-height: 0.9;
+		line-height: 1;
 		color: #fff;
 		letter-spacing: -0.02em;
 		text-align: center;
+		white-space: nowrap;
 	}
+	
+	.site-name span {
+		display: inline-block;
+		transition: color 0.3s ease;
+		cursor: pointer;
+	}
+	
+	.site-name span:nth-child(1):hover { color: #FF6B35; }
+	.site-name span:nth-child(2):hover { color: #FF1493; }
+	.site-name span:nth-child(3):hover { color: #9D00FF; }
+	.site-name span:nth-child(4):hover { color: #00FFFF; }
+	.site-name span:nth-child(5):hover { color: #00FF00; }
+	.site-name span:nth-child(7):hover { color: #FF1493; }
+	.site-name span:nth-child(8):hover { color: #9D00FF; }
+	.site-name span:nth-child(9):hover { color: #00FFFF; }
+	.site-name span:nth-child(10):hover { color: #00FF00; }
+	.site-name span:nth-child(11):hover { color: #FF6B35; }
+	.site-name span:nth-child(12):hover { color: #FF1493; }
+	.site-name span:nth-child(13):hover { color: #9D00FF; }
+	.site-name span:nth-child(14):hover { color: #00FFFF; }
+	.site-name span:nth-child(15):hover { color: #00FF00; }
+	.site-name span:nth-child(16):hover { color: #FF6B35; }
+	.site-name span:nth-child(18):hover { color: #FF6B35; }
+	.site-name span:nth-child(19):hover { color: #FF1493; }
+	.site-name span:nth-child(20):hover { color: #9D00FF; }
+	.site-name span:nth-child(21):hover { color: #00FFFF; }
+	.site-name span:nth-child(22):hover { color: #00FF00; }
 	
 	.social-icons {
 		display: flex;
