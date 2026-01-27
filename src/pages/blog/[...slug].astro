@@ -149,7 +149,7 @@ const { Content } = await post.render();
 	
 	.social-icons {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 1rem;
 		position: absolute;
 		left: 0;
@@ -175,9 +175,9 @@ const { Content } = await post.render();
 	
 	.icon-with-tooltip .tooltip {
 		position: absolute;
-		left: 3rem;
-		top: 50%;
-		transform: translateY(-50%);
+		bottom: -2.5rem;
+		left: 50%;
+		transform: translateX(-50%);
 		background: #000;
 		color: #fff;
 		padding: 0.5rem 1rem;
