@@ -31,15 +31,10 @@ const { Content } = await post.render();
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="split-container">
-		<div class="left-panel">
-			<a href="/blog" class="back-link">
-				<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-					<path d="M19 12H5M12 19l-7-7 7-7"/>
-				</svg>
-			</a>
-			<div class="name-section">
-				<h1 class="name">KATIE<br>WILLIAMSON<br>SEBKHI</h1>
+	<header class="blog-header">
+		<div class="header-content">
+			<div class="header-left">
+				<h1 class="site-name">KATIE<br>WILLIAMSON<br>SEBKHI</h1>
 				<div class="social-icons">
 					<a href="https://www.linkedin.com/in/katie-williamson-sebkhi-8787a85b/" target="_blank" aria-label="LinkedIn">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -56,31 +51,38 @@ const { Content } = await post.render();
 							<path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
 						</svg>
 					</a>
+					<a href="/" aria-label="Home">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+						</svg>
+					</a>
 				</div>
 			</div>
+			<h2 class="blog-title">UX Intelligence Blog</h2>
+		</div>
+	</header>
+	
+	<main class="blog-content">
+		<div class="breadcrumb">
+			<a href="/blog">BLOGS</a>
+			{post.data.category && (
+				<>
+					<span>•</span>
+					<span>{post.data.category.toUpperCase()}</span>
+				</>
+			)}
 		</div>
 		
-		<div class="right-panel">
-			<div class="breadcrumb">
-				<a href="/blog">BLOGS</a>
-				{post.data.category && (
-					<>
-						<span>•</span>
-						<span>{post.data.category.toUpperCase()}</span>
-					</>
-				)}
+		<article class="blog-post">
+			<h1 class="post-title">{post.data.title}</h1>
+			<p class="post-description">{post.data.description}</p>
+			<p class="post-meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+			
+			<div class="post-content">
+				<Content />
 			</div>
-			<article class="blog-post">
-				<h1 class="post-title">{post.data.title}</h1>
-				<p class="post-description">{post.data.description}</p>
-				<p class="post-meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-				
-				<div class="post-content">
-					<Content />
-				</div>
-			</article>
-		</div>
-	</div>
+		</article>
+	</main>
 	
 	<div id="email-toast" class="email-toast">thekatiewilliamson@gmail.com email copied</div>
 
@@ -118,99 +120,63 @@ const { Content } = await post.render();
 	
 	body {
 		font-family: 'Inter', sans-serif;
-		min-height: 100vh;
 		background: #f5f5f5;
-	}
-	
-	.split-container {
-		display: grid;
-		grid-template-columns: 0.6fr 4fr;
 		min-height: 100vh;
 	}
 	
-	.left-panel {
-		background: #fff;
-		border-right: 3px solid #000;
+	.blog-header {
+		background: #7C3AED;
+		border-bottom: 3px solid #000;
+		padding: 2rem 4rem;
+	}
+	
+	.header-content {
+		max-width: 1400px;
+		margin: 0 auto;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
-		justify-content: center;
-		padding: 4rem;
-		position: sticky;
-		top: 0;
-		height: 100vh;
 	}
 	
-	.back-link {
-		position: absolute;
-		top: 2rem;
-		left: 2rem;
-		color: #000;
-		text-decoration: none;
-		transition: all 0.2s;
-		padding: 1rem;
-		margin: -1rem;
-		display: inline-block;
-		background: #ffffff;
-		border-radius: 50%;
-		border: 2px solid rgba(0, 0, 0, 0.1);
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	.header-left {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 	}
 	
-	.back-link:hover {
-		transform: translateX(-5px) scale(1.1);
-	}
-	
-	.name-section {
-		text-align: left;
-	}
-	
-	.name {
-		font-size: clamp(2.5rem, 6vw, 4.5rem);
+	.site-name {
+		font-size: clamp(1.5rem, 3vw, 2.5rem);
 		font-weight: 900;
 		line-height: 0.9;
-		margin-bottom: 3rem;
+		color: #fff;
 		letter-spacing: -0.02em;
-		white-space: nowrap;
 	}
 	
 	.social-icons {
 		display: flex;
-		gap: 1.5rem;
+		gap: 1rem;
 	}
 	
 	.social-icons a {
-		color: #000;
+		color: #fff;
 		transition: opacity 0.2s;
 	}
 	
 	.social-icons a:hover {
-		opacity: 0.6;
+		opacity: 0.7;
 	}
 	
-	.email-toast {
-		position: fixed;
-		bottom: 2rem;
-		left: 50%;
-		transform: translateX(-50%) translateY(200%);
-		background: #000;
+	.blog-title {
+		font-size: clamp(3rem, 6vw, 5rem);
+		font-weight: 900;
 		color: #fff;
-		padding: 1rem 2rem;
-		border-radius: 8px;
-		font-size: 1rem;
-		font-weight: 700;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-		transition: transform 0.3s ease;
-		z-index: 1000;
+		text-align: right;
 	}
 	
-	.email-toast.show {
-		transform: translateX(-50%) translateY(0);
-	}
-	
-	.right-panel {
-		background: #FFFFFF;
-		padding: 4rem;
-		color: #000000;
+	.blog-content {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 4rem 2rem;
 	}
 	
 	.breadcrumb {
@@ -237,7 +203,9 @@ const { Content } = await post.render();
 	}
 	
 	.blog-post {
-		max-width: 900px;
+		background: #fff;
+		border: 3px solid #000;
+		padding: 3rem;
 	}
 	
 	.post-title {
@@ -245,20 +213,23 @@ const { Content } = await post.render();
 		font-weight: 900;
 		line-height: 1.1;
 		margin-bottom: 1rem;
-		color: #7C3AED;
+		color: #000;
 	}
 	
 	.post-description {
 		font-size: 1.5rem;
 		line-height: 1.5;
 		margin-bottom: 1rem;
-		color: #000;
+		color: #333;
 	}
 	
 	.post-meta {
 		font-size: 0.875rem;
 		color: #666;
+		font-weight: 600;
 		margin-bottom: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 2px solid #e5e5e5;
 	}
 	
 	.post-content {
@@ -267,7 +238,6 @@ const { Content } = await post.render();
 		color: #000;
 	}
 	
-	/* Markdown content styling */
 	.post-content :global(h2) {
 		font-size: 2rem;
 		font-weight: 700;
@@ -341,21 +311,48 @@ const { Content } = await post.render();
 		padding: 0;
 	}
 	
-	@media (max-width: 1024px) {
-		.split-container {
-			grid-template-columns: 1fr;
-		}
-		
-		.left-panel {
-			position: relative;
-			height: auto;
-			border-right: none;
-			border-bottom: 3px solid #000;
+	.email-toast {
+		position: fixed;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%) translateY(200%);
+		background: #000;
+		color: #fff;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		font-size: 1rem;
+		font-weight: 700;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		transition: transform 0.3s ease;
+		z-index: 1000;
+	}
+	
+	.email-toast.show {
+		transform: translateX(-50%) translateY(0);
+	}
+	
+	@media (max-width: 768px) {
+		.blog-header {
 			padding: 2rem;
 		}
 		
-		.right-panel {
-			padding: 2rem;
+		.header-content {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 2rem;
+		}
+		
+		.blog-title {
+			text-align: left;
+			font-size: 2.5rem;
+		}
+		
+		.blog-content {
+			padding: 2rem 1rem;
+		}
+		
+		.blog-post {
+			padding: 2rem 1.5rem;
 		}
 		
 		.post-title {
