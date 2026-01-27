@@ -1,17 +1,12 @@
 ---
 /**
- * BLOG LISTING PAGE (TEMPLATE - NOT LIVE YET)
+ * BLOG COMING SOON PAGE
  * 
- * When ready to launch blog:
- * 1. Rename blog.astro to blog-coming-soon.astro (to keep as backup)
- * 2. Rename this file to blog.astro
- * 3. Add your markdown files to src/content/blog/
- * 4. This page will automatically display all blog posts
+ * This is a placeholder page while blog content is being prepared.
+ * When ready to launch:
+ * 1. Rename this file to blog-coming-soon.astro
+ * 2. Create new blog.astro with blog listing (see blog-list-template.astro)
  */
-import { getCollection } from 'astro:content';
-
-const blogPosts = await getCollection('blog');
-const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <!DOCTYPE html>
@@ -19,7 +14,7 @@ const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.p
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>UX Intelligence Blog | Katie Sebkhi Williamson</title>
+	<title>Blog Coming Soon | Katie Sebkhi Williamson</title>
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,18 +53,16 @@ const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.p
 	</header>
 	
 	<main class="blog-content">
-		<div class="posts-container">
-			{sortedPosts.map((post) => (
-				<article class="blog-post-card">
-					<a href={`/blog/${post.slug}`}>
-						<h3 class:list={["post-title", { featured: post.data.featured }]}>
-							{post.data.title}
-						</h3>
-						<p class="post-description">{post.data.description}</p>
-						<p class="post-meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-					</a>
-				</article>
-			))}
+		<div class="coming-soon">
+			<h2>Coming Soon</h2>
+			<p>I'm currently crafting thoughtful content about UX Intelligence, AI-powered product development, and building high-performing teams.</p>
+			<p>Check back soon for insights on:</p>
+			<ul>
+				<li><strong>UX as a Product:</strong> Treating UX with the same rigor as P&L products</li>
+				<li><strong>AI & UX:</strong> Leveraging AI to scale user understanding</li>
+				<li><strong>Team Building:</strong> Creating force multipliers through smart processes</li>
+				<li><strong>Content Strategy:</strong> Systematic approaches to enterprise-scale content</li>
+			</ul>
 		</div>
 	</main>
 	
@@ -168,56 +161,41 @@ const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.p
 		padding: 4rem 2rem;
 	}
 	
-	.posts-container {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-	}
-	
-	.blog-post-card {
-		background: #fff;
-		border: 3px solid #000;
-		padding: 2rem;
-		transition: transform 0.2s;
-	}
-	
-	.blog-post-card:hover {
-		transform: translateX(10px);
-	}
-	
-	.blog-post-card a {
-		text-decoration: none;
-		color: #000;
-		display: block;
-	}
-	
-	.post-title {
-		font-size: 2rem;
+	.coming-soon h2 {
+		font-size: 3rem;
 		font-weight: 900;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		color: #000;
-		transition: color 0.2s;
 	}
 	
-	.post-title.featured {
-		color: #7C3AED;
+	.coming-soon p {
+		font-size: 1.25rem;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		color: #000;
 	}
 	
-	.blog-post-card:hover .post-title {
-		color: #7C3AED;
+	.coming-soon ul {
+		list-style: none;
+		padding-left: 0;
+		margin-top: 2rem;
 	}
 	
-	.post-description {
+	.coming-soon li {
 		font-size: 1.125rem;
-		line-height: 1.6;
-		color: #333;
+		line-height: 1.7;
 		margin-bottom: 1rem;
+		padding-left: 1.5rem;
+		position: relative;
+		color: #000;
 	}
 	
-	.post-meta {
-		font-size: 0.875rem;
-		color: #666;
-		font-weight: 600;
+	.coming-soon li:before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: #7C3AED;
+		font-weight: 900;
 	}
 	
 	.email-toast {
@@ -260,8 +238,8 @@ const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.p
 			padding: 2rem 1rem;
 		}
 		
-		.post-title {
-			font-size: 1.5rem;
+		.coming-soon h2 {
+			font-size: 2rem;
 		}
 	}
 </style>
