@@ -59,16 +59,12 @@ const { Content } = await post.render();
 					<span class="tooltip">See Katie's work</span>
 				</a>
 			</div>
-			<div class="header-center">
-				<a href="/about" class="site-name-link">
-					<h1 class="site-name">
-						<span class="name-part"><span>K</span><span>A</span><span>T</span><span>I</span><span>E</span></span>
-						<span class="name-part"><span>W</span><span>I</span><span>L</span><span>L</span><span>I</span><span>A</span><span>M</span><span>S</span><span>O</span><span>N</span></span>
-						<span class="name-part"><span>S</span><span>E</span><span>B</span><span>K</span><span>H</span><span>I</span></span>
-					</h1>
-				</a>
-				<h2 class="blog-title">UX Intelligence Blog</h2>
-			</div>
+			<a href="/" class="site-name-link">
+				<h1 class="site-name">
+					<span><span>K</span><span>A</span><span>T</span><span>I</span><span>E</span><span>W</span><span>I</span><span>L</span><span>L</span><span>I</span><span>A</span><span>M</span><span>S</span><span>O</span><span>N</span><span>S</span><span>E</span><span>B</span><span>K</span><span>H</span><span>I</span></span>
+				</h1>
+			</a>
+			<h2 class="blog-title">UX Intelligence Blog</h2>
 		</div>
 	</header>
 	
@@ -135,7 +131,7 @@ const { Content } = await post.render();
 	}
 	
 	.blog-header {
-		background: #7C3AED;
+		background: #007BFF;
 		border-bottom: 3px solid #000;
 		padding: 2rem 4rem;
 	}
@@ -144,27 +140,16 @@ const { Content } = await post.render();
 		max-width: 1400px;
 		margin: 0 auto;
 		display: flex;
-		align-items: flex-start;
+		flex-direction: column;
+		align-items: center;
 		gap: 2rem;
-		position: relative;
 	}
 	
 	.social-icons {
 		display: flex;
 		flex-direction: row;
 		gap: 1rem;
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-	
-	.header-center {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-		align-items: center;
-		flex: 1;
-		padding-left: 4rem;
+		justify-content: center;
 	}
 	
 	.site-name-link {
@@ -204,12 +189,6 @@ const { Content } = await post.render();
 		color: #fff;
 		letter-spacing: -0.02em;
 		text-align: center;
-		display: flex;
-		gap: 0.5rem;
-	}
-	
-	.name-part {
-		display: inline-block;
 	}
 	
 	.site-name span span {
@@ -228,6 +207,17 @@ const { Content } = await post.render();
 	.site-name span span:nth-child(8):hover { color: #9D00FF; }
 	.site-name span span:nth-child(9):hover { color: #00FFFF; }
 	.site-name span span:nth-child(10):hover { color: #00FF00; }
+	.site-name span span:nth-child(11):hover { color: #FF6B35; }
+	.site-name span span:nth-child(12):hover { color: #FF1493; }
+	.site-name span span:nth-child(13):hover { color: #9D00FF; }
+	.site-name span span:nth-child(14):hover { color: #00FFFF; }
+	.site-name span span:nth-child(15):hover { color: #00FF00; }
+	.site-name span span:nth-child(16):hover { color: #FF6B35; }
+	.site-name span span:nth-child(17):hover { color: #FF1493; }
+	.site-name span span:nth-child(18):hover { color: #9D00FF; }
+	.site-name span span:nth-child(19):hover { color: #00FFFF; }
+	.site-name span span:nth-child(20):hover { color: #00FF00; }
+	.site-name span span:nth-child(21):hover { color: #FF6B35; }
 	
 	.social-icons a {
 		color: #fff;
@@ -261,7 +251,7 @@ const { Content } = await post.render();
 	}
 	
 	.breadcrumb a {
-		color: #7C3AED;
+		color: #007BFF;
 		text-decoration: none;
 		transition: opacity 0.2s;
 	}
@@ -345,7 +335,7 @@ const { Content } = await post.render();
 	}
 	
 	.post-content :global(a) {
-		color: #7C3AED;
+		color: #007BFF;
 		text-decoration: underline;
 	}
 	
@@ -354,7 +344,7 @@ const { Content } = await post.render();
 	}
 	
 	.post-content :global(blockquote) {
-		border-left: 4px solid #7C3AED;
+		border-left: 4px solid #007BFF;
 		padding-left: 1.5rem;
 		margin: 2rem 0;
 		font-style: italic;
@@ -406,22 +396,6 @@ const { Content } = await post.render();
 	@media (max-width: 768px) {
 		.blog-header {
 			padding: 2rem;
-		}
-		
-		.header-content {
-			flex-direction: column;
-			align-items: center;
-			gap: 1.5rem;
-		}
-		
-		.social-icons {
-			position: static;
-			flex-direction: row;
-			gap: 1rem;
-		}
-		
-		.header-center {
-			padding-left: 0;
 		}
 		
 		.blog-title {
