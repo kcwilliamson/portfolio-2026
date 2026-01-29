@@ -30,10 +30,10 @@ And as we know technology marches forward and the most exciting tool for me toda
 
 ## The Impact in Numbers
 
-Millions of adults deal with learning disabilities. It's estimated that 1 in 5 adults have some variation, diagnosed and undiagnosed. Apply that statistic to our customers:
+Millions of adults deal with learning disabilities. Of course if 1 in 5 kids have a learning disability, 1 in 5 adults do as well. Apply that statistic to our customers:
 
-* **Over 210,000 paying customers** means at least 42,000 users have a learning disability.
-* **Over 4,000 Cloudflare employees** means at least 800 employees.
+* Over 210,000 paying customers means at least **42,000 users have a learning disability.**
+* Over 4,000 Cloudflare employees means at least **800 employees.**
 
 For me, using AI has allowed me to expedite those tedious processes that I struggle with. Summarizing long swaths of text, editing my work, and overall providing a sense of security that I previously only trusted my mom to give.
 
