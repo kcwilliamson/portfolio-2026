@@ -122,15 +122,26 @@ const { Content } = await post.render();
 	
 	body {
 		font-family: 'Inter', sans-serif;
-		overflow: hidden;
-		height: 100vh;
 		background: #0033ff;
+		margin: 0;
+		padding: 0;
 	}
 	
 	.split-container {
 		display: grid;
 		grid-template-columns: 0.6fr 4fr;
-		height: 100vh;
+		min-height: 100vh;
+	}
+	
+	@media (min-width: 1025px) {
+		body {
+			overflow: hidden;
+			height: 100vh;
+		}
+		
+		.split-container {
+			height: 100vh;
+		}
 	}
 	
 	.left-panel {
@@ -376,17 +387,26 @@ const { Content } = await post.render();
 	@media (max-width: 1024px) {
 		.split-container {
 			grid-template-columns: 1fr;
-			grid-template-rows: auto 1fr;
+			grid-template-rows: auto auto;
+			min-height: auto;
 		}
 		
 		.left-panel {
 			border-right: none;
 			border-bottom: 3px solid #000;
 			padding: 2rem;
+			position: static;
+			height: auto;
 		}
 		
 		.right-panel {
 			padding: 0;
+			height: auto;
+			overflow-y: visible;
+		}
+		
+		.content-section {
+			min-height: auto;
 		}
 		
 		.breadcrumb-bar {
@@ -395,6 +415,7 @@ const { Content } = await post.render();
 		
 		.blog-post {
 			padding: 2rem;
+			padding-bottom: 4rem;
 		}
 		
 		.post-title {

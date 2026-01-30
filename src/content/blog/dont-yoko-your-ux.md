@@ -6,7 +6,7 @@ category: "UX & AI Strategy"
 featured: true
 ---
 
-Yoko Ono was a groundbreaking feminist performance artist who defined conceptual art long before she met John Lennon. But, let's be honest: in the context of a rock-and-roll jam session, she is a bit of an acquired taste.
+Yoko Ono was a groundbreaking feminist performance artist who defined conceptual art long before she met John Lennon. But, let's be honest; in the context of a rock-and-roll jam session, she is a bit of an acquired taste.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fXSGm0RUDxo?si=GXlyOgCc4Xb10SNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -14,9 +14,9 @@ There is a famous clip that occasionally makes the rounds of Yoko joining John L
 
 The camera catches Chuck Berry's pained face for a split second before a hero in the sound booth quietly pulled the plug on her mic.
 
-As I lead experience teams through the current state of AI implementation, I see this play out constantly. Many products today are "Yoko-ing" their users: introducing noisy, unprompted AI interruptions in the middle of an otherwise delightful journey. Or asking experience teams to start gurgling along side engineers. AI has immense strategic value, but without a governance layer, it often appears where no one asked for it and no one expected it.
+As I lead experience teams through the current state of AI implementation, I see this play out constantly. Many products today are "Yoko-ing" their users; introducing noisy, unprompted AI interruptions in the middle of an otherwise delightful journey. Or asking experience teams to start gurgling along side engineers. AI has immense strategic value, but without a governance layer, it often appears where no one asked for it and no one expected it.
 
-To build products that maintain brand integrity, we need UX Intelligence. This is a two-prong leadership strategy:
+To build products that maintain brand integrity, we need UX Intelligence. This is a two-prong leadership strategy;
 
 **Internal Operational Intelligence** Leveraging AI to scale experience teams, automating mundane documentation and data sifting to give our talent more power to solve complex problems.
 
@@ -28,13 +28,13 @@ Traditional UX heuristics assume a static, deterministic interface. You click a 
 
 As leaders, we must move away from the binary expectation that AI should be 100% right all the time. If that were the requirement, we would simply use a database query. The true value of AI lies in its ability to make inferences and personalize at scale. The risk lies in its temperature; its tolerance for inaccuracy based on the context of the task.
 
-When experience teams architect these systems, we use a rubric to determine where on the spectrum our AI features should live:
+When experience teams architect these systems, we use a rubric to determine where on the spectrum our AI features should live;
 
 ### 1. High-Creativity / Low-Risk (Full Yoko)
 
 **Use Case** Poetry generators, email brainstorming, or creative discovery.
 
-**The Strategy** High tolerance. In these spaces, hallucinations are not bugs, they are creative sparks. Users welcome the offbeat and the unexpected because it aids in the divergent thinking process. In this context, we let Yoko scream.
+**The Strategy** High tolerance. In these spaces, hallucinations are not bugs; they are creative sparks. Users welcome the offbeat and the unexpected because it aids in the divergent thinking process. In this context, we let Yoko scream.
 
 ### 2. Balanced Assistance / Medium-Risk (Yoko Backup)
 
@@ -54,9 +54,9 @@ UX Intelligence gives experience teams the framework to make better business dec
 
 At the heart of every enterprise is a human need. Whether a user needs to pay their employees or protect their company's digital perimeter, that need must drive the technology, not the other way around. AI for the sake of AI is a brand killer.
 
-To illustrate the danger of tone-deaf AI, consider a hypothetical scenario: an environmental company dedicated to sustainability and resource conservation implements a high-energy, power-hungry AI Clippy to help employees with basic navigation tasks. The feature is not only unnecessary, it directly contradicts the company's core mission.
+To illustrate the danger of tone-deaf AI, consider a hypothetical scenario; an environmental company dedicated to sustainability and resource conservation implements a high-energy, power-hungry AI Clippy to help employees with basic navigation tasks. The feature is not only unnecessary; it directly contradicts the company's core mission.
 
-That lack of strategic alignment does not just frustrate users, it kills contracts and erodes revenue.
+That lack of strategic alignment does not just frustrate users; it kills contracts and erodes revenue.
 
 ## The Director's Mandate for a UX Intelligence Filter
 
