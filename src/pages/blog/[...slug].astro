@@ -17,6 +17,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const ogImageUrl = `https://katiewilliamsonsebkhi.com/og-images/blog-${post.slug}.png`;
+const fallbackOgImage = 'https://katiewilliamsonsebkhi.com/og-images/blog-og.png';
 ---
 
 <!DOCTYPE html>
@@ -25,6 +27,29 @@ const { Content } = await post.render();
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{post.data.title} | Katie Sebkhi Williamson</title>
+	<meta name="description" content={post.data.description}>
+	<meta name="theme-color" content="#0033ff">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="article">
+	<meta property="og:url" content={`https://katiewilliamsonsebkhi.com/blog/${post.slug}`}>
+	<meta property="og:title" content={post.data.title}>
+	<meta property="og:description" content={post.data.description}>
+	<meta property="og:image" content={`https://katiewilliamsonsebkhi.com/og-images/blog-og.png`}>
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="Katie Williamson Sebkhi">
+	<meta property="article:author" content="Katie Williamson Sebkhi">
+	{post.data.pubDate && <meta property="article:published_time" content={post.data.pubDate.toISOString()}>}
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content={`https://katiewilliamsonsebkhi.com/blog/${post.slug}`}>
+	<meta name="twitter:title" content={post.data.title}>
+	<meta name="twitter:description" content={post.data.description}>
+	<meta name="twitter:image" content={`https://katiewilliamsonsebkhi.com/og-images/blog-og.png`}>
+	<meta name="twitter:creator" content="@katiewsebkhi">
+	
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

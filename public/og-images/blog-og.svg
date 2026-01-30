@@ -1,0 +1,30 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&amp;display=swap');
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0033ff"/>
+  
+  <!-- Name -->
+  <text x="80" y="140" font-family="Inter, sans-serif" font-size="48" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+    KATIE WILLIAMSON SEBKHI
+  </text>
+  
+  <!-- Tagline -->
+  <text x="80" y="220" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="rgba(255, 255, 255, 0.8)">
+    UX Intelligence Pioneer • Digital Storyteller
+  </text>
+  
+  <!-- Blog text -->
+  <text x="80" y="450" font-family="Inter, sans-serif" font-size="96" font-weight="900" fill="#ffffff">
+    BLOG
+  </text>
+  
+  <!-- Website -->
+  <text x="80" y="560" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="rgba(255, 255, 255, 0.6)">
+    katiewilliamsonsebkhi.com
+  </text>
+</svg>
