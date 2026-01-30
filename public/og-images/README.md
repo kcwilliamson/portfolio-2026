@@ -2,11 +2,13 @@
 
 This directory contains Open Graph images for blog posts that appear when shared on social media.
 
-## Quick Setup
+## How It Works
 
-### Option 1: Create a Generic Blog OG Image (Recommended for now)
+Each blog post will look for a post-specific OG image named `blog-[slug].png`:
+- `blog-dont-yoko-your-ux.png` ✅ (exists - will show Yoko image)
+- `blog-other-post.png` (if this doesn't exist, no custom image will show)
 
-You can create a generic `blog-og.png` image (1200x630px) with your branding that will be used for all blog posts.
+## Quick Setup - Creating OG Images for New Posts
 
 **Design Requirements:**
 - Size: 1200px x 630px
