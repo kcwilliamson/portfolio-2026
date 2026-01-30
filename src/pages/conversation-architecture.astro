@@ -50,7 +50,7 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 						<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
 					</svg>
 				</a>
-			</div>
+				</div>
 			</div>
 		</div>
 		
@@ -59,9 +59,9 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 				<h1 class="page-title">{project.title}</h1>
 				<p class="subtitle">{project.subtitle}</p>
 			</div>
-			<div class="three-column-layout">
+			<div class="content-layout">
 				<div class="content-column">
-					{project.sections.map((section) => (
+					{project.sections.map((section, index) => (
 						<div class="section-block">
 							<h2 class="section-heading">{section.heading}</h2>
 							<div class="section-content">
@@ -74,222 +74,95 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 						</div>
 					))}
 					
-					<div class="repo-links">
-						<h3>Related Repositories</h3>
-						<a href="https://gitlab.cfdata.org/cloudflare/pcx/clue-index/-/tree/577830fa52e00ef49a34577216c9bdcdcb376406/" target="_blank" rel="noopener noreferrer" class="repo-link">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
-							</svg>
-							CLUE Index (GitLab)
-						</a>
-						<a href="https://gitlab.cfdata.org/mphillips/frameflow/-/tree/a3a710507ce65c35522a74225d8a6b44bf97a16d/" target="_blank" rel="noopener noreferrer" class="repo-link">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
-							</svg>
-							Frameflow (GitLab)
-						</a>
-						<a href="https://github.com/cloudflare/cloudflare-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-							</svg>
-							Cloudflare Docs (GitHub)
-						</a>
-					</div>
-				</div>
-				
-				{project.sections.flatMap((section) => section.examples).length > 0 && (
-					<div class="gallery-column">
-						{project.sections.flatMap((section) => section.examples).map((example, index) => (
-							<div class="gallery-item" data-index={index} data-caption={example.caption} data-type={example.type} data-url={example.url}>
-								{example.type === 'video' ? (
-									<video class="gallery-thumbnail" muted playsinline>
-										<source src={example.url} type="video/mp4" />
-									</video>
-								) : (
-									<img src={example.url} alt={example.caption} class="gallery-thumbnail" />
-								)}
+					{project.sections.flatMap((section) => section.examples).length > 0 && (
+						<div class="gallery-section">
+							<h2 class="section-heading">Examples</h2>
+							<div class="gallery-row">
+								{project.sections.flatMap((section) => section.examples).map((example, idx) => (
+									<div class="gallery-item gallery-protected" data-index={idx} onclick={`checkPasswordAndOpen(${idx})`}>
+										<div class="color-square"></div>
+									</div>
+								))}
 							</div>
-						))}
-					</div>
-				)}
+						</div>
+					)}
+
+				</div>
 			</div>
 		</div>
 		
-		<div id="imageModal" class="modal">
-			<button class="modal-nav modal-nav-prev" id="modalPrevBtn">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-					<path d="M15 18l-6-6 6-6"/>
-				</svg>
-			</button>
-			<div class="modal-content">
-				<button class="modal-close" id="modalCloseBtn">&times;</button>
-				<div class="modal-media" id="modalMedia">
-					<!-- Media content will be inserted here by JavaScript -->
+		<div id="imageModal" class="modal" onclick="closeModal()">
+			<div class="modal-content" onclick="event.stopPropagation()">
+				<button class="modal-close" onclick="closeModal()">&times;</button>
+				<button class="modal-nav modal-prev" onclick="event.stopPropagation(); prevImage()">‹</button>
+				<button class="modal-nav modal-next" onclick="event.stopPropagation(); nextImage()">›</button>
+				<div class="modal-image-container">
+					<img id="modalImage" src="" alt="" class="modal-image" />
 				</div>
-				<h3 class="modal-title" id="modalTitle"></h3>
 				<p class="modal-description" id="modalDescription"></p>
 			</div>
-			<button class="modal-nav modal-nav-next" id="modalNextBtn">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-					<path d="M9 18l6-6-6-6"/>
-				</svg>
-			</button>
 		</div>
 	</div>
 	
-	<script>
-		let currentIndex = 0;
-		let allItems = [];
+	<script define:vars={{ examples: project.sections.flatMap((section) => section.examples) }}>
+		let currentImageIndex = 0;
+		let isAuthenticated = false;
+		const correctPassword = 'UXI';
 		
-		function openModal(index, caption, type, url) {
-			currentIndex = parseInt(index);
-			const modal = document.getElementById('imageModal');
-			const title = document.getElementById('modalTitle');
-			const description = document.getElementById('modalDescription');
-			const mediaContainer = document.getElementById('modalMedia');
-			const prevBtn = document.getElementById('modalPrevBtn');
-			const nextBtn = document.getElementById('modalNextBtn');
-			
-			title.textContent = 'Project Example ' + (currentIndex + 1);
-			description.textContent = caption;
-			
-			// Clear previous media
-			mediaContainer.innerHTML = '';
-			
-			// Insert appropriate media type
-			if (type === 'video') {
-				const video = document.createElement('video');
-				video.controls = true;
-				video.className = 'modal-video';
-				video.style.width = '100%';
-				video.style.borderRadius = '12px';
-				
-				const source = document.createElement('source');
-				source.src = url;
-				source.type = 'video/mp4';
-				
-				video.appendChild(source);
-				mediaContainer.appendChild(video);
+		window.checkPasswordAndOpen = function(index) {
+			if (!isAuthenticated) {
+				const password = prompt('Please enter the password to view the gallery:');
+				if (password === correctPassword) {
+					isAuthenticated = true;
+					window.openModal(index);
+				} else if (password !== null) {
+					alert('Incorrect password. Please try again.');
+				}
 			} else {
-				const img = document.createElement('img');
-				img.src = url;
-				img.alt = caption;
-				img.className = 'modal-image';
-				img.style.width = '100%';
-				img.style.borderRadius = '12px';
-				mediaContainer.appendChild(img);
+				window.openModal(index);
 			}
+		}
+		
+		window.showImage = function(index) {
+			const modalImage = document.getElementById('modalImage');
+			const description = document.getElementById('modalDescription');
 			
-			// Update navigation button states
-			prevBtn.disabled = currentIndex === 0;
-			nextBtn.disabled = currentIndex === allItems.length - 1;
-			
+			currentImageIndex = index;
+			modalImage.src = examples[index].src;
+			modalImage.alt = examples[index].caption;
+			description.textContent = examples[index].caption;
+		}
+		
+		window.openModal = function(index) {
+			const modal = document.getElementById('imageModal');
+			window.showImage(index);
 			modal.classList.add('active');
 			document.body.style.overflow = 'hidden';
 		}
 		
-		function closeModal() {
+		window.closeModal = function() {
 			const modal = document.getElementById('imageModal');
-			const mediaContainer = document.getElementById('modalMedia');
-			
-			// Stop any playing videos
-			const video = mediaContainer.querySelector('video');
-			if (video) {
-				video.pause();
-			}
-			
 			modal.classList.remove('active');
 			document.body.style.overflow = 'auto';
 		}
 		
-		function navigateModal(direction) {
-			const newIndex = currentIndex + direction;
-			if (newIndex >= 0 && newIndex < allItems.length) {
-				const item = allItems[newIndex];
-				const caption = item.getAttribute('data-caption');
-				const type = item.getAttribute('data-type');
-				const url = item.getAttribute('data-url');
-				openModal(newIndex, caption, type, url);
-			}
+		window.nextImage = function() {
+			const nextIndex = (currentImageIndex + 1) % examples.length;
+			window.showImage(nextIndex);
+		}
+		
+		window.prevImage = function() {
+			const prevIndex = (currentImageIndex - 1 + examples.length) % examples.length;
+			window.showImage(prevIndex);
 		}
 		
 		document.addEventListener('keydown', (e) => {
 			const modal = document.getElementById('imageModal');
-			if (!modal.classList.contains('active')) return;
-			
-			if (e.key === 'Escape') {
-				closeModal();
-			} else if (e.key === 'ArrowLeft') {
-				navigateModal(-1);
-			} else if (e.key === 'ArrowRight') {
-				navigateModal(1);
+			if (modal.classList.contains('active')) {
+				if (e.key === 'Escape') window.closeModal();
+				if (e.key === 'ArrowRight') window.nextImage();
+				if (e.key === 'ArrowLeft') window.prevImage();
 			}
-		});
-		
-		// Add click handlers to gallery items
-		document.addEventListener('DOMContentLoaded', () => {
-			const galleryItems = document.querySelectorAll('.gallery-item');
-			allItems = Array.from(galleryItems);
-			
-			galleryItems.forEach((item) => {
-				item.addEventListener('click', () => {
-					const index = item.getAttribute('data-index');
-					const caption = item.getAttribute('data-caption');
-					const type = item.getAttribute('data-type');
-					const url = item.getAttribute('data-url');
-					openModal(index, caption, type, url);
-				});
-			});
-			
-			// Add close button handler
-			const closeBtn = document.getElementById('modalCloseBtn');
-			if (closeBtn) {
-				closeBtn.addEventListener('click', closeModal);
-			}
-			
-			// Add navigation button handlers
-			const prevBtn = document.getElementById('modalPrevBtn');
-			const nextBtn = document.getElementById('modalNextBtn');
-			if (prevBtn) {
-				prevBtn.addEventListener('click', (e) => {
-					e.stopPropagation();
-					navigateModal(-1);
-				});
-			}
-			if (nextBtn) {
-				nextBtn.addEventListener('click', (e) => {
-					e.stopPropagation();
-					navigateModal(1);
-				});
-			}
-			
-			// Add click outside modal to close
-			const modal = document.getElementById('imageModal');
-			const modalContent = document.querySelector('.modal-content');
-			if (modal) {
-				modal.addEventListener('click', (e) => {
-					if (e.target === modal) {
-						closeModal();
-					}
-				});
-			}
-			if (modalContent) {
-				modalContent.addEventListener('click', (e) => {
-					e.stopPropagation();
-				});
-			}
-			
-			// Add hover effect for video thumbnails
-			const videoThumbnails = document.querySelectorAll('video.gallery-thumbnail');
-			videoThumbnails.forEach(video => {
-				video.parentElement.addEventListener('mouseenter', () => {
-					video.play().catch(() => {});
-				});
-				video.parentElement.addEventListener('mouseleave', () => {
-					video.pause();
-					video.currentTime = 0;
-				});
-			});
 		});
 	</script>
 	</div>
@@ -305,15 +178,24 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 	
 	body {
 		font-family: 'Inter', sans-serif;
-		overflow: hidden;
-		height: 100vh;
 		background: #00FF00;
 	}
 	
 	.split-container {
 		display: grid;
 		grid-template-columns: 0.6fr 4fr;
-		height: 100vh;
+		min-height: 100vh;
+	}
+	
+	@media (min-width: 1025px) {
+		body {
+			overflow: hidden;
+			height: 100vh;
+		}
+		
+		.split-container {
+			height: 100vh;
+		}
 	}
 	
 	.left-panel {
@@ -411,30 +293,56 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		color: #000000;
 	}
 	
-	.three-column-layout {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 2rem;
-		max-width: 100%;
+	.content-layout {
 		background: #FFFFFF;
 		padding: 4rem;
 	}
 	
-	.gallery-column {
-		position: fixed;
-		right: 2rem;
-		top: 12rem;
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		max-height: calc(100vh - 14rem);
-		overflow-y: auto;
-		width: 150px;
+	.content-column {
+		max-width: 100%;
 	}
 	
-	.content-column {
-		max-width: 900px;
-		opacity: 0.8;
+	.gallery-section {
+		margin-top: 3rem;
+		padding-top: 3rem;
+		border-top: 2px solid #E0E0E0;
+	}
+	
+	.gallery-row {
+		display: flex;
+		gap: 1.5rem;
+		margin-top: 2rem;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	
+	.gallery-item {
+		background: #FFFFFF;
+		border: 4px solid #00FF00;
+		border-radius: 12px;
+		overflow: hidden;
+		transition: all 0.3s;
+		cursor: pointer;
+		width: 200px;
+		box-shadow: 0 4px 12px rgba(0, 255, 0, 0.2);
+	}
+	
+	.gallery-item:hover {
+		transform: scale(1.05);
+		box-shadow: 0 8px 24px rgba(0, 255, 0, 0.4);
+		border-color: #00CC00;
+	}
+	
+	.gallery-image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.color-square {
+		width: 100%;
+		aspect-ratio: 1;
+		background: #00FF00;
 	}
 	
 	.repo-links {
@@ -509,28 +417,7 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		text-indent: -2rem;
 	}
 	
-	.gallery-item {
-		background: rgba(0, 0, 0, 0.05);
-		border: 2px solid rgba(0, 0, 0, 0.1);
-		border-radius: 8px;
-		overflow: hidden;
-		transition: all 0.3s;
-		cursor: pointer;
-		max-width: 150px;
-	}
-	
-	.gallery-item:hover {
-		transform: scale(1.1);
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-		border-color: rgba(0, 0, 0, 0.3);
-	}
-	
-	.gallery-thumbnail {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		display: block;
-	}
+
 	
 	.modal {
 		display: none;
@@ -553,12 +440,90 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 		background: #00FF00;
 		padding: 3rem;
 		border-radius: 20px;
-		max-width: 1200px;
-		width: 95%;
-		max-height: 95vh;
+		max-width: 800px;
+		width: 90%;
+		max-height: 90vh;
 		overflow-y: auto;
 		position: relative;
 		color: #000;
+	}
+	
+	.modal-close {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		background: rgba(0, 0, 0, 0.2);
+		border: none;
+		color: #000;
+		font-size: 2rem;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s;
+	}
+	
+	.modal-close:hover {
+		background: rgba(0, 0, 0, 0.3);
+	}
+	
+	.modal-image-container {
+		width: 100%;
+		margin-bottom: 2rem;
+		border-radius: 12px;
+		overflow: hidden;
+		background: rgba(0, 0, 0, 0.1);
+		max-height: 70vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.modal-image {
+		width: 100%;
+		height: auto;
+		max-height: 70vh;
+		object-fit: contain;
+	}
+	
+	.modal-nav {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(0, 0, 0, 0.2);
+		border: none;
+		color: #000;
+		font-size: 3rem;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 0.3s;
+		z-index: 10;
+	}
+	
+	.modal-nav:hover {
+		background: rgba(0, 0, 0, 0.3);
+	}
+	
+	.modal-prev {
+		left: 1rem;
+	}
+	
+	.modal-next {
+		right: 1rem;
+	}
+	
+	.modal-description {
+		font-size: 1.125rem;
+		line-height: 1.6;
+		opacity: 0.9;
 	}
 	
 	.modal-close {
@@ -654,26 +619,38 @@ const project = portfolioPieces.find(p => p.slug === 'conversation-architecture'
 	@media (max-width: 1024px) {
 		.split-container {
 			grid-template-columns: 1fr;
-			grid-template-rows: auto 1fr;
+			grid-template-rows: auto auto;
+			min-height: auto;
 		}
 		
 		.left-panel {
 			border-right: none;
 			border-bottom: 3px solid #000;
 			padding: 2rem;
+			position: static;
+			height: auto;
 		}
 		
 		.right-panel {
+			padding: 0;
+			height: auto;
+			overflow-y: visible;
+		}
+		
+		.header-section {
 			padding: 2rem;
 		}
 		
-		.three-column-layout {
-			grid-template-columns: 1fr;
-			gap: 2rem;
+		.content-layout {
+			padding: 2rem;
 		}
 		
-		.gallery-column {
-			position: static;
+		.gallery-row {
+			justify-content: center;
+		}
+		
+		.gallery-item {
+			width: 150px;
 		}
 	}
 </style>
