@@ -313,8 +313,17 @@ const project = portfolioPieces.find(p => p.slug === 'team-leadership');
 		margin-bottom: 0;
 	}
 	
-	/* Indent bullet points */
+	/* Indent all bullet points */
+	.section-content p {
+		position: relative;
+	}
+	
 	.section-content p:has(strong:first-child) {
+		padding-left: 2.5rem;
+		text-indent: -2.5rem;
+	}
+	.section-content p:has(strong:first-child),
+	.section-content p:first-of-type:has(strong) {
 		padding-left: 2rem;
 		text-indent: -2rem;
 	}

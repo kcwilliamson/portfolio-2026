@@ -335,10 +335,14 @@ const project = portfolioPieces.find(p => p.slug === 'omega-framework');
 		margin-bottom: 0;
 	}
 	
-	/* Indent bullet points */
+	/* Indent all bullet points */
+	.section-content p {
+		position: relative;
+	}
+	
 	.section-content p:has(strong:first-child) {
-		padding-left: 2rem;
-		text-indent: -2rem;
+		padding-left: 2.5rem;
+		text-indent: -2.5rem;
 	}
 	
 	.gallery-item {
