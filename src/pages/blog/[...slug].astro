@@ -439,6 +439,16 @@ const ogImageUrl = postSpecificImage; // Will try post-specific first, fallback 
 		padding: 0;
 	}
 	
+	/* Responsive images */
+	.post-content :global(img) {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		margin: 2rem 0;
+		display: block;
+	}
+	
 	/* Responsive YouTube video embed */
 	.post-content :global(iframe) {
 		max-width: 100%;
