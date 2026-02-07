@@ -198,6 +198,195 @@ See `/public/glossary.json` for term definitions. Key terms that should always b
 
 ---
 
+## Content Types
+
+This site uses 7 defined content types. Each has specific audiences, story levels, and requirements.
+
+### Overview
+
+| Content Type | Audience | Story Level | Status |
+|--------------|----------|-------------|--------|
+| Blog Post | UX Leaders | Medium-High | Active |
+| Portfolio Case Study | Hiring Managers | Medium | Active |
+| About/Bio | Hiring Managers | Medium | Active |
+| Personal Essay | UX Leaders | Very High | Active |
+| Hot Take | UX Leaders | Medium-High | Active |
+| Presentation Write-up | UX Leaders | Medium-High | Future |
+| Framework Guide | UX Leaders + Hiring Managers | Medium | Future |
+
+---
+
+### Blog Post
+
+**Audience:** UX Leaders  
+**Story Level:** Medium-High (case study with narrative)  
+**Purpose:** Share strategic insights through the lens of UX Intelligence
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Required |
+| Empathy for user | Required |
+| Real example | Required |
+| Business value | Required |
+| Storytelling element | Required |
+| Visuals | Required |
+
+**Structure:** Hook → Context → Thesis → Body with examples → The Takeaway
+
+**Example:** "The UX of AI: How I Built a Custom Agent to Lower My Power Bill"
+
+---
+
+### Portfolio Case Study
+
+**Audience:** Hiring Managers  
+**Story Level:** Medium (structured but with story)  
+**Purpose:** Demonstrate expertise and impact for career opportunities
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Required |
+| Empathy for user | Required |
+| Real example | Required |
+| Business value | Required |
+| Storytelling element | Required |
+| Visuals | Required |
+
+**Structure:** The Challenge → The Solution → The Impact
+
+**Example:** "The Omega Framework", "Conversational Architecture"
+
+---
+
+### About/Bio
+
+**Audience:** Hiring Managers  
+**Story Level:** Medium (personal but not all the way)  
+**Purpose:** Establish credibility and human connection
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Nice to have |
+| Empathy for user | Required |
+| Real example | Nice to have |
+| Business value | Nice to have |
+| Storytelling element | Required |
+| Visuals | Optional |
+
+**Structure:** Who I am → What I do → Philosophy → Background → Contact
+
+**Example:** About page
+
+---
+
+### Personal Essay
+
+**Audience:** UX Leaders  
+**Story Level:** Very High (very personal, memoir-style)  
+**Purpose:** Build connection through vulnerability and personal journey
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Optional |
+| Empathy for user | Required |
+| Real example | Required |
+| Business value | Optional |
+| Storytelling element | Required |
+| Visuals | Optional |
+
+**Structure:** Personal hook → Journey/struggle → Insight → Broader meaning
+
+**Example:** "Empowering Divergent Thinking: AI as an Accessibility Tool"
+
+---
+
+### Hot Take
+
+**Audience:** UX Leaders  
+**Story Level:** Medium-High (punchy, opinionated)  
+**Purpose:** Establish thought leadership with bold perspectives on AI/UX trends
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Required |
+| Empathy for user | Required |
+| Real example | Required |
+| Business value | Required |
+| Storytelling element | Required |
+| Visuals | Required |
+
+**Structure:** Bold claim → Supporting argument → Framework/rubric → Call to action
+
+**Example:** "Don't Yoko Your UX"
+
+---
+
+### Presentation Write-up (Future)
+
+**Audience:** UX Leaders  
+**Story Level:** Medium-High  
+**Purpose:** Expand conference/talk content for readers who weren't there
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Required |
+| Empathy for user | Required |
+| Real example | Required |
+| Business value | Required |
+| Storytelling element | Required |
+| Visuals | Required |
+
+**Structure:** Talk premise → Expanded content (what didn't fit) → Key takeaways → Resources/links
+
+**Example:** Future talk write-ups
+
+---
+
+### Framework Guide (Future)
+
+**Audience:** UX Leaders + Hiring Managers  
+**Story Level:** Medium (structured but engaging)  
+**Purpose:** Deep-dive into a methodology you've created
+
+**Requirements:**
+| Requirement | Status |
+|-------------|--------|
+| Measurement/outcomes | Required |
+| Empathy for user | Required |
+| Real example | Required |
+| Business value | Required |
+| Storytelling element | Required |
+| Visuals | Required |
+
+**Structure:** Why this framework exists → Core principles → How to apply → Examples → Results
+
+**Example:** Future "The Complete Guide to Listen, Respond, Measure"
+
+---
+
+### Frontmatter Format
+
+All blog posts should include a `contentType` field:
+
+```yaml
+---
+title: "Your Post Title"
+description: "Brief description"
+pubDate: 2026-02-07
+contentType: "Blog Post"  # or "Personal Essay", "Hot Take", etc.
+category: "UX Intelligence"
+featured: true
+---
+```
+
+---
+
 ## What Makes This Different
 
 | UX Intelligence Content | Technical Documentation |

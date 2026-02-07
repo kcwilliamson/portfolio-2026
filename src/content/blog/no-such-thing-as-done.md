@@ -2,7 +2,8 @@
 title: "There Is No Such Thing as 'Done' when UX is a Product"
 description: "Why treating UX like homework instead of a living system is killing your product experience"
 pubDate: 2026-02-03
-category: "UX as a Product"
+contentType: "Blog Post"
+category: "UX Intelligence"
 featured: true
 ---
 

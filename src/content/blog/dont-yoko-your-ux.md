@@ -2,7 +2,8 @@
 title: "Don't Yoko Your UX"
 description: "Strategic Governance in the Age of AI Intelligence"
 pubDate: 2026-01-29
-category: "UX & AI Strategy"
+contentType: "Hot Take"
+category: "UX Intelligence"
 featured: true
 ---
 

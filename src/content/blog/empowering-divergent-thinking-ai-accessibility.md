@@ -2,7 +2,8 @@
 title: "Empowering Divergent Thinking: AI as an Accessibility Tool"
 description: "How AI tools like generative models are leveling the playing field for people with learning disabilities, from someone who knows firsthand"
 pubDate: 2025-09-15
-category: "AI & Accessibility"
+contentType: "Personal Essay"
+category: "UX Intelligence"
 featured: true
 ---
 

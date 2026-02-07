@@ -2,7 +2,8 @@
 title: "The UX of AI: How I Built a Custom Agent to Lower My Power Bill (and Win an Argument)"
 description: "How to apply UX Intelligence to agentic AI—building solutions grounded in user empathy and UX best practices"
 pubDate: 2026-02-07
-category: "AI, UX Intelligence, Case Study"
+contentType: "Blog Post"
+category: "UX Intelligence"
 featured: true
 ---
 
