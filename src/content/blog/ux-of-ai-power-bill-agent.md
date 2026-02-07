@@ -175,5 +175,4 @@ I won the argument. But more importantly, I proved that in the age of AI, UX isn
 
 **View the code:**
 
-- [GitHub: Rate Advisor App](https://github.com/kcwilliamson/ga-power-bot-app) — Full source code for the tool
-- [GitHub: Analytics Dashboard](https://github.com/kcwilliamson/ga-power-bot) — Dashboard and Worker code
+- [GitHub: ga-power-bot-app](https://github.com/kcwilliamson/ga-power-bot-app) — Full source code (Worker API, frontend, and dashboard)
