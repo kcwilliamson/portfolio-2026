@@ -64,6 +64,21 @@ Former investigative journalist (Robert F. Kennedy Award for Humanitarian Journa
 - Email: thekatiewilliamson@gmail.com
 - Portfolio: https://katiewilliamsonsebkhi.com
 
+## Content Types
+
+- **Portfolio Case Studies**: In-depth explorations of UX strategy work (Omega Framework, Conversation Architecture, Team Leadership, Content ROI)
+- **Blog Posts**: Original thought leadership on UX Intelligence, AI governance, and accessibility
+- **About**: Professional background and contact information
+
+## AI Usage
+
+All content on this site is original. AI (Claude) assists with:
+- Copy editing and proofreading
+- Code generation for site development
+- Content structure suggestions
+
+Final editorial decisions are human-made.
+
 ## Blog Posts
 
 ### The UX of AI: How I Built a Custom Agent to Lower My Power Bill (and Win an Argument)
