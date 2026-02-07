@@ -1,0 +1,22 @@
+extends: existence
+message: "When discussing AI, specify the category: General Purpose Interfaces, Internal Operations, Workflows & Agents, or External Experience & Product Building. Consider naming the specific tool."
+level: suggestion
+ignorecase: false
+tokens:
+  - '\bAI\b'
+exceptions:
+  - AI tools
+  - AI-powered
+  - AI-driven
+  - AI agent
+  - AI agents
+  - Workers AI
+  - AI Gateway
+  - AI Intelligence
+  - AI implementation
+  - AI architecture
+  - AI strategy
+  - General Purpose Interfaces
+  - Internal Operations
+  - Workflows & Agents
+  - External Experience

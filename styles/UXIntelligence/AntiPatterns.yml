@@ -1,0 +1,20 @@
+extends: existence
+message: "This phrase conflicts with UX Intelligence principles: '%s'. Consider reframing unless used in a story context to show what NOT to do."
+level: warning
+ignorecase: true
+tokens:
+  - just ask AI
+  - just use AI
+  - let AI do it
+  - ship it and fix
+  - ship and fix
+  - fix it later
+  - we'll fix it later
+  - users don't know what they want
+  - users don't know
+  - customers don't know what they want
+  - just a design opinion
+  - that's just design
+  - design is subjective
+  - it's just UX
+  - just UX

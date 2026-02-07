@@ -1,0 +1,28 @@
+extends: existence
+message: "Avoid using '%s' - consider a more specific or authoritative alternative."
+level: warning
+ignorecase: true
+tokens:
+  - easy
+  - easily
+  - delight
+  - delightful
+  - delighted
+  - leverage
+  - leveraging
+  - leveraged
+  - synergy
+  - synergies
+  - synergistic
+  - best-in-class
+  - best in class
+  - world-class
+  - world class
+  - learnings
+  - utilize
+  - utilized
+  - utilizing
+  - utilization
+  - ideate
+  - ideation
+  - ideating

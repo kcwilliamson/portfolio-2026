@@ -1,0 +1,15 @@
+extends: substitution
+message: "Consider using '%s' instead of '%s'"
+level: suggestion
+ignorecase: true
+swap:
+  customers: users
+  customer: user
+  copy: content
+  copywriting: content strategy
+  usability testing: User Research
+  usability test: User Research
+  user testing: User Research
+  simplify: reduce friction
+  streamline: reduce friction
+  machine learning: AI tools

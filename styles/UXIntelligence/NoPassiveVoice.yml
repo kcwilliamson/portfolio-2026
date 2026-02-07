@@ -1,0 +1,37 @@
+extends: existence
+message: "Avoid passive voice: '%s'. Use active, authoritative language."
+level: warning
+ignorecase: true
+tokens:
+  - was designed
+  - were designed
+  - was built
+  - were built
+  - was created
+  - were created
+  - was developed
+  - were developed
+  - was implemented
+  - were implemented
+  - was made
+  - were made
+  - is being done
+  - are being done
+  - was being done
+  - were being done
+  - has been done
+  - have been done
+  - had been done
+  - will be done
+  - is done by
+  - are done by
+  - was done by
+  - were done by
+  - is handled by
+  - are handled by
+  - was handled by
+  - were handled by
+  - is managed by
+  - are managed by
+  - was managed by
+  - were managed by

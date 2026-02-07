@@ -1,0 +1,104 @@
+{
+  "terms": [
+    {
+      "term": "UX Intelligence",
+      "definition": "A discipline combining product strategy, UX research, AI/ML, and systematic problem-solving to understand users at enterprise scale. Not periodic research studies—continuous user intelligence."
+    },
+    {
+      "term": "Listen, Respond, Measure",
+      "definition": "The UX Intelligence methodology: Listen to users systematically through calls, AI insights, and support analysis; Respond with content iterations and proactive architecture; Measure through task completion rates, support deflection, and satisfaction scores."
+    },
+    {
+      "term": "The Omega Empathy Platform",
+      "definition": "An AI-powered UX Intelligence platform using Workers AI and Llama 3 that automatically surfaces user pain points, sentiment, and needs from 10+ data sources including Discord, Twitter, GitHub, and support tickets."
+    },
+    {
+      "term": "Conversational Architecture",
+      "definition": "A framework positioning Content Strategy as an upstream architectural decision embedded in product planning—not a downstream deliverable. Designing the content structure and flow before code is written."
+    },
+    {
+      "term": "Content Strategy",
+      "definition": "The practice of planning, creating, and governing content to achieve business and user goals. In UX Intelligence, content strategists participate in PRD reviews and architecture discussions from the start."
+    },
+    {
+      "term": "UX Tech Debt",
+      "definition": "Inconsistent patterns, confusing copy, or legacy journeys that need refactoring to prevent user churn. Just as engineers refactor code to prevent crashes, UX teams must refactor experiences."
+    },
+    {
+      "term": "Steel Thread",
+      "definition": "The foundational experience architecture visible before development begins. The core user journey that guides the build, established through content structure and flow."
+    },
+    {
+      "term": "High-Creativity / Low-Risk",
+      "definition": "AI use cases where hallucinations are acceptable and even welcome, such as poetry generators, email brainstorming, or creative discovery. High tolerance for inaccuracy because it aids divergent thinking."
+    },
+    {
+      "term": "High-Precision / High-Risk",
+      "definition": "AI use cases where errors are catastrophic to brand and user, such as security configuration, medical data, or payroll. Zero tolerance—AI should work invisibly in the background for human experts to verify."
+    },
+    {
+      "term": "Probabilistic Interface",
+      "definition": "AI-driven UI that operates in the 'gray area of maybe' versus traditional deterministic interfaces where clicking a button produces a specific, predictable outcome."
+    },
+    {
+      "term": "Task Completion Rate",
+      "definition": "A metric measuring whether users successfully accomplish their intended goal. Core to UX Intelligence measurement—are users getting where they need to go, or hitting a wall?"
+    },
+    {
+      "term": "Support Deflection",
+      "definition": "Reducing support ticket volume through better in-product guidance. A simple text update or well-placed warning can save thousands of dollars—a UX win that shows up on a balance sheet."
+    },
+    {
+      "term": "Hybrid Agent",
+      "definition": "An AI system combining deterministic code (for mathematical accuracy) with LLMs (for natural language explanation). The code does the math, the model explains it."
+    },
+    {
+      "term": "Force Multiplier",
+      "definition": "A person or tool that enables others to execute at the pace of technology. Building internal tools and components that replicate expertise so everyone can make better decisions."
+    },
+    {
+      "term": "Workers AI",
+      "definition": "Cloudflare's serverless AI inference platform that runs machine learning models at the edge. Enables running models like Llama 3 without managing infrastructure."
+    },
+    {
+      "term": "Cloudflare Workers",
+      "definition": "Cloudflare's serverless compute platform that runs JavaScript/TypeScript at the edge. Code executes in data centers close to users for sub-millisecond response times."
+    },
+    {
+      "term": "Cloudflare Pages",
+      "definition": "Cloudflare's platform for deploying static sites and frontend applications. Integrates with GitHub for automatic deployments."
+    },
+    {
+      "term": "Cloudflare KV",
+      "definition": "Cloudflare's distributed key-value storage system. Low-latency data storage accessible from Workers, useful for user preferences, feature flags, and session data."
+    },
+    {
+      "term": "Vectorize",
+      "definition": "Cloudflare's vector database for AI applications. Stores embeddings for semantic search, RAG applications, and similarity matching."
+    },
+    {
+      "term": "LLM",
+      "definition": "Large Language Model. AI models trained on vast text data to generate human-like text, answer questions, and perform language tasks. Examples: GPT-4, Claude, Llama 3."
+    },
+    {
+      "term": "Llama 3",
+      "definition": "Meta's open-source large language model. Available through Workers AI for text generation, summarization, and conversational AI without API costs."
+    },
+    {
+      "term": "HTMLRewriter",
+      "definition": "Cloudflare Workers API for parsing and transforming HTML at the edge. Enables modifying page content on-the-fly without changing origin servers."
+    },
+    {
+      "term": "Edge Computing",
+      "definition": "Running code in data centers geographically close to users rather than centralized servers. Reduces latency and improves performance for global audiences."
+    },
+    {
+      "term": "Serverless",
+      "definition": "Cloud computing model where the provider manages infrastructure. Code runs on-demand without provisioning servers—pay only for execution time."
+    },
+    {
+      "term": "RAG",
+      "definition": "Retrieval-Augmented Generation. AI technique that retrieves relevant documents before generating responses, grounding LLM outputs in factual sources to reduce hallucinations."
+    }
+  ]
+}

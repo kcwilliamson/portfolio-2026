@@ -1,0 +1,19 @@
+extends: substitution
+message: "'%s' should be capitalized as '%s'"
+level: warning
+ignorecase: true
+swap:
+  ux intelligence: UX Intelligence
+  content strategy: Content Strategy
+  conversational architecture: Conversational Architecture
+  conversation architecture: Conversational Architecture
+  the omega empathy platform: The Omega Empathy Platform
+  omega empathy platform: The Omega Empathy Platform
+  the omega platform: The Omega Empathy Platform
+  omega platform: The Omega Empathy Platform
+  omega framework: The Omega Framework
+  the omega framework: The Omega Framework
+  listen, respond, measure: Listen, Respond, Measure
+  listen respond measure: Listen, Respond, Measure
+  user research: User Research
+  ux tech debt: UX Tech Debt

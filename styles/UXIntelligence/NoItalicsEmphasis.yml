@@ -1,0 +1,5 @@
+extends: existence
+message: "Avoid using italics for emphasis. Use **bold** instead."
+level: warning
+raw:
+  - '\*[^*\n]+\*(?!\*)'

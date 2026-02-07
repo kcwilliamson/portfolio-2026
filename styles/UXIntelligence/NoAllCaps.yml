@@ -1,0 +1,44 @@
+extends: existence
+message: "Avoid ALL CAPS for emphasis: '%s'. Use **bold** instead."
+level: warning
+ignorecase: false
+tokens:
+  - '\b[A-Z]{4,}\b'
+exceptions:
+  - AI
+  - UX
+  - UI
+  - API
+  - CEO
+  - CTO
+  - VP
+  - PM
+  - KPI
+  - OKR
+  - ROI
+  - URL
+  - HTML
+  - CSS
+  - JSON
+  - YAML
+  - CLI
+  - SDK
+  - LLM
+  - NLP
+  - MCP
+  - RAG
+  - PDF
+  - YMCA
+  - SRE
+  - PRD
+  - EST
+  - GMT
+  - CST
+  - HINT
+  - CLUE
+  - FAQ
+  - DNS
+  - CDN
+  - WAF
+  - SUS
+  - CIDR

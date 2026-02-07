@@ -1,0 +1,79 @@
+# Katie Williamson Sebkhi
+
+> Director of Content Strategy at Cloudflare. Pioneer of UX Intelligence—a discipline combining product strategy, UX research, and AI/ML to understand users at enterprise scale.
+
+I believe the most powerful systems are those that listen. I move fluidly between strategy, research, technical architecture, and team leadership. Whatever solves the problem.
+
+## What I Do
+
+I build systems that turn thousands of daily user interactions into actionable insights. My work sits at the intersection of storytelling and systems—using AI tools not to replace human intuition, but to amplify it.
+
+## Core Frameworks
+
+### UX Intelligence
+A systematic approach to understanding users at scale. Not periodic research studies—continuous user intelligence. The core realization: UX isn't a service. It's a product.
+
+### Listen, Respond, Measure
+The methodology behind UX Intelligence:
+- Listen: Customer calls, AI-powered insights, User Research, support ticket analysis
+- Respond: In-product content iterations, proactive content architecture
+- Measure: Task completion rates, support ticket reduction, user satisfaction
+
+### Conversational Architecture
+Positioning Content Strategy as an upstream architectural decision embedded in product planning—not a downstream deliverable. We design the content structure and flow before a single line of code is written.
+
+## Key Projects
+
+### The Omega Empathy Platform
+AI-powered UX Intelligence platform using Workers AI and Llama 3. Automatically surfaces user pain points, sentiment, and needs from 10+ sources (Discord, Twitter, GitHub, support tickets, forums, Reddit, Hacker News). Achieved 99% efficiency gain—from 3 weeks to 5 minutes.
+
+### Georgia Power Rate Advisor
+Personal project demonstrating UX Intelligence in practice. Built an AI agent that compares all 7 Georgia Power residential rate plans using deterministic math (not AI hallucinations) with conversational explanations powered by Llama 3.
+- Live: https://ga-power-website.pages.dev
+- GitHub: https://github.com/kcwilliamson/ga-power-bot-app
+
+### Smart Documentation Worker
+Proposed environment-aware documentation personalization using Cloudflare Workers and HTMLRewriter. Detects user's OS to show only relevant content, reducing cognitive load.
+- PR: https://github.com/cloudflare/cloudflare-docs/pull/27954
+
+## Philosophy
+
+**Process is not a deliverable. The deliverable is the outcome.**
+
+**UX is a product.** It deserves the same accountability, measurement, and continuous improvement as any other product.
+
+Teams should treat the interface—the only part of the product the human actually touches—as a living system, not a static painting. There is no such thing as "final_final_v3." There is only the version that's live, and the one we're making better right now.
+
+## Results I've Delivered
+
+- 45% increase in user engagement across key product flows
+- 60% reduction in content-related support tickets
+- 28% improvement in enterprise trial-to-paid conversion
+- 62% improvement in time-to-comprehension (8 minutes to 3 minutes)
+- 95% team retention rate (industry average: 75%)
+- 100% promotion rate for eligible reports
+
+## Background
+
+Former investigative journalist (Robert F. Kennedy Award for Humanitarian Journalism). Transitioned from storytelling to architecting AI-driven intelligence systems. The same discipline required to master a craft is what's required to lead a mission.
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/katie-williamson-sebkhi-8787a85b/
+- GitHub: https://github.com/kcwilliamson
+- Email: thekatiewilliamson@gmail.com
+- Portfolio: https://katiewilliamsonsebkhi.com
+
+## Blog Posts
+
+### The UX of AI: How I Built a Custom Agent to Lower My Power Bill (and Win an Argument)
+How to apply UX Intelligence to agentic AI—building solutions grounded in user empathy and UX best practices. Demonstrates the difference between "just asking AI" (which fails at complex math) and architecting a hybrid agent that combines deterministic code with LLM explanation.
+
+### There Is No Such Thing as "Done" when UX is a Product
+Why treating UX like homework instead of a living system is killing your product experience. Introduces the "pet vs homework" metaphor and explains how UX Intelligence treats the interface as a product requiring continuous care, measurement, and iteration.
+
+### Don't Yoko Your UX
+Strategic governance in the age of AI Intelligence. Managing the "maybe" of probabilistic AI with user-first principles. Introduces the framework for determining AI tolerance levels: High-Creativity/Low-Risk, Balanced Assistance, and High-Precision/High-Risk contexts.
+
+### Empowering Divergent Thinking: AI as an Accessibility Tool
+How AI tools are leveling the playing field for people with learning disabilities—from someone who knows firsthand. A personal essay on dyslexia and how generative AI has become an accessibility tool for divergent thinkers.
