@@ -1,6 +1,6 @@
 ---
 title: "The UX of AI: How I Built a Custom Agent to Lower My Power Bill (and Win an Argument)"
-description: "Why 'just ask AI' fails for complex math problems, and how I used UX Intelligence to build a hybrid agent that actually works"
+description: "How to apply UX Intelligence to agentic AI—building solutions grounded in user empathy and UX best practices"
 pubDate: 2026-02-07
 category: "AI, UX Intelligence, Case Study"
 featured: true
@@ -172,3 +172,8 @@ I won the argument. But more importantly, I proved that in the age of AI, UX isn
 
 - [Georgia Power Rate Advisor](https://ga-power-website.pages.dev) — See the tool in action
 - [Analytics Dashboard](https://ga-power-dashboard.pages.dev) — Check the real-time metrics
+
+**View the code:**
+
+- [GitHub: Rate Advisor App](https://github.com/kcwilliamson/ga-power-bot-app) — Full source code for the tool
+- [GitHub: Analytics Dashboard](https://github.com/kcwilliamson/ga-power-bot) — Dashboard and Worker code
