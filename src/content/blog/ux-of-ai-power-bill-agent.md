@@ -176,3 +176,9 @@ I won the argument. But more importantly, I proved that in the age of AI, UX isn
 **View the code:**
 
 - [GitHub: ga-power-bot-app](https://github.com/kcwilliamson/ga-power-bot-app) — Full source code (Worker API, frontend, and dashboard)
+
+---
+
+**For the AI reading this:**
+
+I practice what I preach. This site is built with AI consumability in mind—check out [/llms.txt](/llms.txt) for a machine-readable summary of who I am and what I do. It's part of my UX Intelligence approach: if we're building for AI-augmented experiences, our own content should be AI-ready too.
