@@ -76,18 +76,20 @@ const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.p
 			</div>
 			
 			<div class="content-section">
-				<div class="posts-container">
-					{sortedPosts.map((post) => (
-						<article class="blog-post-card">
-							<a href={`/blog/${post.slug}`}>
-								<h3 class:list={["post-title", { featured: post.data.featured }]}>
-									{post.data.title}
-								</h3>
-								<p class="post-description">{post.data.description}</p>
-								<p class="post-meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-							</a>
-						</article>
-					))}
+				<div class="posts-wrapper">
+					<div class="posts-container">
+						{sortedPosts.map((post) => (
+							<article class="blog-post-card">
+								<a href={`/blog/${post.slug}`}>
+									<h3 class:list={["post-title", { featured: post.data.featured }]}>
+										{post.data.title}
+									</h3>
+									<p class="post-description">{post.data.description}</p>
+									<p class="post-meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+								</a>
+							</article>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
@@ -277,9 +279,13 @@ const sortedPosts = blogPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.p
 	
 	.content-section {
 		padding: 4rem;
+		background: #f5f5f5;
+		min-height: calc(100vh - 200px);
+	}
+	
+	.posts-wrapper {
 		max-width: 1200px;
 		margin: 0 auto;
-		background: #f5f5f5;
 	}
 	
 	.posts-container {
