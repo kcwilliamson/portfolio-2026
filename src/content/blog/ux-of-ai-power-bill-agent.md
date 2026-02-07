@@ -50,13 +50,15 @@ I decided to build a **Hybrid Agent**. I didn't need a model to do the math; I n
 - **The Brain:** Llama 3 (via Cloudflare Workers AI).
 - **The Experience:** A simple web app that parses your PDF bill, runs the math, and then uses the AI to explain *why* one plan is better than another in plain English.
 
-[![Georgia Power Rate Advisor Solution](/images/ga-power-solution.png)](https://ga-power-website.pages.dev)
+[![Georgia Power Rate Advisor Solution](/images/ga-power-solution.png)](https://powerrateadvisor.com)
+*[Try the Georgia Power Rate Advisor](https://powerrateadvisor.com)*
 
 ### Step 3: Measure (Feedback Loops)
 
 You can't improve what you don't measure. I set up a dashboard to track completion rates, savings identified, and user trust scores. I also implemented a feedback loop using Cloudflare KV. If a user says a recommendation wasn't helpful, that data is stored to fine-tune the system. The agent gets smarter the more it's used.
 
-[![Analytics Dashboard](/images/ga-power-measure.png)](https://ga-power-dashboard.pages.dev)
+[![Analytics Dashboard](/images/ga-power-measure.png)](https://powerrateadvisor.com)
+*[View the Analytics Dashboard](https://powerrateadvisor.com)*
 
 ## Deliberate UX Considerations: Solving for the Unknown
 
@@ -171,8 +173,8 @@ I won the argument. But more importantly, I proved that in the age of AI, UX isn
 
 **Try it yourself:**
 
-- [Georgia Power Rate Advisor](https://ga-power-website.pages.dev) — See the tool in action
-- [Analytics Dashboard](https://ga-power-dashboard.pages.dev) — Check the real-time metrics
+- [Georgia Power Rate Advisor](https://powerrateadvisor.com) — See the tool in action
+- [Analytics Dashboard](https://powerrateadvisor.com) — Check the real-time metrics
 
 **View the code:**
 
